@@ -1,0 +1,1958 @@
+"COD_VAR";"LIB_VAR";"COD_MOD";"LIB_MOD";"TYPE_VAR";"LONG_VAR"
+"C";"Population couverte bénéficiaire du régime général";;;"NUM";8
+"C_H";"Hommes bénéficiaires du régime général";;;"NUM";8
+"C_F";"Femmes bénéficiaires du régime général";;;"NUM";8
+"C_17";"Bénéficiaires du régime général de moins de 18 ans";;;"NUM";8
+"C_1824";"Bénéficiaires du régime général  de 18 ans à moins de 25 ans";;;"NUM";8
+"C_2549";"Bénéficiaires du régime général  de 25 ans à moins de 50 ans";;;"NUM";8
+"C_5059";"Bénéficiaires du régime général  de 50 ans à moins de 60 ans";;;"NUM";8
+"C_6074";"Bénéficiaires du régime général  de 60 ans à moins de 75 ans";;;"NUM";8
+"C_75";"Bénéficiaires du régime général  de 75 ans ou plus";;;"NUM";8
+"C_C2SNP";"Population couverte bénéficiaire de la C2S non participative (ex-CMUC)";;;"NUM";8
+"C_H_C2SNP";"Hommes bénéficiaires de la C2S non participative (ex-CMUC)";;;"NUM";8
+"C_F_C2SNP";"Femmes bénéficiaires de la C2S non participative (ex-CMUC)";;;"NUM";8
+"C_17_C2SNP";"Bénéficiaires de la C2S non participative (ex-CMUC) de moins de 18 ans";;;"NUM";8
+"C_1824_C2SNP";"Bénéficiaires de la C2S non participative (ex-CMUC) de 18 ans à moins de 25 ans";;;"NUM";8
+"C_2549_C2SNP";"Bénéficiaires de la C2S non participative (ex-CMUC) de 25 ans à moins de 50 ans";;;"NUM";8
+"C_5059_C2SNP";"Bénéficiaires de la C2S non participative (ex-CMUC) de 50 ans à moins de 60 ans";;;"NUM";8
+"C_60_C2SNP";"Bénéficiaires de la C2S non participative (ex-CMUC) de 60 ans ou plus";;;"NUM";8
+"C_C2SP";"Population couverte bénéficiaire de la C2S participative (ex-ACS)";;;"NUM";8
+"C_H_C2SP";"Hommes bénéficiaires de la C2S participative (ex-ACS)";;;"NUM";8
+"C_F_C2SP";"Femmes bénéficiaires de la C2S participative (ex-ACS)";;;"NUM";8
+"C_17_C2SP";"Bénéficiaires de la C2S participative (ex-ACS) de moins de 18 ans";;;"NUM";8
+"C_1824_C2SP";"Bénéficiaires de la C2S participative (ex-ACS) de 18 ans à moins de 25 ans";;;"NUM";8
+"C_2549_C2SP";"Bénéficiaires de la C2S participative (ex-ACS) de 25 ans à moins de 50 ans";;;"NUM";8
+"C_5059_C2SP";"Bénéficiaires de la C2S participative (ex-ACS) de 50 ans à moins de 60 ans";;;"NUM";8
+"C_60_C2SP";"Bénéficiaires de la C2S participative (ex-ACS) de 60 ans ou plus";;;"NUM";8
+"NOTE";"Note de diffusion";"0";"Aucun problème particulier";"CHAR";1
+"NOTE";"Note de diffusion";"2";"Non diffusé : fusion de communes";"CHAR";1
+"NOTE";"Note de diffusion";"3";"Non diffusé : seuil de diffusion";"CHAR";1
+"NOTE";"Note de diffusion";"4";"Non diffusé : mauvaise qualité de géoréférencement";"CHAR";1
+"NOTE";"Note de diffusion";"5";"Non diffusé : anomalies repérées lors des contrôles de cohérence";"CHAR";1
+"CODGEO";"Code de la commune";"01004";"Ambérieu-en-Bugey";"CHAR";5
+"CODGEO";"Code de la commune";"01033";"Valserhône";"CHAR";5
+"CODGEO";"Code de la commune";"01034";"Belley";"CHAR";5
+"CODGEO";"Code de la commune";"01053";"Bourg-en-Bresse";"CHAR";5
+"CODGEO";"Code de la commune";"01143";"Divonne-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"01160";"Ferney-Voltaire";"CHAR";5
+"CODGEO";"Code de la commune";"01173";"Gex";"CHAR";5
+"CODGEO";"Code de la commune";"01194";"Jassans-Riottier";"CHAR";5
+"CODGEO";"Code de la commune";"01202";"Lagnieu";"CHAR";5
+"CODGEO";"Code de la commune";"01244";"Meximieux";"CHAR";5
+"CODGEO";"Code de la commune";"01249";"Miribel";"CHAR";5
+"CODGEO";"Code de la commune";"01262";"Montluel";"CHAR";5
+"CODGEO";"Code de la commune";"01283";"Oyonnax";"CHAR";5
+"CODGEO";"Code de la commune";"01289";"Péronnas";"CHAR";5
+"CODGEO";"Code de la commune";"01354";"Saint-Genis-Pouilly";"CHAR";5
+"CODGEO";"Code de la commune";"01427";"Trévoux";"CHAR";5
+"CODGEO";"Code de la commune";"01451";"Viriat";"CHAR";5
+"CODGEO";"Code de la commune";"02168";"Château-Thierry";"CHAR";5
+"CODGEO";"Code de la commune";"02173";"Chauny";"CHAR";5
+"CODGEO";"Code de la commune";"02340";"Gauchy";"CHAR";5
+"CODGEO";"Code de la commune";"02381";"Hirson";"CHAR";5
+"CODGEO";"Code de la commune";"02408";"Laon";"CHAR";5
+"CODGEO";"Code de la commune";"02691";"Saint-Quentin";"CHAR";5
+"CODGEO";"Code de la commune";"02722";"Soissons";"CHAR";5
+"CODGEO";"Code de la commune";"02738";"Tergnier";"CHAR";5
+"CODGEO";"Code de la commune";"02810";"Villers-Cotterêts";"CHAR";5
+"CODGEO";"Code de la commune";"03023";"Bellerive-sur-Allier";"CHAR";5
+"CODGEO";"Code de la commune";"03082";"Commentry";"CHAR";5
+"CODGEO";"Code de la commune";"03095";"Cusset";"CHAR";5
+"CODGEO";"Code de la commune";"03101";"Domérat";"CHAR";5
+"CODGEO";"Code de la commune";"03118";"Gannat";"CHAR";5
+"CODGEO";"Code de la commune";"03185";"Montluçon";"CHAR";5
+"CODGEO";"Code de la commune";"03190";"Moulins";"CHAR";5
+"CODGEO";"Code de la commune";"03254";"Saint-Pourçain-sur-Sioule";"CHAR";5
+"CODGEO";"Code de la commune";"03310";"Vichy";"CHAR";5
+"CODGEO";"Code de la commune";"03321";"Yzeure";"CHAR";5
+"CODGEO";"Code de la commune";"04049";"Château-Arnoux-Saint-Auban";"CHAR";5
+"CODGEO";"Code de la commune";"04070";"Digne-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"04112";"Manosque";"CHAR";5
+"CODGEO";"Code de la commune";"04209";"Sisteron";"CHAR";5
+"CODGEO";"Code de la commune";"05023";"Briançon";"CHAR";5
+"CODGEO";"Code de la commune";"05046";"Embrun";"CHAR";5
+"CODGEO";"Code de la commune";"05061";"Gap";"CHAR";5
+"CODGEO";"Code de la commune";"06004";"Antibes";"CHAR";5
+"CODGEO";"Code de la commune";"06012";"Beausoleil";"CHAR";5
+"CODGEO";"Code de la commune";"06018";"Biot";"CHAR";5
+"CODGEO";"Code de la commune";"06027";"Cagnes-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"06029";"Cannes";"CHAR";5
+"CODGEO";"Code de la commune";"06030";"Le Cannet";"CHAR";5
+"CODGEO";"Code de la commune";"06033";"Carros";"CHAR";5
+"CODGEO";"Code de la commune";"06044";"La Colle-sur-Loup";"CHAR";5
+"CODGEO";"Code de la commune";"06048";"Contes";"CHAR";5
+"CODGEO";"Code de la commune";"06065";"La Gaude";"CHAR";5
+"CODGEO";"Code de la commune";"06069";"Grasse";"CHAR";5
+"CODGEO";"Code de la commune";"06079";"Mandelieu-la-Napoule";"CHAR";5
+"CODGEO";"Code de la commune";"06083";"Menton";"CHAR";5
+"CODGEO";"Code de la commune";"06084";"Mouans-Sartoux";"CHAR";5
+"CODGEO";"Code de la commune";"06085";"Mougins";"CHAR";5
+"CODGEO";"Code de la commune";"06088";"Nice";"CHAR";5
+"CODGEO";"Code de la commune";"06090";"Pégomas";"CHAR";5
+"CODGEO";"Code de la commune";"06095";"Peymeinade";"CHAR";5
+"CODGEO";"Code de la commune";"06104";"Roquebrune-Cap-Martin";"CHAR";5
+"CODGEO";"Code de la commune";"06105";"Roquefort-les-Pins";"CHAR";5
+"CODGEO";"Code de la commune";"06123";"Saint-Laurent-du-Var";"CHAR";5
+"CODGEO";"Code de la commune";"06149";"La Trinité";"CHAR";5
+"CODGEO";"Code de la commune";"06152";"Valbonne";"CHAR";5
+"CODGEO";"Code de la commune";"06155";"Vallauris";"CHAR";5
+"CODGEO";"Code de la commune";"06157";"Vence";"CHAR";5
+"CODGEO";"Code de la commune";"06159";"Villefranche-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"06161";"Villeneuve-Loubet";"CHAR";5
+"CODGEO";"Code de la commune";"07010";"Annonay";"CHAR";5
+"CODGEO";"Code de la commune";"07019";"Aubenas";"CHAR";5
+"CODGEO";"Code de la commune";"07042";"Bourg-Saint-Andéol";"CHAR";5
+"CODGEO";"Code de la commune";"07102";"Guilherand-Granges";"CHAR";5
+"CODGEO";"Code de la commune";"07186";"Privas";"CHAR";5
+"CODGEO";"Code de la commune";"07281";"Saint-Péray";"CHAR";5
+"CODGEO";"Code de la commune";"07319";"Le Teil";"CHAR";5
+"CODGEO";"Code de la commune";"07324";"Tournon-sur-Rhône";"CHAR";5
+"CODGEO";"Code de la commune";"07349";"La Voulte-sur-Rhône";"CHAR";5
+"CODGEO";"Code de la commune";"08081";"Bogny-sur-Meuse";"CHAR";5
+"CODGEO";"Code de la commune";"08105";"Charleville-Mézières";"CHAR";5
+"CODGEO";"Code de la commune";"08185";"Fumay";"CHAR";5
+"CODGEO";"Code de la commune";"08190";"Givet";"CHAR";5
+"CODGEO";"Code de la commune";"08328";"Nouzonville";"CHAR";5
+"CODGEO";"Code de la commune";"08362";"Rethel";"CHAR";5
+"CODGEO";"Code de la commune";"08363";"Revin";"CHAR";5
+"CODGEO";"Code de la commune";"08409";"Sedan";"CHAR";5
+"CODGEO";"Code de la commune";"08490";"Vouziers";"CHAR";5
+"CODGEO";"Code de la commune";"09122";"Foix";"CHAR";5
+"CODGEO";"Code de la commune";"09160";"Lavelanet";"CHAR";5
+"CODGEO";"Code de la commune";"09225";"Pamiers";"CHAR";5
+"CODGEO";"Code de la commune";"09261";"Saint-Girons";"CHAR";5
+"CODGEO";"Code de la commune";"10033";"Bar-sur-Aube";"CHAR";5
+"CODGEO";"Code de la commune";"10081";"La Chapelle-Saint-Luc";"CHAR";5
+"CODGEO";"Code de la commune";"10268";"Nogent-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"10323";"Romilly-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"10333";"Saint-André-les-Vergers";"CHAR";5
+"CODGEO";"Code de la commune";"10343";"Saint-Julien-les-Villas";"CHAR";5
+"CODGEO";"Code de la commune";"10362";"Sainte-Savine";"CHAR";5
+"CODGEO";"Code de la commune";"10387";"Troyes";"CHAR";5
+"CODGEO";"Code de la commune";"11069";"Carcassonne";"CHAR";5
+"CODGEO";"Code de la commune";"11076";"Castelnaudary";"CHAR";5
+"CODGEO";"Code de la commune";"11106";"Coursan";"CHAR";5
+"CODGEO";"Code de la commune";"11116";"Cuxac-d'Aude";"CHAR";5
+"CODGEO";"Code de la commune";"11203";"Lézignan-Corbières";"CHAR";5
+"CODGEO";"Code de la commune";"11206";"Limoux";"CHAR";5
+"CODGEO";"Code de la commune";"11262";"Narbonne";"CHAR";5
+"CODGEO";"Code de la commune";"11266";"Port-la-Nouvelle";"CHAR";5
+"CODGEO";"Code de la commune";"11379";"Sigean";"CHAR";5
+"CODGEO";"Code de la commune";"11397";"Trèbes";"CHAR";5
+"CODGEO";"Code de la commune";"12089";"Decazeville";"CHAR";5
+"CODGEO";"Code de la commune";"12145";"Millau";"CHAR";5
+"CODGEO";"Code de la commune";"12176";"Onet-le-Château";"CHAR";5
+"CODGEO";"Code de la commune";"12202";"Rodez";"CHAR";5
+"CODGEO";"Code de la commune";"12208";"Saint-Affrique";"CHAR";5
+"CODGEO";"Code de la commune";"12300";"Villefranche-de-Rouergue";"CHAR";5
+"CODGEO";"Code de la commune";"13001";"Aix-en-Provence";"CHAR";5
+"CODGEO";"Code de la commune";"13002";"Allauch";"CHAR";5
+"CODGEO";"Code de la commune";"13004";"Arles";"CHAR";5
+"CODGEO";"Code de la commune";"13005";"Aubagne";"CHAR";5
+"CODGEO";"Code de la commune";"13007";"Auriol";"CHAR";5
+"CODGEO";"Code de la commune";"13014";"Berre-l'Étang";"CHAR";5
+"CODGEO";"Code de la commune";"13015";"Bouc-Bel-Air";"CHAR";5
+"CODGEO";"Code de la commune";"13019";"Cabriès";"CHAR";5
+"CODGEO";"Code de la commune";"13021";"Carry-le-Rouet";"CHAR";5
+"CODGEO";"Code de la commune";"13022";"Cassis";"CHAR";5
+"CODGEO";"Code de la commune";"13026";"Châteauneuf-les-Martigues";"CHAR";5
+"CODGEO";"Code de la commune";"13027";"Châteaurenard";"CHAR";5
+"CODGEO";"Code de la commune";"13028";"La Ciotat";"CHAR";5
+"CODGEO";"Code de la commune";"13032";"Éguilles";"CHAR";5
+"CODGEO";"Code de la commune";"13035";"Eyguières";"CHAR";5
+"CODGEO";"Code de la commune";"13037";"La Fare-les-Oliviers";"CHAR";5
+"CODGEO";"Code de la commune";"13039";"Fos-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"13040";"Fuveau";"CHAR";5
+"CODGEO";"Code de la commune";"13041";"Gardanne";"CHAR";5
+"CODGEO";"Code de la commune";"13042";"Gémenos";"CHAR";5
+"CODGEO";"Code de la commune";"13043";"Gignac-la-Nerthe";"CHAR";5
+"CODGEO";"Code de la commune";"13047";"Istres";"CHAR";5
+"CODGEO";"Code de la commune";"13050";"Lambesc";"CHAR";5
+"CODGEO";"Code de la commune";"13051";"Lançon-Provence";"CHAR";5
+"CODGEO";"Code de la commune";"13054";"Marignane";"CHAR";5
+"CODGEO";"Code de la commune";"13055";"Marseille";"CHAR";5
+"CODGEO";"Code de la commune";"13056";"Martigues";"CHAR";5
+"CODGEO";"Code de la commune";"13063";"Miramas";"CHAR";5
+"CODGEO";"Code de la commune";"13069";"Pélissanne";"CHAR";5
+"CODGEO";"Code de la commune";"13070";"La Penne-sur-Huveaune";"CHAR";5
+"CODGEO";"Code de la commune";"13071";"Les Pennes-Mirabeau";"CHAR";5
+"CODGEO";"Code de la commune";"13075";"Plan-de-Cuques";"CHAR";5
+"CODGEO";"Code de la commune";"13077";"Port-de-Bouc";"CHAR";5
+"CODGEO";"Code de la commune";"13078";"Port-Saint-Louis-du-Rhône";"CHAR";5
+"CODGEO";"Code de la commune";"13081";"Rognac";"CHAR";5
+"CODGEO";"Code de la commune";"13086";"Roquevaire";"CHAR";5
+"CODGEO";"Code de la commune";"13092";"Saint-Chamas";"CHAR";5
+"CODGEO";"Code de la commune";"13097";"Saint-Martin-de-Crau";"CHAR";5
+"CODGEO";"Code de la commune";"13098";"Saint-Mitre-les-Remparts";"CHAR";5
+"CODGEO";"Code de la commune";"13100";"Saint-Rémy-de-Provence";"CHAR";5
+"CODGEO";"Code de la commune";"13102";"Saint-Victoret";"CHAR";5
+"CODGEO";"Code de la commune";"13103";"Salon-de-Provence";"CHAR";5
+"CODGEO";"Code de la commune";"13104";"Sausset-les-Pins";"CHAR";5
+"CODGEO";"Code de la commune";"13105";"Sénas";"CHAR";5
+"CODGEO";"Code de la commune";"13106";"Septèmes-les-Vallons";"CHAR";5
+"CODGEO";"Code de la commune";"13107";"Simiane-Collongue";"CHAR";5
+"CODGEO";"Code de la commune";"13108";"Tarascon";"CHAR";5
+"CODGEO";"Code de la commune";"13110";"Trets";"CHAR";5
+"CODGEO";"Code de la commune";"13112";"Velaux";"CHAR";5
+"CODGEO";"Code de la commune";"13113";"Venelles";"CHAR";5
+"CODGEO";"Code de la commune";"13117";"Vitrolles";"CHAR";5
+"CODGEO";"Code de la commune";"13119";"Carnoux-en-Provence";"CHAR";5
+"CODGEO";"Code de la commune";"13201";"Marseille 1er Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13202";"Marseille 2e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13203";"Marseille 3e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13204";"Marseille 4e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13205";"Marseille 5e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13206";"Marseille 6e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13207";"Marseille 7e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13208";"Marseille 8e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13209";"Marseille 9e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13210";"Marseille 10e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13211";"Marseille 11e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13212";"Marseille 12e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13213";"Marseille 13e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13214";"Marseille 14e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13215";"Marseille 15e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"13216";"Marseille 16e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"14047";"Bayeux";"CHAR";5
+"CODGEO";"Code de la commune";"14118";"Caen";"CHAR";5
+"CODGEO";"Code de la commune";"14167";"Colombelles";"CHAR";5
+"CODGEO";"Code de la commune";"14174";"Condé-en-Normandie";"CHAR";5
+"CODGEO";"Code de la commune";"14181";"Cormelles-le-Royal";"CHAR";5
+"CODGEO";"Code de la commune";"14225";"Dives-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"14258";"Falaise";"CHAR";5
+"CODGEO";"Code de la commune";"14271";"Fleury-sur-Orne";"CHAR";5
+"CODGEO";"Code de la commune";"14301";"Giberville";"CHAR";5
+"CODGEO";"Code de la commune";"14327";"Hérouville-Saint-Clair";"CHAR";5
+"CODGEO";"Code de la commune";"14333";"Honfleur";"CHAR";5
+"CODGEO";"Code de la commune";"14341";"Ifs";"CHAR";5
+"CODGEO";"Code de la commune";"14366";"Lisieux";"CHAR";5
+"CODGEO";"Code de la commune";"14437";"Mondeville";"CHAR";5
+"CODGEO";"Code de la commune";"14488";"Ouistreham";"CHAR";5
+"CODGEO";"Code de la commune";"14715";"Trouville-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"14762";"Vire Normandie";"CHAR";5
+"CODGEO";"Code de la commune";"15012";"Arpajon-sur-Cère";"CHAR";5
+"CODGEO";"Code de la commune";"15014";"Aurillac";"CHAR";5
+"CODGEO";"Code de la commune";"15187";"Saint-Flour";"CHAR";5
+"CODGEO";"Code de la commune";"16015";"Angoulême";"CHAR";5
+"CODGEO";"Code de la commune";"16028";"Barbezieux-Saint-Hilaire";"CHAR";5
+"CODGEO";"Code de la commune";"16102";"Cognac";"CHAR";5
+"CODGEO";"Code de la commune";"16113";"La Couronne";"CHAR";5
+"CODGEO";"Code de la commune";"16154";"Gond-Pontouvre";"CHAR";5
+"CODGEO";"Code de la commune";"16291";"Ruelle-sur-Touvre";"CHAR";5
+"CODGEO";"Code de la commune";"16358";"Saint-Yrieix-sur-Charente";"CHAR";5
+"CODGEO";"Code de la commune";"16374";"Soyaux";"CHAR";5
+"CODGEO";"Code de la commune";"17028";"Aytré";"CHAR";5
+"CODGEO";"Code de la commune";"17094";"Châtelaillon-Plage";"CHAR";5
+"CODGEO";"Code de la commune";"17200";"Lagord";"CHAR";5
+"CODGEO";"Code de la commune";"17264";"Nieul-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"17274";"Périgny";"CHAR";5
+"CODGEO";"Code de la commune";"17299";"Rochefort";"CHAR";5
+"CODGEO";"Code de la commune";"17300";"La Rochelle";"CHAR";5
+"CODGEO";"Code de la commune";"17306";"Royan";"CHAR";5
+"CODGEO";"Code de la commune";"17333";"Saint-Georges-de-Didonne";"CHAR";5
+"CODGEO";"Code de la commune";"17347";"Saint-Jean-d'Angély";"CHAR";5
+"CODGEO";"Code de la commune";"17385";"Saint-Pierre-d'Oléron";"CHAR";5
+"CODGEO";"Code de la commune";"17415";"Saintes";"CHAR";5
+"CODGEO";"Code de la commune";"17421";"Saujon";"CHAR";5
+"CODGEO";"Code de la commune";"17434";"Surgères";"CHAR";5
+"CODGEO";"Code de la commune";"17449";"Tonnay-Charente";"CHAR";5
+"CODGEO";"Code de la commune";"18033";"Bourges";"CHAR";5
+"CODGEO";"Code de la commune";"18197";"Saint-Amand-Montrond";"CHAR";5
+"CODGEO";"Code de la commune";"18205";"Saint-Doulchard";"CHAR";5
+"CODGEO";"Code de la commune";"18213";"Saint-Germain-du-Puy";"CHAR";5
+"CODGEO";"Code de la commune";"18279";"Vierzon";"CHAR";5
+"CODGEO";"Code de la commune";"19031";"Brive-la-Gaillarde";"CHAR";5
+"CODGEO";"Code de la commune";"19073";"Égletons";"CHAR";5
+"CODGEO";"Code de la commune";"19123";"Malemort";"CHAR";5
+"CODGEO";"Code de la commune";"19272";"Tulle";"CHAR";5
+"CODGEO";"Code de la commune";"19275";"Ussel";"CHAR";5
+"CODGEO";"Code de la commune";"21038";"Auxonne";"CHAR";5
+"CODGEO";"Code de la commune";"21054";"Beaune";"CHAR";5
+"CODGEO";"Code de la commune";"21154";"Châtillon-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"21166";"Chenôve";"CHAR";5
+"CODGEO";"Code de la commune";"21171";"Chevigny-Saint-Sauveur";"CHAR";5
+"CODGEO";"Code de la commune";"21231";"Dijon";"CHAR";5
+"CODGEO";"Code de la commune";"21278";"Fontaine-lès-Dijon";"CHAR";5
+"CODGEO";"Code de la commune";"21292";"Genlis";"CHAR";5
+"CODGEO";"Code de la commune";"21355";"Longvic";"CHAR";5
+"CODGEO";"Code de la commune";"21390";"Marsannay-la-Côte";"CHAR";5
+"CODGEO";"Code de la commune";"21425";"Montbard";"CHAR";5
+"CODGEO";"Code de la commune";"21464";"Nuits-Saint-Georges";"CHAR";5
+"CODGEO";"Code de la commune";"21515";"Quetigny";"CHAR";5
+"CODGEO";"Code de la commune";"21540";"Saint-Apollinaire";"CHAR";5
+"CODGEO";"Code de la commune";"21603";"Semur-en-Auxois";"CHAR";5
+"CODGEO";"Code de la commune";"21617";"Talant";"CHAR";5
+"CODGEO";"Code de la commune";"22004";"Bégard";"CHAR";5
+"CODGEO";"Code de la commune";"22050";"Dinan";"CHAR";5
+"CODGEO";"Code de la commune";"22070";"Guingamp";"CHAR";5
+"CODGEO";"Code de la commune";"22093";"Lamballe-Armor";"CHAR";5
+"CODGEO";"Code de la commune";"22106";"Langueux";"CHAR";5
+"CODGEO";"Code de la commune";"22113";"Lannion";"CHAR";5
+"CODGEO";"Code de la commune";"22136";"Loudéac";"CHAR";5
+"CODGEO";"Code de la commune";"22162";"Paimpol";"CHAR";5
+"CODGEO";"Code de la commune";"22168";"Perros-Guirec";"CHAR";5
+"CODGEO";"Code de la commune";"22176";"Plédran";"CHAR";5
+"CODGEO";"Code de la commune";"22187";"Plérin";"CHAR";5
+"CODGEO";"Code de la commune";"22215";"Ploufragan";"CHAR";5
+"CODGEO";"Code de la commune";"22251";"Pordic";"CHAR";5
+"CODGEO";"Code de la commune";"22278";"Saint-Brieuc";"CHAR";5
+"CODGEO";"Code de la commune";"22360";"Trégueux";"CHAR";5
+"CODGEO";"Code de la commune";"23008";"Aubusson";"CHAR";5
+"CODGEO";"Code de la commune";"23096";"Guéret";"CHAR";5
+"CODGEO";"Code de la commune";"23176";"La Souterraine";"CHAR";5
+"CODGEO";"Code de la commune";"24037";"Bergerac";"CHAR";5
+"CODGEO";"Code de la commune";"24053";"Boulazac Isle Manoire";"CHAR";5
+"CODGEO";"Code de la commune";"24138";"Coulounieix-Chamiers";"CHAR";5
+"CODGEO";"Code de la commune";"24294";"Montpon-Ménestérol";"CHAR";5
+"CODGEO";"Code de la commune";"24322";"Périgueux";"CHAR";5
+"CODGEO";"Code de la commune";"24372";"Saint-Astier";"CHAR";5
+"CODGEO";"Code de la commune";"24520";"Sarlat-la-Canéda";"CHAR";5
+"CODGEO";"Code de la commune";"24547";"Terrasson-Lavilledieu";"CHAR";5
+"CODGEO";"Code de la commune";"24557";"Trélissac";"CHAR";5
+"CODGEO";"Code de la commune";"25031";"Audincourt";"CHAR";5
+"CODGEO";"Code de la commune";"25047";"Baume-les-Dames";"CHAR";5
+"CODGEO";"Code de la commune";"25056";"Besançon";"CHAR";5
+"CODGEO";"Code de la commune";"25057";"Bethoncourt";"CHAR";5
+"CODGEO";"Code de la commune";"25228";"Étupes";"CHAR";5
+"CODGEO";"Code de la commune";"25230";"Exincourt";"CHAR";5
+"CODGEO";"Code de la commune";"25284";"Grand-Charmont";"CHAR";5
+"CODGEO";"Code de la commune";"25367";"Mandeure";"CHAR";5
+"CODGEO";"Code de la commune";"25388";"Montbéliard";"CHAR";5
+"CODGEO";"Code de la commune";"25411";"Morteau";"CHAR";5
+"CODGEO";"Code de la commune";"25462";"Pontarlier";"CHAR";5
+"CODGEO";"Code de la commune";"25539";"Seloncourt";"CHAR";5
+"CODGEO";"Code de la commune";"25547";"Sochaux";"CHAR";5
+"CODGEO";"Code de la commune";"25580";"Valentigney";"CHAR";5
+"CODGEO";"Code de la commune";"25632";"Voujeaucourt";"CHAR";5
+"CODGEO";"Code de la commune";"26057";"Bourg-de-Péage";"CHAR";5
+"CODGEO";"Code de la commune";"26058";"Bourg-lès-Valence";"CHAR";5
+"CODGEO";"Code de la commune";"26064";"Chabeuil";"CHAR";5
+"CODGEO";"Code de la commune";"26108";"Crest";"CHAR";5
+"CODGEO";"Code de la commune";"26165";"Livron-sur-Drôme";"CHAR";5
+"CODGEO";"Code de la commune";"26166";"Loriol-sur-Drôme";"CHAR";5
+"CODGEO";"Code de la commune";"26198";"Montélimar";"CHAR";5
+"CODGEO";"Code de la commune";"26220";"Nyons";"CHAR";5
+"CODGEO";"Code de la commune";"26235";"Pierrelatte";"CHAR";5
+"CODGEO";"Code de la commune";"26252";"Portes-lès-Valence";"CHAR";5
+"CODGEO";"Code de la commune";"26281";"Romans-sur-Isère";"CHAR";5
+"CODGEO";"Code de la commune";"26324";"Saint-Paul-Trois-Châteaux";"CHAR";5
+"CODGEO";"Code de la commune";"26347";"Tain-l'Hermitage";"CHAR";5
+"CODGEO";"Code de la commune";"26362";"Valence";"CHAR";5
+"CODGEO";"Code de la commune";"27016";"Les Andelys";"CHAR";5
+"CODGEO";"Code de la commune";"27056";"Bernay";"CHAR";5
+"CODGEO";"Code de la commune";"27229";"Évreux";"CHAR";5
+"CODGEO";"Code de la commune";"27275";"Gaillon";"CHAR";5
+"CODGEO";"Code de la commune";"27284";"Gisors";"CHAR";5
+"CODGEO";"Code de la commune";"27375";"Louviers";"CHAR";5
+"CODGEO";"Code de la commune";"27467";"Pont-Audemer";"CHAR";5
+"CODGEO";"Code de la commune";"27679";"Verneuil d'Avre et d'Iton";"CHAR";5
+"CODGEO";"Code de la commune";"27681";"Vernon";"CHAR";5
+"CODGEO";"Code de la commune";"27701";"Val-de-Reuil";"CHAR";5
+"CODGEO";"Code de la commune";"28085";"Chartres";"CHAR";5
+"CODGEO";"Code de la commune";"28088";"Châteaudun";"CHAR";5
+"CODGEO";"Code de la commune";"28134";"Dreux";"CHAR";5
+"CODGEO";"Code de la commune";"28218";"Lucé";"CHAR";5
+"CODGEO";"Code de la commune";"28220";"Luisant";"CHAR";5
+"CODGEO";"Code de la commune";"28229";"Mainvilliers";"CHAR";5
+"CODGEO";"Code de la commune";"28280";"Nogent-le-Rotrou";"CHAR";5
+"CODGEO";"Code de la commune";"28404";"Vernouillet";"CHAR";5
+"CODGEO";"Code de la commune";"29019";"Brest";"CHAR";5
+"CODGEO";"Code de la commune";"29024";"Carhaix-Plouguer";"CHAR";5
+"CODGEO";"Code de la commune";"29026";"Châteaulin";"CHAR";5
+"CODGEO";"Code de la commune";"29039";"Concarneau";"CHAR";5
+"CODGEO";"Code de la commune";"29042";"Crozon";"CHAR";5
+"CODGEO";"Code de la commune";"29046";"Douarnenez";"CHAR";5
+"CODGEO";"Code de la commune";"29051";"Ergué-Gabéric";"CHAR";5
+"CODGEO";"Code de la commune";"29058";"Fouesnant";"CHAR";5
+"CODGEO";"Code de la commune";"29061";"Gouesnou";"CHAR";5
+"CODGEO";"Code de la commune";"29069";"Guilers";"CHAR";5
+"CODGEO";"Code de la commune";"29075";"Guipavas";"CHAR";5
+"CODGEO";"Code de la commune";"29103";"Landerneau";"CHAR";5
+"CODGEO";"Code de la commune";"29105";"Landivisiau";"CHAR";5
+"CODGEO";"Code de la commune";"29124";"Lesneven";"CHAR";5
+"CODGEO";"Code de la commune";"29150";"Moëlan-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"29151";"Morlaix";"CHAR";5
+"CODGEO";"Code de la commune";"29158";"Penmarch";"CHAR";5
+"CODGEO";"Code de la commune";"29160";"Plabennec";"CHAR";5
+"CODGEO";"Code de la commune";"29189";"Plougastel-Daoulas";"CHAR";5
+"CODGEO";"Code de la commune";"29195";"Plouguerneau";"CHAR";5
+"CODGEO";"Code de la commune";"29212";"Plouzané";"CHAR";5
+"CODGEO";"Code de la commune";"29220";"Pont-l'Abbé";"CHAR";5
+"CODGEO";"Code de la commune";"29232";"Quimper";"CHAR";5
+"CODGEO";"Code de la commune";"29233";"Quimperlé";"CHAR";5
+"CODGEO";"Code de la commune";"29235";"Le Relecq-Kerhuon";"CHAR";5
+"CODGEO";"Code de la commune";"29241";"Rosporden";"CHAR";5
+"CODGEO";"Code de la commune";"29259";"Saint-Pol-de-Léon";"CHAR";5
+"CODGEO";"Code de la commune";"29260";"Saint-Renan";"CHAR";5
+"CODGEO";"Code de la commune";"29274";"Scaër";"CHAR";5
+"CODGEO";"Code de la commune";"29293";"Trégunc";"CHAR";5
+"CODGEO";"Code de la commune";"2A004";"Ajaccio";"CHAR";5
+"CODGEO";"Code de la commune";"2A247";"Porto-Vecchio";"CHAR";5
+"CODGEO";"Code de la commune";"2B033";"Bastia";"CHAR";5
+"CODGEO";"Code de la commune";"2B037";"Biguglia";"CHAR";5
+"CODGEO";"Code de la commune";"2B042";"Borgo";"CHAR";5
+"CODGEO";"Code de la commune";"2B050";"Calvi";"CHAR";5
+"CODGEO";"Code de la commune";"2B096";"Corte";"CHAR";5
+"CODGEO";"Code de la commune";"30003";"Aigues-Mortes";"CHAR";5
+"CODGEO";"Code de la commune";"30007";"Alès";"CHAR";5
+"CODGEO";"Code de la commune";"30011";"Les Angles";"CHAR";5
+"CODGEO";"Code de la commune";"30028";"Bagnols-sur-Cèze";"CHAR";5
+"CODGEO";"Code de la commune";"30032";"Beaucaire";"CHAR";5
+"CODGEO";"Code de la commune";"30034";"Bellegarde";"CHAR";5
+"CODGEO";"Code de la commune";"30047";"Bouillargues";"CHAR";5
+"CODGEO";"Code de la commune";"30132";"La Grand-Combe";"CHAR";5
+"CODGEO";"Code de la commune";"30133";"Le Grau-du-Roi";"CHAR";5
+"CODGEO";"Code de la commune";"30141";"Laudun-l'Ardoise";"CHAR";5
+"CODGEO";"Code de la commune";"30155";"Manduel";"CHAR";5
+"CODGEO";"Code de la commune";"30156";"Marguerittes";"CHAR";5
+"CODGEO";"Code de la commune";"30169";"Milhaud";"CHAR";5
+"CODGEO";"Code de la commune";"30189";"Nîmes";"CHAR";5
+"CODGEO";"Code de la commune";"30202";"Pont-Saint-Esprit";"CHAR";5
+"CODGEO";"Code de la commune";"30217";"Rochefort-du-Gard";"CHAR";5
+"CODGEO";"Code de la commune";"30221";"Roquemaure";"CHAR";5
+"CODGEO";"Code de la commune";"30243";"Saint-Christol-lez-Alès";"CHAR";5
+"CODGEO";"Code de la commune";"30258";"Saint-Gilles";"CHAR";5
+"CODGEO";"Code de la commune";"30284";"Saint-Martin-de-Valgalgues";"CHAR";5
+"CODGEO";"Code de la commune";"30294";"Saint-Privat-des-Vieux";"CHAR";5
+"CODGEO";"Code de la commune";"30334";"Uzès";"CHAR";5
+"CODGEO";"Code de la commune";"30341";"Vauvert";"CHAR";5
+"CODGEO";"Code de la commune";"30350";"Le Vigan";"CHAR";5
+"CODGEO";"Code de la commune";"30351";"Villeneuve-lès-Avignon";"CHAR";5
+"CODGEO";"Code de la commune";"31022";"Aucamville";"CHAR";5
+"CODGEO";"Code de la commune";"31033";"Auterive";"CHAR";5
+"CODGEO";"Code de la commune";"31044";"Balma";"CHAR";5
+"CODGEO";"Code de la commune";"31056";"Beauzelle";"CHAR";5
+"CODGEO";"Code de la commune";"31069";"Blagnac";"CHAR";5
+"CODGEO";"Code de la commune";"31113";"Castanet-Tolosan";"CHAR";5
+"CODGEO";"Code de la commune";"31116";"Castelginest";"CHAR";5
+"CODGEO";"Code de la commune";"31149";"Colomiers";"CHAR";5
+"CODGEO";"Code de la commune";"31157";"Cugnaux";"CHAR";5
+"CODGEO";"Code de la commune";"31169";"Escalquens";"CHAR";5
+"CODGEO";"Code de la commune";"31187";"Fonsorbes";"CHAR";5
+"CODGEO";"Code de la commune";"31203";"Frouzins";"CHAR";5
+"CODGEO";"Code de la commune";"31232";"Grenade";"CHAR";5
+"CODGEO";"Code de la commune";"31282";"Launaguet";"CHAR";5
+"CODGEO";"Code de la commune";"31291";"Léguevin";"CHAR";5
+"CODGEO";"Code de la commune";"31395";"Muret";"CHAR";5
+"CODGEO";"Code de la commune";"31417";"Pibrac";"CHAR";5
+"CODGEO";"Code de la commune";"31424";"Plaisance-du-Touch";"CHAR";5
+"CODGEO";"Code de la commune";"31433";"Portet-sur-Garonne";"CHAR";5
+"CODGEO";"Code de la commune";"31446";"Ramonville-Saint-Agne";"CHAR";5
+"CODGEO";"Code de la commune";"31451";"Revel";"CHAR";5
+"CODGEO";"Code de la commune";"31467";"Saint-Alban";"CHAR";5
+"CODGEO";"Code de la commune";"31483";"Saint-Gaudens";"CHAR";5
+"CODGEO";"Code de la commune";"31488";"Saint-Jean";"CHAR";5
+"CODGEO";"Code de la commune";"31499";"Saint-Lys";"CHAR";5
+"CODGEO";"Code de la commune";"31506";"Saint-Orens-de-Gameville";"CHAR";5
+"CODGEO";"Code de la commune";"31526";"La Salvetat-Saint-Gilles";"CHAR";5
+"CODGEO";"Code de la commune";"31547";"Seysses";"CHAR";5
+"CODGEO";"Code de la commune";"31555";"Toulouse";"CHAR";5
+"CODGEO";"Code de la commune";"31557";"Tournefeuille";"CHAR";5
+"CODGEO";"Code de la commune";"31561";"L'Union";"CHAR";5
+"CODGEO";"Code de la commune";"31588";"Villeneuve-Tolosane";"CHAR";5
+"CODGEO";"Code de la commune";"32013";"Auch";"CHAR";5
+"CODGEO";"Code de la commune";"32107";"Condom";"CHAR";5
+"CODGEO";"Code de la commune";"32132";"Fleurance";"CHAR";5
+"CODGEO";"Code de la commune";"32160";"L'Isle-Jourdain";"CHAR";5
+"CODGEO";"Code de la commune";"33003";"Ambarès-et-Lagrave";"CHAR";5
+"CODGEO";"Code de la commune";"33005";"Andernos-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"33009";"Arcachon";"CHAR";5
+"CODGEO";"Code de la commune";"33013";"Artigues-près-Bordeaux";"CHAR";5
+"CODGEO";"Code de la commune";"33032";"Bassens";"CHAR";5
+"CODGEO";"Code de la commune";"33039";"Bègles";"CHAR";5
+"CODGEO";"Code de la commune";"33051";"Biganos";"CHAR";5
+"CODGEO";"Code de la commune";"33056";"Blanquefort";"CHAR";5
+"CODGEO";"Code de la commune";"33063";"Bordeaux";"CHAR";5
+"CODGEO";"Code de la commune";"33069";"Le Bouscat";"CHAR";5
+"CODGEO";"Code de la commune";"33075";"Bruges";"CHAR";5
+"CODGEO";"Code de la commune";"33090";"Canéjan";"CHAR";5
+"CODGEO";"Code de la commune";"33096";"Carbon-Blanc";"CHAR";5
+"CODGEO";"Code de la commune";"33119";"Cenon";"CHAR";5
+"CODGEO";"Code de la commune";"33122";"Cestas";"CHAR";5
+"CODGEO";"Code de la commune";"33138";"Coutras";"CHAR";5
+"CODGEO";"Code de la commune";"33162";"Eysines";"CHAR";5
+"CODGEO";"Code de la commune";"33167";"Floirac";"CHAR";5
+"CODGEO";"Code de la commune";"33192";"Gradignan";"CHAR";5
+"CODGEO";"Code de la commune";"33199";"Gujan-Mestras";"CHAR";5
+"CODGEO";"Code de la commune";"33200";"Le Haillan";"CHAR";5
+"CODGEO";"Code de la commune";"33227";"Langon";"CHAR";5
+"CODGEO";"Code de la commune";"33236";"Lège-Cap-Ferret";"CHAR";5
+"CODGEO";"Code de la commune";"33238";"Léognan";"CHAR";5
+"CODGEO";"Code de la commune";"33243";"Libourne";"CHAR";5
+"CODGEO";"Code de la commune";"33249";"Lormont";"CHAR";5
+"CODGEO";"Code de la commune";"33273";"Martignas-sur-Jalle";"CHAR";5
+"CODGEO";"Code de la commune";"33281";"Mérignac";"CHAR";5
+"CODGEO";"Code de la commune";"33284";"Mios";"CHAR";5
+"CODGEO";"Code de la commune";"33312";"Parempuyre";"CHAR";5
+"CODGEO";"Code de la commune";"33314";"Pauillac";"CHAR";5
+"CODGEO";"Code de la commune";"33318";"Pessac";"CHAR";5
+"CODGEO";"Code de la commune";"33322";"Le Pian-Médoc";"CHAR";5
+"CODGEO";"Code de la commune";"33366";"Saint-André-de-Cubzac";"CHAR";5
+"CODGEO";"Code de la commune";"33422";"Saint-Jean-d'Illac";"CHAR";5
+"CODGEO";"Code de la commune";"33433";"Saint-Loubès";"CHAR";5
+"CODGEO";"Code de la commune";"33449";"Saint-Médard-en-Jalles";"CHAR";5
+"CODGEO";"Code de la commune";"33519";"Le Taillan-Médoc";"CHAR";5
+"CODGEO";"Code de la commune";"33522";"Talence";"CHAR";5
+"CODGEO";"Code de la commune";"33529";"La Teste-de-Buch";"CHAR";5
+"CODGEO";"Code de la commune";"33550";"Villenave-d'Ornon";"CHAR";5
+"CODGEO";"Code de la commune";"34003";"Agde";"CHAR";5
+"CODGEO";"Code de la commune";"34022";"Baillargues";"CHAR";5
+"CODGEO";"Code de la commune";"34023";"Balaruc-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"34028";"Bédarieux";"CHAR";5
+"CODGEO";"Code de la commune";"34031";"Bessan";"CHAR";5
+"CODGEO";"Code de la commune";"34032";"Béziers";"CHAR";5
+"CODGEO";"Code de la commune";"34057";"Castelnau-le-Lez";"CHAR";5
+"CODGEO";"Code de la commune";"34058";"Castries";"CHAR";5
+"CODGEO";"Code de la commune";"34077";"Clapiers";"CHAR";5
+"CODGEO";"Code de la commune";"34079";"Clermont-l'Hérault";"CHAR";5
+"CODGEO";"Code de la commune";"34088";"Cournonterral";"CHAR";5
+"CODGEO";"Code de la commune";"34090";"Le Crès";"CHAR";5
+"CODGEO";"Code de la commune";"34095";"Fabrègues";"CHAR";5
+"CODGEO";"Code de la commune";"34108";"Frontignan";"CHAR";5
+"CODGEO";"Code de la commune";"34116";"Grabels";"CHAR";5
+"CODGEO";"Code de la commune";"34120";"Jacou";"CHAR";5
+"CODGEO";"Code de la commune";"34123";"Juvignac";"CHAR";5
+"CODGEO";"Code de la commune";"34129";"Lattes";"CHAR";5
+"CODGEO";"Code de la commune";"34142";"Lodève";"CHAR";5
+"CODGEO";"Code de la commune";"34145";"Lunel";"CHAR";5
+"CODGEO";"Code de la commune";"34150";"Marseillan";"CHAR";5
+"CODGEO";"Code de la commune";"34151";"Marsillargues";"CHAR";5
+"CODGEO";"Code de la commune";"34154";"Mauguio";"CHAR";5
+"CODGEO";"Code de la commune";"34157";"Mèze";"CHAR";5
+"CODGEO";"Code de la commune";"34172";"Montpellier";"CHAR";5
+"CODGEO";"Code de la commune";"34192";"Palavas-les-Flots";"CHAR";5
+"CODGEO";"Code de la commune";"34198";"Pérols";"CHAR";5
+"CODGEO";"Code de la commune";"34199";"Pézenas";"CHAR";5
+"CODGEO";"Code de la commune";"34202";"Pignan";"CHAR";5
+"CODGEO";"Code de la commune";"34213";"Poussan";"CHAR";5
+"CODGEO";"Code de la commune";"34217";"Prades-le-Lez";"CHAR";5
+"CODGEO";"Code de la commune";"34247";"Saint-Clément-de-Rivière";"CHAR";5
+"CODGEO";"Code de la commune";"34255";"Saint-Gély-du-Fesc";"CHAR";5
+"CODGEO";"Code de la commune";"34259";"Saint-Georges-d'Orques";"CHAR";5
+"CODGEO";"Code de la commune";"34270";"Saint-Jean-de-Védas";"CHAR";5
+"CODGEO";"Code de la commune";"34299";"Sérignan";"CHAR";5
+"CODGEO";"Code de la commune";"34301";"Sète";"CHAR";5
+"CODGEO";"Code de la commune";"34309";"Teyran";"CHAR";5
+"CODGEO";"Code de la commune";"34327";"Vendargues";"CHAR";5
+"CODGEO";"Code de la commune";"34332";"Vias";"CHAR";5
+"CODGEO";"Code de la commune";"34337";"Villeneuve-lès-Maguelone";"CHAR";5
+"CODGEO";"Code de la commune";"34344";"La Grande-Motte";"CHAR";5
+"CODGEO";"Code de la commune";"35001";"Acigné";"CHAR";5
+"CODGEO";"Code de la commune";"35012";"Bain-de-Bretagne";"CHAR";5
+"CODGEO";"Code de la commune";"35024";"Betton";"CHAR";5
+"CODGEO";"Code de la commune";"35047";"Bruz";"CHAR";5
+"CODGEO";"Code de la commune";"35049";"Cancale";"CHAR";5
+"CODGEO";"Code de la commune";"35051";"Cesson-Sévigné";"CHAR";5
+"CODGEO";"Code de la commune";"35055";"Chantepie";"CHAR";5
+"CODGEO";"Code de la commune";"35066";"Chartres-de-Bretagne";"CHAR";5
+"CODGEO";"Code de la commune";"35069";"Châteaugiron";"CHAR";5
+"CODGEO";"Code de la commune";"35093";"Dinard";"CHAR";5
+"CODGEO";"Code de la commune";"35115";"Fougères";"CHAR";5
+"CODGEO";"Code de la commune";"35126";"Guichen";"CHAR";5
+"CODGEO";"Code de la commune";"35136";"Janzé";"CHAR";5
+"CODGEO";"Code de la commune";"35152";"Liffré";"CHAR";5
+"CODGEO";"Code de la commune";"35173";"Melesse";"CHAR";5
+"CODGEO";"Code de la commune";"35188";"Montfort-sur-Meu";"CHAR";5
+"CODGEO";"Code de la commune";"35196";"Mordelles";"CHAR";5
+"CODGEO";"Code de la commune";"35206";"Noyal-Châtillon-sur-Seiche";"CHAR";5
+"CODGEO";"Code de la commune";"35210";"Pacé";"CHAR";5
+"CODGEO";"Code de la commune";"35236";"Redon";"CHAR";5
+"CODGEO";"Code de la commune";"35238";"Rennes";"CHAR";5
+"CODGEO";"Code de la commune";"35240";"Le Rheu";"CHAR";5
+"CODGEO";"Code de la commune";"35278";"Saint-Grégoire";"CHAR";5
+"CODGEO";"Code de la commune";"35281";"Saint-Jacques-de-la-Lande";"CHAR";5
+"CODGEO";"Code de la commune";"35288";"Saint-Malo";"CHAR";5
+"CODGEO";"Code de la commune";"35334";"Thorigné-Fouillard";"CHAR";5
+"CODGEO";"Code de la commune";"35352";"Vern-sur-Seiche";"CHAR";5
+"CODGEO";"Code de la commune";"35360";"Vitré";"CHAR";5
+"CODGEO";"Code de la commune";"36044";"Châteauroux";"CHAR";5
+"CODGEO";"Code de la commune";"36063";"Déols";"CHAR";5
+"CODGEO";"Code de la commune";"36088";"Issoudun";"CHAR";5
+"CODGEO";"Code de la commune";"36159";"Le Poinçonnet";"CHAR";5
+"CODGEO";"Code de la commune";"37003";"Amboise";"CHAR";5
+"CODGEO";"Code de la commune";"37018";"Ballan-Miré";"CHAR";5
+"CODGEO";"Code de la commune";"37050";"Chambray-lès-Tours";"CHAR";5
+"CODGEO";"Code de la commune";"37109";"Fondettes";"CHAR";5
+"CODGEO";"Code de la commune";"37122";"Joué-lès-Tours";"CHAR";5
+"CODGEO";"Code de la commune";"37156";"Montlouis-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"37195";"La Riche";"CHAR";5
+"CODGEO";"Code de la commune";"37208";"Saint-Avertin";"CHAR";5
+"CODGEO";"Code de la commune";"37214";"Saint-Cyr-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"37233";"Saint-Pierre-des-Corps";"CHAR";5
+"CODGEO";"Code de la commune";"37261";"Tours";"CHAR";5
+"CODGEO";"Code de la commune";"37266";"Veigné";"CHAR";5
+"CODGEO";"Code de la commune";"38053";"Bourgoin-Jallieu";"CHAR";5
+"CODGEO";"Code de la commune";"38085";"Charvieu-Chavagneux";"CHAR";5
+"CODGEO";"Code de la commune";"38111";"Claix";"CHAR";5
+"CODGEO";"Code de la commune";"38140";"Crolles";"CHAR";5
+"CODGEO";"Code de la commune";"38150";"Domène";"CHAR";5
+"CODGEO";"Code de la commune";"38151";"Échirolles";"CHAR";5
+"CODGEO";"Code de la commune";"38158";"Eybens";"CHAR";5
+"CODGEO";"Code de la commune";"38169";"Fontaine";"CHAR";5
+"CODGEO";"Code de la commune";"38179";"Gières";"CHAR";5
+"CODGEO";"Code de la commune";"38185";"Grenoble";"CHAR";5
+"CODGEO";"Code de la commune";"38193";"L'Isle-d'Abeau";"CHAR";5
+"CODGEO";"Code de la commune";"38229";"Meylan";"CHAR";5
+"CODGEO";"Code de la commune";"38239";"Moirans";"CHAR";5
+"CODGEO";"Code de la commune";"38269";"La Mure";"CHAR";5
+"CODGEO";"Code de la commune";"38298";"Le Péage-de-Roussillon";"CHAR";5
+"CODGEO";"Code de la commune";"38314";"Pontcharra";"CHAR";5
+"CODGEO";"Code de la commune";"38317";"Le Pont-de-Claix";"CHAR";5
+"CODGEO";"Code de la commune";"38318";"Pont-Évêque";"CHAR";5
+"CODGEO";"Code de la commune";"38337";"Rives";"CHAR";5
+"CODGEO";"Code de la commune";"38344";"Roussillon";"CHAR";5
+"CODGEO";"Code de la commune";"38382";"Saint-Égrève";"CHAR";5
+"CODGEO";"Code de la commune";"38397";"Saint-Ismier";"CHAR";5
+"CODGEO";"Code de la commune";"38416";"Saint-Marcellin";"CHAR";5
+"CODGEO";"Code de la commune";"38421";"Saint-Martin-d'Hères";"CHAR";5
+"CODGEO";"Code de la commune";"38423";"Saint-Martin-le-Vinoux";"CHAR";5
+"CODGEO";"Code de la commune";"38425";"Saint-Maurice-l'Exil";"CHAR";5
+"CODGEO";"Code de la commune";"38449";"Saint-Quentin-Fallavier";"CHAR";5
+"CODGEO";"Code de la commune";"38474";"Sassenage";"CHAR";5
+"CODGEO";"Code de la commune";"38485";"Seyssinet-Pariset";"CHAR";5
+"CODGEO";"Code de la commune";"38486";"Seyssins";"CHAR";5
+"CODGEO";"Code de la commune";"38509";"La Tour-du-Pin";"CHAR";5
+"CODGEO";"Code de la commune";"38516";"La Tronche";"CHAR";5
+"CODGEO";"Code de la commune";"38517";"Tullins";"CHAR";5
+"CODGEO";"Code de la commune";"38524";"Varces-Allières-et-Risset";"CHAR";5
+"CODGEO";"Code de la commune";"38537";"La Verpillière";"CHAR";5
+"CODGEO";"Code de la commune";"38544";"Vienne";"CHAR";5
+"CODGEO";"Code de la commune";"38545";"Vif";"CHAR";5
+"CODGEO";"Code de la commune";"38547";"Villard-Bonnot";"CHAR";5
+"CODGEO";"Code de la commune";"38553";"Villefontaine";"CHAR";5
+"CODGEO";"Code de la commune";"38562";"Vizille";"CHAR";5
+"CODGEO";"Code de la commune";"38563";"Voiron";"CHAR";5
+"CODGEO";"Code de la commune";"38565";"Voreppe";"CHAR";5
+"CODGEO";"Code de la commune";"39097";"Champagnole";"CHAR";5
+"CODGEO";"Code de la commune";"39198";"Dole";"CHAR";5
+"CODGEO";"Code de la commune";"39300";"Lons-le-Saunier";"CHAR";5
+"CODGEO";"Code de la commune";"39368";"Hauts de Bienne";"CHAR";5
+"CODGEO";"Code de la commune";"39478";"Saint-Claude";"CHAR";5
+"CODGEO";"Code de la commune";"40001";"Aire-sur-l'Adour";"CHAR";5
+"CODGEO";"Code de la commune";"40046";"Biscarrosse";"CHAR";5
+"CODGEO";"Code de la commune";"40065";"Capbreton";"CHAR";5
+"CODGEO";"Code de la commune";"40088";"Dax";"CHAR";5
+"CODGEO";"Code de la commune";"40184";"Mimizan";"CHAR";5
+"CODGEO";"Code de la commune";"40192";"Mont-de-Marsan";"CHAR";5
+"CODGEO";"Code de la commune";"40279";"Saint-Paul-lès-Dax";"CHAR";5
+"CODGEO";"Code de la commune";"40281";"Saint-Pierre-du-Mont";"CHAR";5
+"CODGEO";"Code de la commune";"40284";"Saint-Vincent-de-Tyrosse";"CHAR";5
+"CODGEO";"Code de la commune";"40310";"Soustons";"CHAR";5
+"CODGEO";"Code de la commune";"40312";"Tarnos";"CHAR";5
+"CODGEO";"Code de la commune";"41018";"Blois";"CHAR";5
+"CODGEO";"Code de la commune";"41136";"Mer";"CHAR";5
+"CODGEO";"Code de la commune";"41194";"Romorantin-Lanthenay";"CHAR";5
+"CODGEO";"Code de la commune";"41269";"Vendôme";"CHAR";5
+"CODGEO";"Code de la commune";"41295";"Vineuil";"CHAR";5
+"CODGEO";"Code de la commune";"42005";"Andrézieux-Bouthéon";"CHAR";5
+"CODGEO";"Code de la commune";"42044";"Le Chambon-Feugerolles";"CHAR";5
+"CODGEO";"Code de la commune";"42071";"Le Coteau";"CHAR";5
+"CODGEO";"Code de la commune";"42094";"Feurs";"CHAR";5
+"CODGEO";"Code de la commune";"42095";"Firminy";"CHAR";5
+"CODGEO";"Code de la commune";"42127";"Mably";"CHAR";5
+"CODGEO";"Code de la commune";"42147";"Montbrison";"CHAR";5
+"CODGEO";"Code de la commune";"42183";"La Ricamarie";"CHAR";5
+"CODGEO";"Code de la commune";"42184";"Riorges";"CHAR";5
+"CODGEO";"Code de la commune";"42186";"Rive-de-Gier";"CHAR";5
+"CODGEO";"Code de la commune";"42187";"Roanne";"CHAR";5
+"CODGEO";"Code de la commune";"42189";"Roche-la-Molière";"CHAR";5
+"CODGEO";"Code de la commune";"42207";"Saint-Chamond";"CHAR";5
+"CODGEO";"Code de la commune";"42218";"Saint-Étienne";"CHAR";5
+"CODGEO";"Code de la commune";"42222";"Saint-Galmier";"CHAR";5
+"CODGEO";"Code de la commune";"42223";"Saint-Genest-Lerpt";"CHAR";5
+"CODGEO";"Code de la commune";"42237";"Saint-Jean-Bonnefonds";"CHAR";5
+"CODGEO";"Code de la commune";"42275";"Saint-Priest-en-Jarez";"CHAR";5
+"CODGEO";"Code de la commune";"42279";"Saint-Just-Saint-Rambert";"CHAR";5
+"CODGEO";"Code de la commune";"42302";"Sorbiers";"CHAR";5
+"CODGEO";"Code de la commune";"42305";"La Talaudière";"CHAR";5
+"CODGEO";"Code de la commune";"42316";"Unieux";"CHAR";5
+"CODGEO";"Code de la commune";"42323";"Veauche";"CHAR";5
+"CODGEO";"Code de la commune";"42330";"Villars";"CHAR";5
+"CODGEO";"Code de la commune";"43040";"Brioude";"CHAR";5
+"CODGEO";"Code de la commune";"43137";"Monistrol-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"43157";"Le Puy-en-Velay";"CHAR";5
+"CODGEO";"Code de la commune";"43224";"Sainte-Sigolène";"CHAR";5
+"CODGEO";"Code de la commune";"43268";"Yssingeaux";"CHAR";5
+"CODGEO";"Code de la commune";"44003";"Ancenis-Saint-Géréon";"CHAR";5
+"CODGEO";"Code de la commune";"44009";"Basse-Goulaine";"CHAR";5
+"CODGEO";"Code de la commune";"44018";"Bouaye";"CHAR";5
+"CODGEO";"Code de la commune";"44020";"Bouguenais";"CHAR";5
+"CODGEO";"Code de la commune";"44026";"Carquefou";"CHAR";5
+"CODGEO";"Code de la commune";"44029";"Divatte-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"44035";"La Chapelle-sur-Erdre";"CHAR";5
+"CODGEO";"Code de la commune";"44036";"Châteaubriant";"CHAR";5
+"CODGEO";"Code de la commune";"44041";"La Chevrolière";"CHAR";5
+"CODGEO";"Code de la commune";"44043";"Clisson";"CHAR";5
+"CODGEO";"Code de la commune";"44047";"Couëron";"CHAR";5
+"CODGEO";"Code de la commune";"44052";"Donges";"CHAR";5
+"CODGEO";"Code de la commune";"44055";"La Baule-Escoublac";"CHAR";5
+"CODGEO";"Code de la commune";"44067";"Guémené-Penfao";"CHAR";5
+"CODGEO";"Code de la commune";"44069";"Guérande";"CHAR";5
+"CODGEO";"Code de la commune";"44087";"Machecoul-Saint-Même";"CHAR";5
+"CODGEO";"Code de la commune";"44101";"La Montagne";"CHAR";5
+"CODGEO";"Code de la commune";"44103";"Montoir-de-Bretagne";"CHAR";5
+"CODGEO";"Code de la commune";"44109";"Nantes";"CHAR";5
+"CODGEO";"Code de la commune";"44110";"Nort-sur-Erdre";"CHAR";5
+"CODGEO";"Code de la commune";"44114";"Orvault";"CHAR";5
+"CODGEO";"Code de la commune";"44129";"Pontchâteau";"CHAR";5
+"CODGEO";"Code de la commune";"44131";"Pornic";"CHAR";5
+"CODGEO";"Code de la commune";"44132";"Pornichet";"CHAR";5
+"CODGEO";"Code de la commune";"44135";"Le Pouliguen";"CHAR";5
+"CODGEO";"Code de la commune";"44143";"Rezé";"CHAR";5
+"CODGEO";"Code de la commune";"44154";"Saint-Brevin-les-Pins";"CHAR";5
+"CODGEO";"Code de la commune";"44158";"Saint-Étienne-de-Montluc";"CHAR";5
+"CODGEO";"Code de la commune";"44162";"Saint-Herblain";"CHAR";5
+"CODGEO";"Code de la commune";"44166";"Saint-Jean-de-Boiseau";"CHAR";5
+"CODGEO";"Code de la commune";"44169";"Saint-Julien-de-Concelles";"CHAR";5
+"CODGEO";"Code de la commune";"44172";"Sainte-Luce-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"44184";"Saint-Nazaire";"CHAR";5
+"CODGEO";"Code de la commune";"44188";"Saint-Philbert-de-Grand-Lieu";"CHAR";5
+"CODGEO";"Code de la commune";"44190";"Saint-Sébastien-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"44194";"Sautron";"CHAR";5
+"CODGEO";"Code de la commune";"44198";"Les Sorinières";"CHAR";5
+"CODGEO";"Code de la commune";"44201";"Sucé-sur-Erdre";"CHAR";5
+"CODGEO";"Code de la commune";"44204";"Thouaré-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"44209";"Treillières";"CHAR";5
+"CODGEO";"Code de la commune";"44210";"Trignac";"CHAR";5
+"CODGEO";"Code de la commune";"44212";"Vallet";"CHAR";5
+"CODGEO";"Code de la commune";"44215";"Vertou";"CHAR";5
+"CODGEO";"Code de la commune";"44217";"Vigneux-de-Bretagne";"CHAR";5
+"CODGEO";"Code de la commune";"45004";"Amilly";"CHAR";5
+"CODGEO";"Code de la commune";"45068";"Châlette-sur-Loing";"CHAR";5
+"CODGEO";"Code de la commune";"45075";"La Chapelle-Saint-Mesmin";"CHAR";5
+"CODGEO";"Code de la commune";"45089";"Chécy";"CHAR";5
+"CODGEO";"Code de la commune";"45147";"Fleury-les-Aubrais";"CHAR";5
+"CODGEO";"Code de la commune";"45155";"Gien";"CHAR";5
+"CODGEO";"Code de la commune";"45169";"Ingré";"CHAR";5
+"CODGEO";"Code de la commune";"45208";"Montargis";"CHAR";5
+"CODGEO";"Code de la commune";"45232";"Olivet";"CHAR";5
+"CODGEO";"Code de la commune";"45234";"Orléans";"CHAR";5
+"CODGEO";"Code de la commune";"45252";"Pithiviers";"CHAR";5
+"CODGEO";"Code de la commune";"45274";"Saint-Denis-en-Val";"CHAR";5
+"CODGEO";"Code de la commune";"45284";"Saint-Jean-de-Braye";"CHAR";5
+"CODGEO";"Code de la commune";"45285";"Saint-Jean-de-la-Ruelle";"CHAR";5
+"CODGEO";"Code de la commune";"45286";"Saint-Jean-le-Blanc";"CHAR";5
+"CODGEO";"Code de la commune";"45298";"Saint-Pryvé-Saint-Mesmin";"CHAR";5
+"CODGEO";"Code de la commune";"45302";"Saran";"CHAR";5
+"CODGEO";"Code de la commune";"46042";"Cahors";"CHAR";5
+"CODGEO";"Code de la commune";"46102";"Figeac";"CHAR";5
+"CODGEO";"Code de la commune";"47001";"Agen";"CHAR";5
+"CODGEO";"Code de la commune";"47032";"Bon-Encontre";"CHAR";5
+"CODGEO";"Code de la commune";"47106";"Fumel";"CHAR";5
+"CODGEO";"Code de la commune";"47157";"Marmande";"CHAR";5
+"CODGEO";"Code de la commune";"47195";"Nérac";"CHAR";5
+"CODGEO";"Code de la commune";"47201";"Le Passage";"CHAR";5
+"CODGEO";"Code de la commune";"47252";"Sainte-Livrade-sur-Lot";"CHAR";5
+"CODGEO";"Code de la commune";"47310";"Tonneins";"CHAR";5
+"CODGEO";"Code de la commune";"47323";"Villeneuve-sur-Lot";"CHAR";5
+"CODGEO";"Code de la commune";"48092";"Marvejols";"CHAR";5
+"CODGEO";"Code de la commune";"48095";"Mende";"CHAR";5
+"CODGEO";"Code de la commune";"48140";"Saint-Chély-d'Apcher";"CHAR";5
+"CODGEO";"Code de la commune";"49007";"Angers";"CHAR";5
+"CODGEO";"Code de la commune";"49015";"Avrillé";"CHAR";5
+"CODGEO";"Code de la commune";"49018";"Baugé-en-Anjou";"CHAR";5
+"CODGEO";"Code de la commune";"49021";"Beaufort-en-Anjou";"CHAR";5
+"CODGEO";"Code de la commune";"49023";"Beaupréau-en-Mauges";"CHAR";5
+"CODGEO";"Code de la commune";"49035";"Bouchemaine";"CHAR";5
+"CODGEO";"Code de la commune";"49050";"Brissac Loire Aubance";"CHAR";5
+"CODGEO";"Code de la commune";"49063";"Chalonnes-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"49069";"Orée d'Anjou";"CHAR";5
+"CODGEO";"Code de la commune";"49092";"Chemillé-en-Anjou";"CHAR";5
+"CODGEO";"Code de la commune";"49099";"Cholet";"CHAR";5
+"CODGEO";"Code de la commune";"49125";"Doué-en-Anjou";"CHAR";5
+"CODGEO";"Code de la commune";"49180";"Longué-Jumelles";"CHAR";5
+"CODGEO";"Code de la commune";"49214";"Montreuil-Juigné";"CHAR";5
+"CODGEO";"Code de la commune";"49215";"Montreuil-Bellay";"CHAR";5
+"CODGEO";"Code de la commune";"49218";"Montrevault-sur-Èvre";"CHAR";5
+"CODGEO";"Code de la commune";"49223";"Mûrs-Erigné";"CHAR";5
+"CODGEO";"Code de la commune";"49244";"Mauges-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"49246";"Les Ponts-de-Cé";"CHAR";5
+"CODGEO";"Code de la commune";"49267";"Saint-Barthélemy-d'Anjou";"CHAR";5
+"CODGEO";"Code de la commune";"49301";"Sèvremoine";"CHAR";5
+"CODGEO";"Code de la commune";"49307";"Loire-Authion";"CHAR";5
+"CODGEO";"Code de la commune";"49328";"Saumur";"CHAR";5
+"CODGEO";"Code de la commune";"49331";"Segré-en-Anjou Bleu";"CHAR";5
+"CODGEO";"Code de la commune";"49353";"Trélazé";"CHAR";5
+"CODGEO";"Code de la commune";"49373";"Lys-Haut-Layon";"CHAR";5
+"CODGEO";"Code de la commune";"50025";"Avranches";"CHAR";5
+"CODGEO";"Code de la commune";"50041";"La Hague";"CHAR";5
+"CODGEO";"Code de la commune";"50099";"Carentan-les-Marais";"CHAR";5
+"CODGEO";"Code de la commune";"50129";"Cherbourg-en-Cotentin";"CHAR";5
+"CODGEO";"Code de la commune";"50147";"Coutances";"CHAR";5
+"CODGEO";"Code de la commune";"50218";"Granville";"CHAR";5
+"CODGEO";"Code de la commune";"50502";"Saint-Lô";"CHAR";5
+"CODGEO";"Code de la commune";"50615";"Valognes";"CHAR";5
+"CODGEO";"Code de la commune";"51055";"Bétheny";"CHAR";5
+"CODGEO";"Code de la commune";"51108";"Châlons-en-Champagne";"CHAR";5
+"CODGEO";"Code de la commune";"51172";"Cormontreuil";"CHAR";5
+"CODGEO";"Code de la commune";"51230";"Épernay";"CHAR";5
+"CODGEO";"Code de la commune";"51242";"Fagnières";"CHAR";5
+"CODGEO";"Code de la commune";"51250";"Fismes";"CHAR";5
+"CODGEO";"Code de la commune";"51454";"Reims";"CHAR";5
+"CODGEO";"Code de la commune";"51506";"Saint-Memmie";"CHAR";5
+"CODGEO";"Code de la commune";"51507";"Sainte-Menehould";"CHAR";5
+"CODGEO";"Code de la commune";"51535";"Sézanne";"CHAR";5
+"CODGEO";"Code de la commune";"51573";"Tinqueux";"CHAR";5
+"CODGEO";"Code de la commune";"51649";"Vitry-le-François";"CHAR";5
+"CODGEO";"Code de la commune";"52121";"Chaumont";"CHAR";5
+"CODGEO";"Code de la commune";"52269";"Langres";"CHAR";5
+"CODGEO";"Code de la commune";"52448";"Saint-Dizier";"CHAR";5
+"CODGEO";"Code de la commune";"53054";"Changé";"CHAR";5
+"CODGEO";"Code de la commune";"53062";"Château-Gontier-sur-Mayenne";"CHAR";5
+"CODGEO";"Code de la commune";"53084";"Craon";"CHAR";5
+"CODGEO";"Code de la commune";"53096";"Ernée";"CHAR";5
+"CODGEO";"Code de la commune";"53097";"Évron";"CHAR";5
+"CODGEO";"Code de la commune";"53130";"Laval";"CHAR";5
+"CODGEO";"Code de la commune";"53147";"Mayenne";"CHAR";5
+"CODGEO";"Code de la commune";"53201";"Saint-Berthevin";"CHAR";5
+"CODGEO";"Code de la commune";"54115";"Champigneulles";"CHAR";5
+"CODGEO";"Code de la commune";"54159";"Dombasle-sur-Meurthe";"CHAR";5
+"CODGEO";"Code de la commune";"54184";"Essey-lès-Nancy";"CHAR";5
+"CODGEO";"Code de la commune";"54215";"Frouard";"CHAR";5
+"CODGEO";"Code de la commune";"54257";"Heillecourt";"CHAR";5
+"CODGEO";"Code de la commune";"54263";"Homécourt";"CHAR";5
+"CODGEO";"Code de la commune";"54273";"Jarny";"CHAR";5
+"CODGEO";"Code de la commune";"54274";"Jarville-la-Malgrange";"CHAR";5
+"CODGEO";"Code de la commune";"54304";"Laxou";"CHAR";5
+"CODGEO";"Code de la commune";"54318";"Liverdun";"CHAR";5
+"CODGEO";"Code de la commune";"54323";"Longwy";"CHAR";5
+"CODGEO";"Code de la commune";"54328";"Ludres";"CHAR";5
+"CODGEO";"Code de la commune";"54329";"Lunéville";"CHAR";5
+"CODGEO";"Code de la commune";"54339";"Malzéville";"CHAR";5
+"CODGEO";"Code de la commune";"54357";"Maxéville";"CHAR";5
+"CODGEO";"Code de la commune";"54382";"Mont-Saint-Martin";"CHAR";5
+"CODGEO";"Code de la commune";"54395";"Nancy";"CHAR";5
+"CODGEO";"Code de la commune";"54430";"Pompey";"CHAR";5
+"CODGEO";"Code de la commune";"54431";"Pont-à-Mousson";"CHAR";5
+"CODGEO";"Code de la commune";"54482";"Saint-Max";"CHAR";5
+"CODGEO";"Code de la commune";"54526";"Tomblaine";"CHAR";5
+"CODGEO";"Code de la commune";"54528";"Toul";"CHAR";5
+"CODGEO";"Code de la commune";"54547";"Vandœuvre-lès-Nancy";"CHAR";5
+"CODGEO";"Code de la commune";"54578";"Villers-lès-Nancy";"CHAR";5
+"CODGEO";"Code de la commune";"54580";"Villerupt";"CHAR";5
+"CODGEO";"Code de la commune";"55029";"Bar-le-Duc";"CHAR";5
+"CODGEO";"Code de la commune";"55545";"Verdun";"CHAR";5
+"CODGEO";"Code de la commune";"56003";"Arradon";"CHAR";5
+"CODGEO";"Code de la commune";"56007";"Auray";"CHAR";5
+"CODGEO";"Code de la commune";"56034";"Carnac";"CHAR";5
+"CODGEO";"Code de la commune";"56036";"Caudan";"CHAR";5
+"CODGEO";"Code de la commune";"56075";"Guer";"CHAR";5
+"CODGEO";"Code de la commune";"56078";"Guidel";"CHAR";5
+"CODGEO";"Code de la commune";"56083";"Hennebont";"CHAR";5
+"CODGEO";"Code de la commune";"56090";"Inzinzac-Lochrist";"CHAR";5
+"CODGEO";"Code de la commune";"56098";"Lanester";"CHAR";5
+"CODGEO";"Code de la commune";"56101";"Languidic";"CHAR";5
+"CODGEO";"Code de la commune";"56107";"Larmor-Plage";"CHAR";5
+"CODGEO";"Code de la commune";"56121";"Lorient";"CHAR";5
+"CODGEO";"Code de la commune";"56162";"Ploemeur";"CHAR";5
+"CODGEO";"Code de la commune";"56165";"Ploërmel";"CHAR";5
+"CODGEO";"Code de la commune";"56177";"Pluvigner";"CHAR";5
+"CODGEO";"Code de la commune";"56178";"Pontivy";"CHAR";5
+"CODGEO";"Code de la commune";"56184";"Questembert";"CHAR";5
+"CODGEO";"Code de la commune";"56185";"Quéven";"CHAR";5
+"CODGEO";"Code de la commune";"56186";"Quiberon";"CHAR";5
+"CODGEO";"Code de la commune";"56206";"Saint-Avé";"CHAR";5
+"CODGEO";"Code de la commune";"56240";"Sarzeau";"CHAR";5
+"CODGEO";"Code de la commune";"56243";"Séné";"CHAR";5
+"CODGEO";"Code de la commune";"56251";"Theix-Noyalo";"CHAR";5
+"CODGEO";"Code de la commune";"56260";"Vannes";"CHAR";5
+"CODGEO";"Code de la commune";"57019";"Amnéville";"CHAR";5
+"CODGEO";"Code de la commune";"57032";"Ars-sur-Moselle";"CHAR";5
+"CODGEO";"Code de la commune";"57058";"Behren-lès-Forbach";"CHAR";5
+"CODGEO";"Code de la commune";"57089";"Bitche";"CHAR";5
+"CODGEO";"Code de la commune";"57160";"Creutzwald";"CHAR";5
+"CODGEO";"Code de la commune";"57206";"Fameck";"CHAR";5
+"CODGEO";"Code de la commune";"57207";"Farébersviller";"CHAR";5
+"CODGEO";"Code de la commune";"57209";"Faulquemont";"CHAR";5
+"CODGEO";"Code de la commune";"57221";"Florange";"CHAR";5
+"CODGEO";"Code de la commune";"57227";"Forbach";"CHAR";5
+"CODGEO";"Code de la commune";"57240";"Freyming-Merlebach";"CHAR";5
+"CODGEO";"Code de la commune";"57269";"Guénange";"CHAR";5
+"CODGEO";"Code de la commune";"57283";"Hagondange";"CHAR";5
+"CODGEO";"Code de la commune";"57306";"Hayange";"CHAR";5
+"CODGEO";"Code de la commune";"57323";"Hettange-Grande";"CHAR";5
+"CODGEO";"Code de la commune";"57332";"Hombourg-Haut";"CHAR";5
+"CODGEO";"Code de la commune";"57336";"L'Hôpital";"CHAR";5
+"CODGEO";"Code de la commune";"57433";"Maizières-lès-Metz";"CHAR";5
+"CODGEO";"Code de la commune";"57443";"Marange-Silvange";"CHAR";5
+"CODGEO";"Code de la commune";"57447";"Marly";"CHAR";5
+"CODGEO";"Code de la commune";"57463";"Metz";"CHAR";5
+"CODGEO";"Code de la commune";"57474";"Mondelange";"CHAR";5
+"CODGEO";"Code de la commune";"57480";"Montigny-lès-Metz";"CHAR";5
+"CODGEO";"Code de la commune";"57491";"Moyeuvre-Grande";"CHAR";5
+"CODGEO";"Code de la commune";"57591";"Rombas";"CHAR";5
+"CODGEO";"Code de la commune";"57606";"Saint-Avold";"CHAR";5
+"CODGEO";"Code de la commune";"57630";"Sarrebourg";"CHAR";5
+"CODGEO";"Code de la commune";"57631";"Sarreguemines";"CHAR";5
+"CODGEO";"Code de la commune";"57660";"Stiring-Wendel";"CHAR";5
+"CODGEO";"Code de la commune";"57663";"Talange";"CHAR";5
+"CODGEO";"Code de la commune";"57666";"Terville";"CHAR";5
+"CODGEO";"Code de la commune";"57672";"Thionville";"CHAR";5
+"CODGEO";"Code de la commune";"57751";"Woippy";"CHAR";5
+"CODGEO";"Code de la commune";"57757";"Yutz";"CHAR";5
+"CODGEO";"Code de la commune";"58059";"La Charité-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"58079";"Clamecy";"CHAR";5
+"CODGEO";"Code de la commune";"58086";"Cosne-Cours-sur-Loire";"CHAR";5
+"CODGEO";"Code de la commune";"58095";"Decize";"CHAR";5
+"CODGEO";"Code de la commune";"58117";"Fourchambault";"CHAR";5
+"CODGEO";"Code de la commune";"58134";"Imphy";"CHAR";5
+"CODGEO";"Code de la commune";"58194";"Nevers";"CHAR";5
+"CODGEO";"Code de la commune";"58303";"Varennes-Vauzelles";"CHAR";5
+"CODGEO";"Code de la commune";"59008";"Aniche";"CHAR";5
+"CODGEO";"Code de la commune";"59009";"Villeneuve-d'Ascq";"CHAR";5
+"CODGEO";"Code de la commune";"59011";"Annœullin";"CHAR";5
+"CODGEO";"Code de la commune";"59014";"Anzin";"CHAR";5
+"CODGEO";"Code de la commune";"59017";"Armentières";"CHAR";5
+"CODGEO";"Code de la commune";"59028";"Auby";"CHAR";5
+"CODGEO";"Code de la commune";"59032";"Aulnoy-lez-Valenciennes";"CHAR";5
+"CODGEO";"Code de la commune";"59033";"Aulnoye-Aymeries";"CHAR";5
+"CODGEO";"Code de la commune";"59036";"Avesnes-sur-Helpe";"CHAR";5
+"CODGEO";"Code de la commune";"59043";"Bailleul";"CHAR";5
+"CODGEO";"Code de la commune";"59051";"La Bassée";"CHAR";5
+"CODGEO";"Code de la commune";"59052";"Bauvin";"CHAR";5
+"CODGEO";"Code de la commune";"59079";"Beuvrages";"CHAR";5
+"CODGEO";"Code de la commune";"59090";"Bondues";"CHAR";5
+"CODGEO";"Code de la commune";"59094";"Bourbourg";"CHAR";5
+"CODGEO";"Code de la commune";"59112";"Bruay-sur-l'Escaut";"CHAR";5
+"CODGEO";"Code de la commune";"59122";"Cambrai";"CHAR";5
+"CODGEO";"Code de la commune";"59131";"Cappelle-la-Grande";"CHAR";5
+"CODGEO";"Code de la commune";"59136";"Le Cateau-Cambrésis";"CHAR";5
+"CODGEO";"Code de la commune";"59139";"Caudry";"CHAR";5
+"CODGEO";"Code de la commune";"59143";"La Chapelle-d'Armentières";"CHAR";5
+"CODGEO";"Code de la commune";"59152";"Comines";"CHAR";5
+"CODGEO";"Code de la commune";"59153";"Condé-sur-l'Escaut";"CHAR";5
+"CODGEO";"Code de la commune";"59155";"Coudekerque-Branche";"CHAR";5
+"CODGEO";"Code de la commune";"59163";"Croix";"CHAR";5
+"CODGEO";"Code de la commune";"59165";"Cuincy";"CHAR";5
+"CODGEO";"Code de la commune";"59170";"Dechy";"CHAR";5
+"CODGEO";"Code de la commune";"59172";"Denain";"CHAR";5
+"CODGEO";"Code de la commune";"59178";"Douai";"CHAR";5
+"CODGEO";"Code de la commune";"59179";"Douchy-les-Mines";"CHAR";5
+"CODGEO";"Code de la commune";"59183";"Dunkerque";"CHAR";5
+"CODGEO";"Code de la commune";"59205";"Escaudain";"CHAR";5
+"CODGEO";"Code de la commune";"59212";"Estaires";"CHAR";5
+"CODGEO";"Code de la commune";"59220";"Faches-Thumesnil";"CHAR";5
+"CODGEO";"Code de la commune";"59225";"Feignies";"CHAR";5
+"CODGEO";"Code de la commune";"59227";"Fenain";"CHAR";5
+"CODGEO";"Code de la commune";"59230";"Ferrière-la-Grande";"CHAR";5
+"CODGEO";"Code de la commune";"59234";"Flers-en-Escrebieux";"CHAR";5
+"CODGEO";"Code de la commune";"59239";"Flines-lez-Raches";"CHAR";5
+"CODGEO";"Code de la commune";"59249";"Fourmies";"CHAR";5
+"CODGEO";"Code de la commune";"59253";"Fresnes-sur-Escaut";"CHAR";5
+"CODGEO";"Code de la commune";"59268";"La Gorgue";"CHAR";5
+"CODGEO";"Code de la commune";"59271";"Grande-Synthe";"CHAR";5
+"CODGEO";"Code de la commune";"59272";"Grand-Fort-Philippe";"CHAR";5
+"CODGEO";"Code de la commune";"59273";"Gravelines";"CHAR";5
+"CODGEO";"Code de la commune";"59276";"Guesnain";"CHAR";5
+"CODGEO";"Code de la commune";"59279";"Halluin";"CHAR";5
+"CODGEO";"Code de la commune";"59286";"Haubourdin";"CHAR";5
+"CODGEO";"Code de la commune";"59291";"Hautmont";"CHAR";5
+"CODGEO";"Code de la commune";"59295";"Hazebrouck";"CHAR";5
+"CODGEO";"Code de la commune";"59299";"Hem";"CHAR";5
+"CODGEO";"Code de la commune";"59317";"Houplines";"CHAR";5
+"CODGEO";"Code de la commune";"59324";"Jeumont";"CHAR";5
+"CODGEO";"Code de la commune";"59327";"Lallaing";"CHAR";5
+"CODGEO";"Code de la commune";"59328";"Lambersart";"CHAR";5
+"CODGEO";"Code de la commune";"59329";"Lambres-lez-Douai";"CHAR";5
+"CODGEO";"Code de la commune";"59339";"Leers";"CHAR";5
+"CODGEO";"Code de la commune";"59340";"Leffrinckoucke";"CHAR";5
+"CODGEO";"Code de la commune";"59343";"Lesquin";"CHAR";5
+"CODGEO";"Code de la commune";"59350";"Lille";"CHAR";5
+"CODGEO";"Code de la commune";"59352";"Linselles";"CHAR";5
+"CODGEO";"Code de la commune";"59359";"Loon-Plage";"CHAR";5
+"CODGEO";"Code de la commune";"59360";"Loos";"CHAR";5
+"CODGEO";"Code de la commune";"59365";"Louvroil";"CHAR";5
+"CODGEO";"Code de la commune";"59367";"Lys-lez-Lannoy";"CHAR";5
+"CODGEO";"Code de la commune";"59368";"La Madeleine";"CHAR";5
+"CODGEO";"Code de la commune";"59378";"Marcq-en-Barœul";"CHAR";5
+"CODGEO";"Code de la commune";"59383";"Marly";"CHAR";5
+"CODGEO";"Code de la commune";"59386";"Marquette-lez-Lille";"CHAR";5
+"CODGEO";"Code de la commune";"59392";"Maubeuge";"CHAR";5
+"CODGEO";"Code de la commune";"59400";"Merville";"CHAR";5
+"CODGEO";"Code de la commune";"59410";"Mons-en-Barœul";"CHAR";5
+"CODGEO";"Code de la commune";"59414";"Montigny-en-Ostrevent";"CHAR";5
+"CODGEO";"Code de la commune";"59421";"Mouvaux";"CHAR";5
+"CODGEO";"Code de la commune";"59426";"Neuville-en-Ferrain";"CHAR";5
+"CODGEO";"Code de la commune";"59431";"Nieppe";"CHAR";5
+"CODGEO";"Code de la commune";"59447";"Onnaing";"CHAR";5
+"CODGEO";"Code de la commune";"59449";"Orchies";"CHAR";5
+"CODGEO";"Code de la commune";"59452";"Ostricourt";"CHAR";5
+"CODGEO";"Code de la commune";"59456";"Pecquencourt";"CHAR";5
+"CODGEO";"Code de la commune";"59457";"Pérenchies";"CHAR";5
+"CODGEO";"Code de la commune";"59459";"Petite-Forêt";"CHAR";5
+"CODGEO";"Code de la commune";"59482";"Quesnoy-sur-Deûle";"CHAR";5
+"CODGEO";"Code de la commune";"59484";"Quiévrechain";"CHAR";5
+"CODGEO";"Code de la commune";"59491";"Raismes";"CHAR";5
+"CODGEO";"Code de la commune";"59507";"Ronchin";"CHAR";5
+"CODGEO";"Code de la commune";"59508";"Roncq";"CHAR";5
+"CODGEO";"Code de la commune";"59509";"Roost-Warendin";"CHAR";5
+"CODGEO";"Code de la commune";"59512";"Roubaix";"CHAR";5
+"CODGEO";"Code de la commune";"59524";"Sainghin-en-Weppes";"CHAR";5
+"CODGEO";"Code de la commune";"59526";"Saint-Amand-les-Eaux";"CHAR";5
+"CODGEO";"Code de la commune";"59527";"Saint-André-lez-Lille";"CHAR";5
+"CODGEO";"Code de la commune";"59544";"Saint-Saulve";"CHAR";5
+"CODGEO";"Code de la commune";"59553";"Santes";"CHAR";5
+"CODGEO";"Code de la commune";"59560";"Seclin";"CHAR";5
+"CODGEO";"Code de la commune";"59569";"Sin-le-Noble";"CHAR";5
+"CODGEO";"Code de la commune";"59571";"Solesmes";"CHAR";5
+"CODGEO";"Code de la commune";"59574";"Somain";"CHAR";5
+"CODGEO";"Code de la commune";"59586";"Templeuve-en-Pévèle";"CHAR";5
+"CODGEO";"Code de la commune";"59588";"Téteghem-Coudekerque-Village";"CHAR";5
+"CODGEO";"Code de la commune";"59599";"Tourcoing";"CHAR";5
+"CODGEO";"Code de la commune";"59603";"Trith-Saint-Léger";"CHAR";5
+"CODGEO";"Code de la commune";"59606";"Valenciennes";"CHAR";5
+"CODGEO";"Code de la commune";"59616";"Vieux-Condé";"CHAR";5
+"CODGEO";"Code de la commune";"59632";"Wallers";"CHAR";5
+"CODGEO";"Code de la commune";"59636";"Wambrechies";"CHAR";5
+"CODGEO";"Code de la commune";"59646";"Wasquehal";"CHAR";5
+"CODGEO";"Code de la commune";"59648";"Wattignies";"CHAR";5
+"CODGEO";"Code de la commune";"59650";"Wattrelos";"CHAR";5
+"CODGEO";"Code de la commune";"59653";"Wavrin";"CHAR";5
+"CODGEO";"Code de la commune";"59654";"Waziers";"CHAR";5
+"CODGEO";"Code de la commune";"59663";"Wormhout";"CHAR";5
+"CODGEO";"Code de la commune";"60057";"Beauvais";"CHAR";5
+"CODGEO";"Code de la commune";"60139";"Chambly";"CHAR";5
+"CODGEO";"Code de la commune";"60141";"Chantilly";"CHAR";5
+"CODGEO";"Code de la commune";"60157";"Clermont";"CHAR";5
+"CODGEO";"Code de la commune";"60159";"Compiègne";"CHAR";5
+"CODGEO";"Code de la commune";"60175";"Creil";"CHAR";5
+"CODGEO";"Code de la commune";"60176";"Crépy-en-Valois";"CHAR";5
+"CODGEO";"Code de la commune";"60282";"Gouvieux";"CHAR";5
+"CODGEO";"Code de la commune";"60346";"Lamorlaye";"CHAR";5
+"CODGEO";"Code de la commune";"60360";"Liancourt";"CHAR";5
+"CODGEO";"Code de la commune";"60382";"Margny-lès-Compiègne";"CHAR";5
+"CODGEO";"Code de la commune";"60395";"Méru";"CHAR";5
+"CODGEO";"Code de la commune";"60414";"Montataire";"CHAR";5
+"CODGEO";"Code de la commune";"60439";"Mouy";"CHAR";5
+"CODGEO";"Code de la commune";"60463";"Nogent-sur-Oise";"CHAR";5
+"CODGEO";"Code de la commune";"60471";"Noyon";"CHAR";5
+"CODGEO";"Code de la commune";"60509";"Pont-Sainte-Maxence";"CHAR";5
+"CODGEO";"Code de la commune";"60612";"Senlis";"CHAR";5
+"CODGEO";"Code de la commune";"60684";"Villers-Saint-Paul";"CHAR";5
+"CODGEO";"Code de la commune";"61001";"Alençon";"CHAR";5
+"CODGEO";"Code de la commune";"61006";"Argentan";"CHAR";5
+"CODGEO";"Code de la commune";"61168";"La Ferté Macé";"CHAR";5
+"CODGEO";"Code de la commune";"61169";"Flers";"CHAR";5
+"CODGEO";"Code de la commune";"61214";"L'Aigle";"CHAR";5
+"CODGEO";"Code de la commune";"62004";"Achicourt";"CHAR";5
+"CODGEO";"Code de la commune";"62014";"Aire-sur-la-Lys";"CHAR";5
+"CODGEO";"Code de la commune";"62033";"Annay";"CHAR";5
+"CODGEO";"Code de la commune";"62035";"Annezin";"CHAR";5
+"CODGEO";"Code de la commune";"62040";"Arques";"CHAR";5
+"CODGEO";"Code de la commune";"62041";"Arras";"CHAR";5
+"CODGEO";"Code de la commune";"62048";"Auchel";"CHAR";5
+"CODGEO";"Code de la commune";"62065";"Avion";"CHAR";5
+"CODGEO";"Code de la commune";"62083";"Barlin";"CHAR";5
+"CODGEO";"Code de la commune";"62108";"Berck";"CHAR";5
+"CODGEO";"Code de la commune";"62119";"Béthune";"CHAR";5
+"CODGEO";"Code de la commune";"62126";"Beuvry";"CHAR";5
+"CODGEO";"Code de la commune";"62133";"Billy-Montigny";"CHAR";5
+"CODGEO";"Code de la commune";"62139";"Blendecques";"CHAR";5
+"CODGEO";"Code de la commune";"62160";"Boulogne-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"62178";"Bruay-la-Buissière";"CHAR";5
+"CODGEO";"Code de la commune";"62186";"Bully-les-Mines";"CHAR";5
+"CODGEO";"Code de la commune";"62193";"Calais";"CHAR";5
+"CODGEO";"Code de la commune";"62194";"Calonne-Ricouart";"CHAR";5
+"CODGEO";"Code de la commune";"62215";"Carvin";"CHAR";5
+"CODGEO";"Code de la commune";"62244";"Coulogne";"CHAR";5
+"CODGEO";"Code de la commune";"62249";"Courcelles-lès-Lens";"CHAR";5
+"CODGEO";"Code de la commune";"62250";"Courrières";"CHAR";5
+"CODGEO";"Code de la commune";"62263";"Dainville";"CHAR";5
+"CODGEO";"Code de la commune";"62268";"Desvres";"CHAR";5
+"CODGEO";"Code de la commune";"62270";"Divion";"CHAR";5
+"CODGEO";"Code de la commune";"62274";"Dourges";"CHAR";5
+"CODGEO";"Code de la commune";"62276";"Douvrin";"CHAR";5
+"CODGEO";"Code de la commune";"62318";"Étaples";"CHAR";5
+"CODGEO";"Code de la commune";"62351";"Fouquières-lès-Lens";"CHAR";5
+"CODGEO";"Code de la commune";"62386";"Grenay";"CHAR";5
+"CODGEO";"Code de la commune";"62397";"Guînes";"CHAR";5
+"CODGEO";"Code de la commune";"62400";"Haillicourt";"CHAR";5
+"CODGEO";"Code de la commune";"62413";"Harnes";"CHAR";5
+"CODGEO";"Code de la commune";"62427";"Hénin-Beaumont";"CHAR";5
+"CODGEO";"Code de la commune";"62443";"Hersin-Coupigny";"CHAR";5
+"CODGEO";"Code de la commune";"62457";"Houdain";"CHAR";5
+"CODGEO";"Code de la commune";"62473";"Isbergues";"CHAR";5
+"CODGEO";"Code de la commune";"62497";"Leforest";"CHAR";5
+"CODGEO";"Code de la commune";"62498";"Lens";"CHAR";5
+"CODGEO";"Code de la commune";"62510";"Liévin";"CHAR";5
+"CODGEO";"Code de la commune";"62516";"Lillers";"CHAR";5
+"CODGEO";"Code de la commune";"62523";"Loison-sous-Lens";"CHAR";5
+"CODGEO";"Code de la commune";"62525";"Longuenesse";"CHAR";5
+"CODGEO";"Code de la commune";"62528";"Loos-en-Gohelle";"CHAR";5
+"CODGEO";"Code de la commune";"62548";"Marck";"CHAR";5
+"CODGEO";"Code de la commune";"62555";"Marles-les-Mines";"CHAR";5
+"CODGEO";"Code de la commune";"62563";"Mazingarbe";"CHAR";5
+"CODGEO";"Code de la commune";"62570";"Méricourt";"CHAR";5
+"CODGEO";"Code de la commune";"62587";"Montigny-en-Gohelle";"CHAR";5
+"CODGEO";"Code de la commune";"62617";"Nœux-les-Mines";"CHAR";5
+"CODGEO";"Code de la commune";"62624";"Noyelles-Godault";"CHAR";5
+"CODGEO";"Code de la commune";"62628";"Noyelles-sous-Lens";"CHAR";5
+"CODGEO";"Code de la commune";"62637";"Oignies";"CHAR";5
+"CODGEO";"Code de la commune";"62643";"Outreau";"CHAR";5
+"CODGEO";"Code de la commune";"62645";"Oye-Plage";"CHAR";5
+"CODGEO";"Code de la commune";"62667";"Le Portel";"CHAR";5
+"CODGEO";"Code de la commune";"62724";"Rouvroy";"CHAR";5
+"CODGEO";"Code de la commune";"62737";"Sains-en-Gohelle";"CHAR";5
+"CODGEO";"Code de la commune";"62753";"Saint-Laurent-Blangy";"CHAR";5
+"CODGEO";"Code de la commune";"62758";"Saint-Martin-Boulogne";"CHAR";5
+"CODGEO";"Code de la commune";"62764";"Saint-Nicolas";"CHAR";5
+"CODGEO";"Code de la commune";"62765";"Saint-Omer";"CHAR";5
+"CODGEO";"Code de la commune";"62767";"Saint-Pol-sur-Ternoise";"CHAR";5
+"CODGEO";"Code de la commune";"62771";"Sallaumines";"CHAR";5
+"CODGEO";"Code de la commune";"62826";"Le Touquet-Paris-Plage";"CHAR";5
+"CODGEO";"Code de la commune";"62842";"Vendin-le-Vieil";"CHAR";5
+"CODGEO";"Code de la commune";"62893";"Wimereux";"CHAR";5
+"CODGEO";"Code de la commune";"62895";"Wingles";"CHAR";5
+"CODGEO";"Code de la commune";"62907";"Libercourt";"CHAR";5
+"CODGEO";"Code de la commune";"63003";"Ambert";"CHAR";5
+"CODGEO";"Code de la commune";"63014";"Aubière";"CHAR";5
+"CODGEO";"Code de la commune";"63032";"Beaumont";"CHAR";5
+"CODGEO";"Code de la commune";"63063";"Cébazat";"CHAR";5
+"CODGEO";"Code de la commune";"63069";"Le Cendre";"CHAR";5
+"CODGEO";"Code de la commune";"63070";"Ceyrat";"CHAR";5
+"CODGEO";"Code de la commune";"63075";"Chamalières";"CHAR";5
+"CODGEO";"Code de la commune";"63103";"Châtel-Guyon";"CHAR";5
+"CODGEO";"Code de la commune";"63113";"Clermont-Ferrand";"CHAR";5
+"CODGEO";"Code de la commune";"63124";"Cournon-d'Auvergne";"CHAR";5
+"CODGEO";"Code de la commune";"63164";"Gerzat";"CHAR";5
+"CODGEO";"Code de la commune";"63178";"Issoire";"CHAR";5
+"CODGEO";"Code de la commune";"63193";"Lempdes";"CHAR";5
+"CODGEO";"Code de la commune";"63284";"Pont-du-Château";"CHAR";5
+"CODGEO";"Code de la commune";"63300";"Riom";"CHAR";5
+"CODGEO";"Code de la commune";"63307";"Romagnat";"CHAR";5
+"CODGEO";"Code de la commune";"63430";"Thiers";"CHAR";5
+"CODGEO";"Code de la commune";"64024";"Anglet";"CHAR";5
+"CODGEO";"Code de la commune";"64102";"Bayonne";"CHAR";5
+"CODGEO";"Code de la commune";"64122";"Biarritz";"CHAR";5
+"CODGEO";"Code de la commune";"64129";"Billère";"CHAR";5
+"CODGEO";"Code de la commune";"64140";"Boucau";"CHAR";5
+"CODGEO";"Code de la commune";"64189";"Ciboure";"CHAR";5
+"CODGEO";"Code de la commune";"64256";"Hasparren";"CHAR";5
+"CODGEO";"Code de la commune";"64260";"Hendaye";"CHAR";5
+"CODGEO";"Code de la commune";"64284";"Jurançon";"CHAR";5
+"CODGEO";"Code de la commune";"64335";"Lescar";"CHAR";5
+"CODGEO";"Code de la commune";"64348";"Lons";"CHAR";5
+"CODGEO";"Code de la commune";"64410";"Mourenx";"CHAR";5
+"CODGEO";"Code de la commune";"64422";"Oloron-Sainte-Marie";"CHAR";5
+"CODGEO";"Code de la commune";"64430";"Orthez";"CHAR";5
+"CODGEO";"Code de la commune";"64445";"Pau";"CHAR";5
+"CODGEO";"Code de la commune";"64483";"Saint-Jean-de-Luz";"CHAR";5
+"CODGEO";"Code de la commune";"64545";"Urrugne";"CHAR";5
+"CODGEO";"Code de la commune";"65047";"Aureilhan";"CHAR";5
+"CODGEO";"Code de la commune";"65059";"Bagnères-de-Bigorre";"CHAR";5
+"CODGEO";"Code de la commune";"65258";"Lannemezan";"CHAR";5
+"CODGEO";"Code de la commune";"65286";"Lourdes";"CHAR";5
+"CODGEO";"Code de la commune";"65440";"Tarbes";"CHAR";5
+"CODGEO";"Code de la commune";"66008";"Argelès-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"66016";"Banyuls-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"66021";"Bompas";"CHAR";5
+"CODGEO";"Code de la commune";"66024";"Le Boulou";"CHAR";5
+"CODGEO";"Code de la commune";"66028";"Cabestany";"CHAR";5
+"CODGEO";"Code de la commune";"66037";"Canet-en-Roussillon";"CHAR";5
+"CODGEO";"Code de la commune";"66038";"Canohès";"CHAR";5
+"CODGEO";"Code de la commune";"66049";"Céret";"CHAR";5
+"CODGEO";"Code de la commune";"66065";"Elne";"CHAR";5
+"CODGEO";"Code de la commune";"66088";"Ille-sur-Têt";"CHAR";5
+"CODGEO";"Code de la commune";"66136";"Perpignan";"CHAR";5
+"CODGEO";"Code de la commune";"66141";"Pia";"CHAR";5
+"CODGEO";"Code de la commune";"66148";"Port-Vendres";"CHAR";5
+"CODGEO";"Code de la commune";"66149";"Prades";"CHAR";5
+"CODGEO";"Code de la commune";"66164";"Rivesaltes";"CHAR";5
+"CODGEO";"Code de la commune";"66171";"Saint-Cyprien";"CHAR";5
+"CODGEO";"Code de la commune";"66172";"Saint-Estève";"CHAR";5
+"CODGEO";"Code de la commune";"66180";"Saint-Laurent-de-la-Salanque";"CHAR";5
+"CODGEO";"Code de la commune";"66195";"Le Soler";"CHAR";5
+"CODGEO";"Code de la commune";"66210";"Thuir";"CHAR";5
+"CODGEO";"Code de la commune";"66213";"Toulouges";"CHAR";5
+"CODGEO";"Code de la commune";"67021";"Barr";"CHAR";5
+"CODGEO";"Code de la commune";"67043";"Bischheim";"CHAR";5
+"CODGEO";"Code de la commune";"67046";"Bischwiller";"CHAR";5
+"CODGEO";"Code de la commune";"67067";"Brumath";"CHAR";5
+"CODGEO";"Code de la commune";"67118";"Eckbolsheim";"CHAR";5
+"CODGEO";"Code de la commune";"67130";"Erstein";"CHAR";5
+"CODGEO";"Code de la commune";"67152";"Geispolsheim";"CHAR";5
+"CODGEO";"Code de la commune";"67180";"Haguenau";"CHAR";5
+"CODGEO";"Code de la commune";"67204";"Hœnheim";"CHAR";5
+"CODGEO";"Code de la commune";"67218";"Illkirch-Graffenstaden";"CHAR";5
+"CODGEO";"Code de la commune";"67267";"Lingolsheim";"CHAR";5
+"CODGEO";"Code de la commune";"67300";"Molsheim";"CHAR";5
+"CODGEO";"Code de la commune";"67309";"Mundolsheim";"CHAR";5
+"CODGEO";"Code de la commune";"67313";"Mutzig";"CHAR";5
+"CODGEO";"Code de la commune";"67348";"Obernai";"CHAR";5
+"CODGEO";"Code de la commune";"67365";"Ostwald";"CHAR";5
+"CODGEO";"Code de la commune";"67388";"Reichshoffen";"CHAR";5
+"CODGEO";"Code de la commune";"67437";"Saverne";"CHAR";5
+"CODGEO";"Code de la commune";"67447";"Schiltigheim";"CHAR";5
+"CODGEO";"Code de la commune";"67462";"Sélestat";"CHAR";5
+"CODGEO";"Code de la commune";"67471";"Souffelweyersheim";"CHAR";5
+"CODGEO";"Code de la commune";"67482";"Strasbourg";"CHAR";5
+"CODGEO";"Code de la commune";"67506";"Vendenheim";"CHAR";5
+"CODGEO";"Code de la commune";"67519";"La Wantzenau";"CHAR";5
+"CODGEO";"Code de la commune";"67520";"Wasselonne";"CHAR";5
+"CODGEO";"Code de la commune";"67544";"Wissembourg";"CHAR";5
+"CODGEO";"Code de la commune";"68004";"Altkirch";"CHAR";5
+"CODGEO";"Code de la commune";"68056";"Brunstatt-Didenheim";"CHAR";5
+"CODGEO";"Code de la commune";"68063";"Cernay";"CHAR";5
+"CODGEO";"Code de la commune";"68066";"Colmar";"CHAR";5
+"CODGEO";"Code de la commune";"68112";"Guebwiller";"CHAR";5
+"CODGEO";"Code de la commune";"68145";"Horbourg-Wihr";"CHAR";5
+"CODGEO";"Code de la commune";"68149";"Huningue";"CHAR";5
+"CODGEO";"Code de la commune";"68154";"Illzach";"CHAR";5
+"CODGEO";"Code de la commune";"68166";"Kingersheim";"CHAR";5
+"CODGEO";"Code de la commune";"68195";"Lutterbach";"CHAR";5
+"CODGEO";"Code de la commune";"68224";"Mulhouse";"CHAR";5
+"CODGEO";"Code de la commune";"68256";"Pfastatt";"CHAR";5
+"CODGEO";"Code de la commune";"68271";"Riedisheim";"CHAR";5
+"CODGEO";"Code de la commune";"68278";"Rixheim";"CHAR";5
+"CODGEO";"Code de la commune";"68297";"Saint-Louis";"CHAR";5
+"CODGEO";"Code de la commune";"68298";"Sainte-Marie-aux-Mines";"CHAR";5
+"CODGEO";"Code de la commune";"68300";"Sausheim";"CHAR";5
+"CODGEO";"Code de la commune";"68315";"Soultz-Haut-Rhin";"CHAR";5
+"CODGEO";"Code de la commune";"68334";"Thann";"CHAR";5
+"CODGEO";"Code de la commune";"68374";"Wintzenheim";"CHAR";5
+"CODGEO";"Code de la commune";"68375";"Wittelsheim";"CHAR";5
+"CODGEO";"Code de la commune";"68376";"Wittenheim";"CHAR";5
+"CODGEO";"Code de la commune";"69006";"Amplepuis";"CHAR";5
+"CODGEO";"Code de la commune";"69010";"L'Arbresle";"CHAR";5
+"CODGEO";"Code de la commune";"69019";"Belleville-en-Beaujolais";"CHAR";5
+"CODGEO";"Code de la commune";"69027";"Brignais";"CHAR";5
+"CODGEO";"Code de la commune";"69029";"Bron";"CHAR";5
+"CODGEO";"Code de la commune";"69034";"Caluire-et-Cuire";"CHAR";5
+"CODGEO";"Code de la commune";"69040";"Champagne-au-Mont-d'Or";"CHAR";5
+"CODGEO";"Code de la commune";"69043";"Chaponost";"CHAR";5
+"CODGEO";"Code de la commune";"69069";"Craponne";"CHAR";5
+"CODGEO";"Code de la commune";"69072";"Dardilly";"CHAR";5
+"CODGEO";"Code de la commune";"69081";"Écully";"CHAR";5
+"CODGEO";"Code de la commune";"69088";"Fontaines-sur-Saône";"CHAR";5
+"CODGEO";"Code de la commune";"69089";"Francheville";"CHAR";5
+"CODGEO";"Code de la commune";"69091";"Givors";"CHAR";5
+"CODGEO";"Code de la commune";"69092";"Gleizé";"CHAR";5
+"CODGEO";"Code de la commune";"69096";"Grigny";"CHAR";5
+"CODGEO";"Code de la commune";"69100";"Irigny";"CHAR";5
+"CODGEO";"Code de la commune";"69123";"Lyon";"CHAR";5
+"CODGEO";"Code de la commune";"69142";"La Mulatière";"CHAR";5
+"CODGEO";"Code de la commune";"69143";"Neuville-sur-Saône";"CHAR";5
+"CODGEO";"Code de la commune";"69149";"Oullins-Pierre-Bénite";"CHAR";5
+"CODGEO";"Code de la commune";"69191";"Saint-Cyr-au-Mont-d'Or";"CHAR";5
+"CODGEO";"Code de la commune";"69194";"Saint-Didier-au-Mont-d'Or";"CHAR";5
+"CODGEO";"Code de la commune";"69199";"Saint-Fons";"CHAR";5
+"CODGEO";"Code de la commune";"69202";"Sainte-Foy-lès-Lyon";"CHAR";5
+"CODGEO";"Code de la commune";"69204";"Saint-Genis-Laval";"CHAR";5
+"CODGEO";"Code de la commune";"69243";"Tarare";"CHAR";5
+"CODGEO";"Code de la commune";"69244";"Tassin-la-Demi-Lune";"CHAR";5
+"CODGEO";"Code de la commune";"69256";"Vaulx-en-Velin";"CHAR";5
+"CODGEO";"Code de la commune";"69259";"Vénissieux";"CHAR";5
+"CODGEO";"Code de la commune";"69264";"Villefranche-sur-Saône";"CHAR";5
+"CODGEO";"Code de la commune";"69266";"Villeurbanne";"CHAR";5
+"CODGEO";"Code de la commune";"69271";"Chassieu";"CHAR";5
+"CODGEO";"Code de la commune";"69273";"Corbas";"CHAR";5
+"CODGEO";"Code de la commune";"69275";"Décines-Charpieu";"CHAR";5
+"CODGEO";"Code de la commune";"69276";"Feyzin";"CHAR";5
+"CODGEO";"Code de la commune";"69277";"Genas";"CHAR";5
+"CODGEO";"Code de la commune";"69279";"Jonage";"CHAR";5
+"CODGEO";"Code de la commune";"69282";"Meyzieu";"CHAR";5
+"CODGEO";"Code de la commune";"69283";"Mions";"CHAR";5
+"CODGEO";"Code de la commune";"69286";"Rillieux-la-Pape";"CHAR";5
+"CODGEO";"Code de la commune";"69287";"Saint-Bonnet-de-Mure";"CHAR";5
+"CODGEO";"Code de la commune";"69290";"Saint-Priest";"CHAR";5
+"CODGEO";"Code de la commune";"69291";"Saint-Symphorien-d'Ozon";"CHAR";5
+"CODGEO";"Code de la commune";"69381";"Lyon 1er Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"69382";"Lyon 2e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"69383";"Lyon 3e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"69384";"Lyon 4e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"69385";"Lyon 5e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"69386";"Lyon 6e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"69387";"Lyon 7e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"69388";"Lyon 8e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"69389";"Lyon 9e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"70279";"Gray";"CHAR";5
+"CODGEO";"Code de la commune";"70285";"Héricourt";"CHAR";5
+"CODGEO";"Code de la commune";"70310";"Lure";"CHAR";5
+"CODGEO";"Code de la commune";"70311";"Luxeuil-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"70550";"Vesoul";"CHAR";5
+"CODGEO";"Code de la commune";"71014";"Autun";"CHAR";5
+"CODGEO";"Code de la commune";"71040";"Blanzy";"CHAR";5
+"CODGEO";"Code de la commune";"71047";"Bourbon-Lancy";"CHAR";5
+"CODGEO";"Code de la commune";"71073";"Chagny";"CHAR";5
+"CODGEO";"Code de la commune";"71076";"Chalon-sur-Saône";"CHAR";5
+"CODGEO";"Code de la commune";"71105";"Charnay-lès-Mâcon";"CHAR";5
+"CODGEO";"Code de la commune";"71118";"Châtenoy-le-Royal";"CHAR";5
+"CODGEO";"Code de la commune";"71153";"Le Creusot";"CHAR";5
+"CODGEO";"Code de la commune";"71176";"Digoin";"CHAR";5
+"CODGEO";"Code de la commune";"71230";"Gueugnon";"CHAR";5
+"CODGEO";"Code de la commune";"71263";"Louhans";"CHAR";5
+"CODGEO";"Code de la commune";"71270";"Mâcon";"CHAR";5
+"CODGEO";"Code de la commune";"71306";"Montceau-les-Mines";"CHAR";5
+"CODGEO";"Code de la commune";"71310";"Montchanin";"CHAR";5
+"CODGEO";"Code de la commune";"71342";"Paray-le-Monial";"CHAR";5
+"CODGEO";"Code de la commune";"71445";"Saint-Marcel";"CHAR";5
+"CODGEO";"Code de la commune";"71475";"Saint-Rémy";"CHAR";5
+"CODGEO";"Code de la commune";"71486";"Saint-Vallier";"CHAR";5
+"CODGEO";"Code de la commune";"71499";"Sanvignes-les-Mines";"CHAR";5
+"CODGEO";"Code de la commune";"71543";"Tournus";"CHAR";5
+"CODGEO";"Code de la commune";"72003";"Allonnes";"CHAR";5
+"CODGEO";"Code de la commune";"72008";"Arnage";"CHAR";5
+"CODGEO";"Code de la commune";"72058";"Changé";"CHAR";5
+"CODGEO";"Code de la commune";"72071";"Montval-sur-Loir";"CHAR";5
+"CODGEO";"Code de la commune";"72095";"Coulaines";"CHAR";5
+"CODGEO";"Code de la commune";"72124";"Écommoy";"CHAR";5
+"CODGEO";"Code de la commune";"72132";"La Ferté-Bernard";"CHAR";5
+"CODGEO";"Code de la commune";"72154";"La Flèche";"CHAR";5
+"CODGEO";"Code de la commune";"72176";"Le Lude";"CHAR";5
+"CODGEO";"Code de la commune";"72180";"Mamers";"CHAR";5
+"CODGEO";"Code de la commune";"72181";"Le Mans";"CHAR";5
+"CODGEO";"Code de la commune";"72213";"Mulsanne";"CHAR";5
+"CODGEO";"Code de la commune";"72264";"Sablé-sur-Sarthe";"CHAR";5
+"CODGEO";"Code de la commune";"73008";"Aix-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"73011";"Albertville";"CHAR";5
+"CODGEO";"Code de la commune";"73054";"Bourg-Saint-Maurice";"CHAR";5
+"CODGEO";"Code de la commune";"73065";"Chambéry";"CHAR";5
+"CODGEO";"Code de la commune";"73087";"Cognin";"CHAR";5
+"CODGEO";"Code de la commune";"73179";"La Motte-Servolex";"CHAR";5
+"CODGEO";"Code de la commune";"73213";"La Ravoire";"CHAR";5
+"CODGEO";"Code de la commune";"73222";"Saint-Alban-Leysse";"CHAR";5
+"CODGEO";"Code de la commune";"73248";"Saint-Jean-de-Maurienne";"CHAR";5
+"CODGEO";"Code de la commune";"73303";"Ugine";"CHAR";5
+"CODGEO";"Code de la commune";"74008";"Ambilly";"CHAR";5
+"CODGEO";"Code de la commune";"74010";"Annecy";"CHAR";5
+"CODGEO";"Code de la commune";"74012";"Annemasse";"CHAR";5
+"CODGEO";"Code de la commune";"74042";"Bonneville";"CHAR";5
+"CODGEO";"Code de la commune";"74056";"Chamonix-Mont-Blanc";"CHAR";5
+"CODGEO";"Code de la commune";"74081";"Cluses";"CHAR";5
+"CODGEO";"Code de la commune";"74119";"Évian-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"74123";"Faverges-Seythenex";"CHAR";5
+"CODGEO";"Code de la commune";"74133";"Gaillard";"CHAR";5
+"CODGEO";"Code de la commune";"74164";"Marignier";"CHAR";5
+"CODGEO";"Code de la commune";"74208";"Passy";"CHAR";5
+"CODGEO";"Code de la commune";"74213";"Poisy";"CHAR";5
+"CODGEO";"Code de la commune";"74220";"Reignier-Ésery";"CHAR";5
+"CODGEO";"Code de la commune";"74224";"La Roche-sur-Foron";"CHAR";5
+"CODGEO";"Code de la commune";"74225";"Rumilly";"CHAR";5
+"CODGEO";"Code de la commune";"74236";"Saint-Gervais-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"74242";"Saint-Jorioz";"CHAR";5
+"CODGEO";"Code de la commune";"74243";"Saint-Julien-en-Genevois";"CHAR";5
+"CODGEO";"Code de la commune";"74250";"Saint-Pierre-en-Faucigny";"CHAR";5
+"CODGEO";"Code de la commune";"74256";"Sallanches";"CHAR";5
+"CODGEO";"Code de la commune";"74264";"Scionzier";"CHAR";5
+"CODGEO";"Code de la commune";"74280";"Thônes";"CHAR";5
+"CODGEO";"Code de la commune";"74281";"Thonon-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"74298";"Vétraz-Monthoux";"CHAR";5
+"CODGEO";"Code de la commune";"74305";"Ville-la-Grand";"CHAR";5
+"CODGEO";"Code de la commune";"75056";"Paris";"CHAR";5
+"CODGEO";"Code de la commune";"75101";"Paris 1er Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75102";"Paris 2e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75103";"Paris 3e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75104";"Paris 4e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75105";"Paris 5e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75106";"Paris 6e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75107";"Paris 7e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75108";"Paris 8e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75109";"Paris 9e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75110";"Paris 10e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75111";"Paris 11e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75112";"Paris 12e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75113";"Paris 13e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75114";"Paris 14e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75115";"Paris 15e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75116";"Paris 16e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75117";"Paris 17e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75118";"Paris 18e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75119";"Paris 19e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"75120";"Paris 20e Arrondissement";"CHAR";5
+"CODGEO";"Code de la commune";"76057";"Barentin";"CHAR";5
+"CODGEO";"Code de la commune";"76095";"Bihorel";"CHAR";5
+"CODGEO";"Code de la commune";"76103";"Bonsecours";"CHAR";5
+"CODGEO";"Code de la commune";"76108";"Bois-Guillaume";"CHAR";5
+"CODGEO";"Code de la commune";"76114";"Bolbec";"CHAR";5
+"CODGEO";"Code de la commune";"76157";"Canteleu";"CHAR";5
+"CODGEO";"Code de la commune";"76165";"Caudebec-lès-Elbeuf";"CHAR";5
+"CODGEO";"Code de la commune";"76178";"Cléon";"CHAR";5
+"CODGEO";"Code de la commune";"76212";"Darnétal";"CHAR";5
+"CODGEO";"Code de la commune";"76216";"Déville-lès-Rouen";"CHAR";5
+"CODGEO";"Code de la commune";"76217";"Dieppe";"CHAR";5
+"CODGEO";"Code de la commune";"76231";"Elbeuf";"CHAR";5
+"CODGEO";"Code de la commune";"76255";"Eu";"CHAR";5
+"CODGEO";"Code de la commune";"76259";"Fécamp";"CHAR";5
+"CODGEO";"Code de la commune";"76305";"Gonfreville-l'Orcher";"CHAR";5
+"CODGEO";"Code de la commune";"76312";"Gournay-en-Bray";"CHAR";5
+"CODGEO";"Code de la commune";"76319";"Grand-Couronne";"CHAR";5
+"CODGEO";"Code de la commune";"76322";"Le Grand-Quevilly";"CHAR";5
+"CODGEO";"Code de la commune";"76341";"Harfleur";"CHAR";5
+"CODGEO";"Code de la commune";"76351";"Le Havre";"CHAR";5
+"CODGEO";"Code de la commune";"76384";"Lillebonne";"CHAR";5
+"CODGEO";"Code de la commune";"76402";"Malaunay";"CHAR";5
+"CODGEO";"Code de la commune";"76410";"Maromme";"CHAR";5
+"CODGEO";"Code de la commune";"76429";"Le Mesnil-Esnard";"CHAR";5
+"CODGEO";"Code de la commune";"76447";"Montivilliers";"CHAR";5
+"CODGEO";"Code de la commune";"76451";"Mont-Saint-Aignan";"CHAR";5
+"CODGEO";"Code de la commune";"76474";"Notre-Dame-de-Bondeville";"CHAR";5
+"CODGEO";"Code de la commune";"76475";"Franqueville-Saint-Pierre";"CHAR";5
+"CODGEO";"Code de la commune";"76476";"Port-Jérôme-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"76484";"Oissel";"CHAR";5
+"CODGEO";"Code de la commune";"76495";"Pavilly";"CHAR";5
+"CODGEO";"Code de la commune";"76497";"Petit-Couronne";"CHAR";5
+"CODGEO";"Code de la commune";"76498";"Le Petit-Quevilly";"CHAR";5
+"CODGEO";"Code de la commune";"76540";"Rouen";"CHAR";5
+"CODGEO";"Code de la commune";"76552";"Sainte-Adresse";"CHAR";5
+"CODGEO";"Code de la commune";"76561";"Saint-Aubin-lès-Elbeuf";"CHAR";5
+"CODGEO";"Code de la commune";"76575";"Saint-Étienne-du-Rouvray";"CHAR";5
+"CODGEO";"Code de la commune";"76640";"Saint-Pierre-lès-Elbeuf";"CHAR";5
+"CODGEO";"Code de la commune";"76681";"Sotteville-lès-Rouen";"CHAR";5
+"CODGEO";"Code de la commune";"76709";"Le Trait";"CHAR";5
+"CODGEO";"Code de la commune";"76711";"Le Tréport";"CHAR";5
+"CODGEO";"Code de la commune";"76758";"Yvetot";"CHAR";5
+"CODGEO";"Code de la commune";"77014";"Avon";"CHAR";5
+"CODGEO";"Code de la commune";"77037";"Bois-le-Roi";"CHAR";5
+"CODGEO";"Code de la commune";"77053";"Brie-Comte-Robert";"CHAR";5
+"CODGEO";"Code de la commune";"77058";"Bussy-Saint-Georges";"CHAR";5
+"CODGEO";"Code de la commune";"77067";"Cesson";"CHAR";5
+"CODGEO";"Code de la commune";"77079";"Champagne-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"77083";"Champs-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"77108";"Chelles";"CHAR";5
+"CODGEO";"Code de la commune";"77118";"Claye-Souilly";"CHAR";5
+"CODGEO";"Code de la commune";"77122";"Combs-la-Ville";"CHAR";5
+"CODGEO";"Code de la commune";"77131";"Coulommiers";"CHAR";5
+"CODGEO";"Code de la commune";"77139";"Courtry";"CHAR";5
+"CODGEO";"Code de la commune";"77152";"Dammarie-les-Lys";"CHAR";5
+"CODGEO";"Code de la commune";"77153";"Dammartin-en-Goële";"CHAR";5
+"CODGEO";"Code de la commune";"77169";"Émerainville";"CHAR";5
+"CODGEO";"Code de la commune";"77171";"Esbly";"CHAR";5
+"CODGEO";"Code de la commune";"77183";"La Ferté-sous-Jouarre";"CHAR";5
+"CODGEO";"Code de la commune";"77186";"Fontainebleau";"CHAR";5
+"CODGEO";"Code de la commune";"77215";"Gretz-Armainvilliers";"CHAR";5
+"CODGEO";"Code de la commune";"77243";"Lagny-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"77249";"Lésigny";"CHAR";5
+"CODGEO";"Code de la commune";"77251";"Lieusaint";"CHAR";5
+"CODGEO";"Code de la commune";"77258";"Lognes";"CHAR";5
+"CODGEO";"Code de la commune";"77284";"Meaux";"CHAR";5
+"CODGEO";"Code de la commune";"77285";"Le Mée-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"77288";"Melun";"CHAR";5
+"CODGEO";"Code de la commune";"77294";"Mitry-Mory";"CHAR";5
+"CODGEO";"Code de la commune";"77296";"Moissy-Cramayel";"CHAR";5
+"CODGEO";"Code de la commune";"77305";"Montereau-Fault-Yonne";"CHAR";5
+"CODGEO";"Code de la commune";"77307";"Montévrain";"CHAR";5
+"CODGEO";"Code de la commune";"77316";"Moret-Loing-et-Orvanne";"CHAR";5
+"CODGEO";"Code de la commune";"77326";"Nandy";"CHAR";5
+"CODGEO";"Code de la commune";"77327";"Nangis";"CHAR";5
+"CODGEO";"Code de la commune";"77330";"Nanteuil-lès-Meaux";"CHAR";5
+"CODGEO";"Code de la commune";"77333";"Nemours";"CHAR";5
+"CODGEO";"Code de la commune";"77337";"Noisiel";"CHAR";5
+"CODGEO";"Code de la commune";"77349";"Othis";"CHAR";5
+"CODGEO";"Code de la commune";"77350";"Ozoir-la-Ferrière";"CHAR";5
+"CODGEO";"Code de la commune";"77373";"Pontault-Combault";"CHAR";5
+"CODGEO";"Code de la commune";"77379";"Provins";"CHAR";5
+"CODGEO";"Code de la commune";"77390";"Roissy-en-Brie";"CHAR";5
+"CODGEO";"Code de la commune";"77407";"Saint-Fargeau-Ponthierry";"CHAR";5
+"CODGEO";"Code de la commune";"77431";"Saint-Pierre-lès-Nemours";"CHAR";5
+"CODGEO";"Code de la commune";"77438";"Saint-Thibault-des-Vignes";"CHAR";5
+"CODGEO";"Code de la commune";"77445";"Savigny-le-Temple";"CHAR";5
+"CODGEO";"Code de la commune";"77458";"Souppes-sur-Loing";"CHAR";5
+"CODGEO";"Code de la commune";"77464";"Thorigny-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"77468";"Torcy";"CHAR";5
+"CODGEO";"Code de la commune";"77470";"Tournan-en-Brie";"CHAR";5
+"CODGEO";"Code de la commune";"77479";"Vaires-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"77487";"Vaux-le-Pénil";"CHAR";5
+"CODGEO";"Code de la commune";"77495";"Vert-Saint-Denis";"CHAR";5
+"CODGEO";"Code de la commune";"77514";"Villeparisis";"CHAR";5
+"CODGEO";"Code de la commune";"78005";"Achères";"CHAR";5
+"CODGEO";"Code de la commune";"78015";"Andrésy";"CHAR";5
+"CODGEO";"Code de la commune";"78029";"Aubergenville";"CHAR";5
+"CODGEO";"Code de la commune";"78062";"Beynes";"CHAR";5
+"CODGEO";"Code de la commune";"78073";"Bois-d'Arcy";"CHAR";5
+"CODGEO";"Code de la commune";"78092";"Bougival";"CHAR";5
+"CODGEO";"Code de la commune";"78117";"Buc";"CHAR";5
+"CODGEO";"Code de la commune";"78123";"Carrières-sous-Poissy";"CHAR";5
+"CODGEO";"Code de la commune";"78124";"Carrières-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"78126";"La Celle-Saint-Cloud";"CHAR";5
+"CODGEO";"Code de la commune";"78133";"Chambourcy";"CHAR";5
+"CODGEO";"Code de la commune";"78138";"Chanteloup-les-Vignes";"CHAR";5
+"CODGEO";"Code de la commune";"78146";"Chatou";"CHAR";5
+"CODGEO";"Code de la commune";"78158";"Le Chesnay-Rocquencourt";"CHAR";5
+"CODGEO";"Code de la commune";"78160";"Chevreuse";"CHAR";5
+"CODGEO";"Code de la commune";"78165";"Les Clayes-sous-Bois";"CHAR";5
+"CODGEO";"Code de la commune";"78172";"Conflans-Sainte-Honorine";"CHAR";5
+"CODGEO";"Code de la commune";"78190";"Croissy-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"78208";"Élancourt";"CHAR";5
+"CODGEO";"Code de la commune";"78217";"Épône";"CHAR";5
+"CODGEO";"Code de la commune";"78220";"Les Essarts-le-Roi";"CHAR";5
+"CODGEO";"Code de la commune";"78242";"Fontenay-le-Fleury";"CHAR";5
+"CODGEO";"Code de la commune";"78267";"Gargenville";"CHAR";5
+"CODGEO";"Code de la commune";"78297";"Guyancourt";"CHAR";5
+"CODGEO";"Code de la commune";"78311";"Houilles";"CHAR";5
+"CODGEO";"Code de la commune";"78322";"Jouy-en-Josas";"CHAR";5
+"CODGEO";"Code de la commune";"78335";"Limay";"CHAR";5
+"CODGEO";"Code de la commune";"78350";"Louveciennes";"CHAR";5
+"CODGEO";"Code de la commune";"78354";"Magnanville";"CHAR";5
+"CODGEO";"Code de la commune";"78356";"Magny-les-Hameaux";"CHAR";5
+"CODGEO";"Code de la commune";"78358";"Maisons-Laffitte";"CHAR";5
+"CODGEO";"Code de la commune";"78361";"Mantes-la-Jolie";"CHAR";5
+"CODGEO";"Code de la commune";"78362";"Mantes-la-Ville";"CHAR";5
+"CODGEO";"Code de la commune";"78372";"Marly-le-Roi";"CHAR";5
+"CODGEO";"Code de la commune";"78380";"Maule";"CHAR";5
+"CODGEO";"Code de la commune";"78383";"Maurepas";"CHAR";5
+"CODGEO";"Code de la commune";"78396";"Le Mesnil-le-Roi";"CHAR";5
+"CODGEO";"Code de la commune";"78397";"Le Mesnil-Saint-Denis";"CHAR";5
+"CODGEO";"Code de la commune";"78401";"Meulan-en-Yvelines";"CHAR";5
+"CODGEO";"Code de la commune";"78418";"Montesson";"CHAR";5
+"CODGEO";"Code de la commune";"78423";"Montigny-le-Bretonneux";"CHAR";5
+"CODGEO";"Code de la commune";"78440";"Les Mureaux";"CHAR";5
+"CODGEO";"Code de la commune";"78455";"Noisy-le-Roi";"CHAR";5
+"CODGEO";"Code de la commune";"78481";"Le Pecq";"CHAR";5
+"CODGEO";"Code de la commune";"78486";"Le Perray-en-Yvelines";"CHAR";5
+"CODGEO";"Code de la commune";"78490";"Plaisir";"CHAR";5
+"CODGEO";"Code de la commune";"78498";"Poissy";"CHAR";5
+"CODGEO";"Code de la commune";"78517";"Rambouillet";"CHAR";5
+"CODGEO";"Code de la commune";"78537";"Saint-Arnoult-en-Yvelines";"CHAR";5
+"CODGEO";"Code de la commune";"78545";"Saint-Cyr-l'École";"CHAR";5
+"CODGEO";"Code de la commune";"78551";"Saint-Germain-en-Laye";"CHAR";5
+"CODGEO";"Code de la commune";"78571";"Saint-Nom-la-Bretèche";"CHAR";5
+"CODGEO";"Code de la commune";"78575";"Saint-Rémy-lès-Chevreuse";"CHAR";5
+"CODGEO";"Code de la commune";"78586";"Sartrouville";"CHAR";5
+"CODGEO";"Code de la commune";"78621";"Trappes";"CHAR";5
+"CODGEO";"Code de la commune";"78624";"Triel-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"78640";"Vélizy-Villacoublay";"CHAR";5
+"CODGEO";"Code de la commune";"78642";"Verneuil-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"78643";"Vernouillet";"CHAR";5
+"CODGEO";"Code de la commune";"78644";"La Verrière";"CHAR";5
+"CODGEO";"Code de la commune";"78646";"Versailles";"CHAR";5
+"CODGEO";"Code de la commune";"78650";"Le Vésinet";"CHAR";5
+"CODGEO";"Code de la commune";"78674";"Villepreux";"CHAR";5
+"CODGEO";"Code de la commune";"78686";"Viroflay";"CHAR";5
+"CODGEO";"Code de la commune";"78688";"Voisins-le-Bretonneux";"CHAR";5
+"CODGEO";"Code de la commune";"79003";"Aiffres";"CHAR";5
+"CODGEO";"Code de la commune";"79049";"Bressuire";"CHAR";5
+"CODGEO";"Code de la commune";"79079";"Mauléon";"CHAR";5
+"CODGEO";"Code de la commune";"79081";"Chauray";"CHAR";5
+"CODGEO";"Code de la commune";"79191";"Niort";"CHAR";5
+"CODGEO";"Code de la commune";"79202";"Parthenay";"CHAR";5
+"CODGEO";"Code de la commune";"79270";"Saint-Maixent-l'École";"CHAR";5
+"CODGEO";"Code de la commune";"79329";"Thouars";"CHAR";5
+"CODGEO";"Code de la commune";"80001";"Abbeville";"CHAR";5
+"CODGEO";"Code de la commune";"80016";"Albert";"CHAR";5
+"CODGEO";"Code de la commune";"80021";"Amiens";"CHAR";5
+"CODGEO";"Code de la commune";"80253";"Doullens";"CHAR";5
+"CODGEO";"Code de la commune";"80410";"Ham";"CHAR";5
+"CODGEO";"Code de la commune";"80620";"Péronne";"CHAR";5
+"CODGEO";"Code de la commune";"81004";"Albi";"CHAR";5
+"CODGEO";"Code de la commune";"81021";"Aussillon";"CHAR";5
+"CODGEO";"Code de la commune";"81060";"Carmaux";"CHAR";5
+"CODGEO";"Code de la commune";"81065";"Castres";"CHAR";5
+"CODGEO";"Code de la commune";"81099";"Gaillac";"CHAR";5
+"CODGEO";"Code de la commune";"81105";"Graulhet";"CHAR";5
+"CODGEO";"Code de la commune";"81120";"Labruguière";"CHAR";5
+"CODGEO";"Code de la commune";"81140";"Lavaur";"CHAR";5
+"CODGEO";"Code de la commune";"81163";"Mazamet";"CHAR";5
+"CODGEO";"Code de la commune";"81257";"Saint-Juéry";"CHAR";5
+"CODGEO";"Code de la commune";"81271";"Saint-Sulpice-la-Pointe";"CHAR";5
+"CODGEO";"Code de la commune";"82033";"Castelsarrasin";"CHAR";5
+"CODGEO";"Code de la commune";"82037";"Caussade";"CHAR";5
+"CODGEO";"Code de la commune";"82112";"Moissac";"CHAR";5
+"CODGEO";"Code de la commune";"82121";"Montauban";"CHAR";5
+"CODGEO";"Code de la commune";"83004";"Les Arcs";"CHAR";5
+"CODGEO";"Code de la commune";"83009";"Bandol";"CHAR";5
+"CODGEO";"Code de la commune";"83016";"Le Beausset";"CHAR";5
+"CODGEO";"Code de la commune";"83019";"Bormes-les-Mimosas";"CHAR";5
+"CODGEO";"Code de la commune";"83023";"Brignoles";"CHAR";5
+"CODGEO";"Code de la commune";"83034";"Carqueiranne";"CHAR";5
+"CODGEO";"Code de la commune";"83036";"Cavalaire-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"83042";"Cogolin";"CHAR";5
+"CODGEO";"Code de la commune";"83047";"La Crau";"CHAR";5
+"CODGEO";"Code de la commune";"83049";"Cuers";"CHAR";5
+"CODGEO";"Code de la commune";"83050";"Draguignan";"CHAR";5
+"CODGEO";"Code de la commune";"83054";"La Farlède";"CHAR";5
+"CODGEO";"Code de la commune";"83061";"Fréjus";"CHAR";5
+"CODGEO";"Code de la commune";"83062";"La Garde";"CHAR";5
+"CODGEO";"Code de la commune";"83069";"Hyères";"CHAR";5
+"CODGEO";"Code de la commune";"83070";"Le Lavandou";"CHAR";5
+"CODGEO";"Code de la commune";"83071";"La Londe-les-Maures";"CHAR";5
+"CODGEO";"Code de la commune";"83072";"Lorgues";"CHAR";5
+"CODGEO";"Code de la commune";"83073";"Le Luc";"CHAR";5
+"CODGEO";"Code de la commune";"83086";"Le Muy";"CHAR";5
+"CODGEO";"Code de la commune";"83090";"Ollioules";"CHAR";5
+"CODGEO";"Code de la commune";"83098";"Le Pradet";"CHAR";5
+"CODGEO";"Code de la commune";"83099";"Puget-sur-Argens";"CHAR";5
+"CODGEO";"Code de la commune";"83107";"Roquebrune-sur-Argens";"CHAR";5
+"CODGEO";"Code de la commune";"83112";"Saint-Cyr-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"83115";"Sainte-Maxime";"CHAR";5
+"CODGEO";"Code de la commune";"83116";"Saint-Maximin-la-Sainte-Baume";"CHAR";5
+"CODGEO";"Code de la commune";"83118";"Saint-Raphaël";"CHAR";5
+"CODGEO";"Code de la commune";"83119";"Saint-Tropez";"CHAR";5
+"CODGEO";"Code de la commune";"83123";"Sanary-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"83126";"La Seyne-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"83129";"Six-Fours-les-Plages";"CHAR";5
+"CODGEO";"Code de la commune";"83130";"Solliès-Pont";"CHAR";5
+"CODGEO";"Code de la commune";"83137";"Toulon";"CHAR";5
+"CODGEO";"Code de la commune";"83144";"La Valette-du-Var";"CHAR";5
+"CODGEO";"Code de la commune";"83148";"Vidauban";"CHAR";5
+"CODGEO";"Code de la commune";"83153";"Saint-Mandrier-sur-Mer";"CHAR";5
+"CODGEO";"Code de la commune";"84003";"Apt";"CHAR";5
+"CODGEO";"Code de la commune";"84007";"Avignon";"CHAR";5
+"CODGEO";"Code de la commune";"84016";"Bédarrides";"CHAR";5
+"CODGEO";"Code de la commune";"84019";"Bollène";"CHAR";5
+"CODGEO";"Code de la commune";"84031";"Carpentras";"CHAR";5
+"CODGEO";"Code de la commune";"84035";"Cavaillon";"CHAR";5
+"CODGEO";"Code de la commune";"84039";"Courthézon";"CHAR";5
+"CODGEO";"Code de la commune";"84043";"Entraigues-sur-la-Sorgue";"CHAR";5
+"CODGEO";"Code de la commune";"84054";"L'Isle-sur-la-Sorgue";"CHAR";5
+"CODGEO";"Code de la commune";"84080";"Monteux";"CHAR";5
+"CODGEO";"Code de la commune";"84081";"Morières-lès-Avignon";"CHAR";5
+"CODGEO";"Code de la commune";"84087";"Orange";"CHAR";5
+"CODGEO";"Code de la commune";"84088";"Pernes-les-Fontaines";"CHAR";5
+"CODGEO";"Code de la commune";"84089";"Pertuis";"CHAR";5
+"CODGEO";"Code de la commune";"84092";"Le Pontet";"CHAR";5
+"CODGEO";"Code de la commune";"84122";"Sarrians";"CHAR";5
+"CODGEO";"Code de la commune";"84129";"Sorgues";"CHAR";5
+"CODGEO";"Code de la commune";"84132";"Le Thor";"CHAR";5
+"CODGEO";"Code de la commune";"84137";"Vaison-la-Romaine";"CHAR";5
+"CODGEO";"Code de la commune";"84138";"Valréas";"CHAR";5
+"CODGEO";"Code de la commune";"84141";"Vedène";"CHAR";5
+"CODGEO";"Code de la commune";"85003";"Aizenay";"CHAR";5
+"CODGEO";"Code de la commune";"85047";"Challans";"CHAR";5
+"CODGEO";"Code de la commune";"85092";"Fontenay-le-Comte";"CHAR";5
+"CODGEO";"Code de la commune";"85109";"Les Herbiers";"CHAR";5
+"CODGEO";"Code de la commune";"85113";"L'Île-d'Yeu";"CHAR";5
+"CODGEO";"Code de la commune";"85128";"Luçon";"CHAR";5
+"CODGEO";"Code de la commune";"85146";"Montaigu-Vendée";"CHAR";5
+"CODGEO";"Code de la commune";"85151";"Mortagne-sur-Sèvre";"CHAR";5
+"CODGEO";"Code de la commune";"85163";"Noirmoutier-en-l'Île";"CHAR";5
+"CODGEO";"Code de la commune";"85182";"Pouzauges";"CHAR";5
+"CODGEO";"Code de la commune";"85191";"La Roche-sur-Yon";"CHAR";5
+"CODGEO";"Code de la commune";"85194";"Les Sables-d'Olonne";"CHAR";5
+"CODGEO";"Code de la commune";"85222";"Saint-Gilles-Croix-de-Vie";"CHAR";5
+"CODGEO";"Code de la commune";"85226";"Saint-Hilaire-de-Riez";"CHAR";5
+"CODGEO";"Code de la commune";"85234";"Saint-Jean-de-Monts";"CHAR";5
+"CODGEO";"Code de la commune";"85288";"Talmont-Saint-Hilaire";"CHAR";5
+"CODGEO";"Code de la commune";"86041";"Buxerolles";"CHAR";5
+"CODGEO";"Code de la commune";"86062";"Chasseneuil-du-Poitou";"CHAR";5
+"CODGEO";"Code de la commune";"86066";"Châtellerault";"CHAR";5
+"CODGEO";"Code de la commune";"86070";"Chauvigny";"CHAR";5
+"CODGEO";"Code de la commune";"86115";"Jaunay-Marigny";"CHAR";5
+"CODGEO";"Code de la commune";"86137";"Loudun";"CHAR";5
+"CODGEO";"Code de la commune";"86158";"Migné-Auxances";"CHAR";5
+"CODGEO";"Code de la commune";"86165";"Montmorillon";"CHAR";5
+"CODGEO";"Code de la commune";"86174";"Naintré";"CHAR";5
+"CODGEO";"Code de la commune";"86194";"Poitiers";"CHAR";5
+"CODGEO";"Code de la commune";"86214";"Saint-Benoît";"CHAR";5
+"CODGEO";"Code de la commune";"87001";"Aixe-sur-Vienne";"CHAR";5
+"CODGEO";"Code de la commune";"87002";"Ambazac";"CHAR";5
+"CODGEO";"Code de la commune";"87011";"Bellac";"CHAR";5
+"CODGEO";"Code de la commune";"87048";"Condat-sur-Vienne";"CHAR";5
+"CODGEO";"Code de la commune";"87050";"Couzeix";"CHAR";5
+"CODGEO";"Code de la commune";"87065";"Feytiat";"CHAR";5
+"CODGEO";"Code de la commune";"87075";"Isle";"CHAR";5
+"CODGEO";"Code de la commune";"87085";"Limoges";"CHAR";5
+"CODGEO";"Code de la commune";"87113";"Le Palais-sur-Vienne";"CHAR";5
+"CODGEO";"Code de la commune";"87114";"Panazol";"CHAR";5
+"CODGEO";"Code de la commune";"87154";"Saint-Junien";"CHAR";5
+"CODGEO";"Code de la commune";"87161";"Saint-Léonard-de-Noblat";"CHAR";5
+"CODGEO";"Code de la commune";"87187";"Saint-Yrieix-la-Perche";"CHAR";5
+"CODGEO";"Code de la commune";"88160";"Épinal";"CHAR";5
+"CODGEO";"Code de la commune";"88196";"Gérardmer";"CHAR";5
+"CODGEO";"Code de la commune";"88209";"Golbey";"CHAR";5
+"CODGEO";"Code de la commune";"88304";"Mirecourt";"CHAR";5
+"CODGEO";"Code de la commune";"88321";"Neufchâteau";"CHAR";5
+"CODGEO";"Code de la commune";"88372";"Raon-l'Étape";"CHAR";5
+"CODGEO";"Code de la commune";"88383";"Remiremont";"CHAR";5
+"CODGEO";"Code de la commune";"88413";"Saint-Dié-des-Vosges";"CHAR";5
+"CODGEO";"Code de la commune";"88516";"Vittel";"CHAR";5
+"CODGEO";"Code de la commune";"89024";"Auxerre";"CHAR";5
+"CODGEO";"Code de la commune";"89025";"Avallon";"CHAR";5
+"CODGEO";"Code de la commune";"89206";"Joigny";"CHAR";5
+"CODGEO";"Code de la commune";"89257";"Migennes";"CHAR";5
+"CODGEO";"Code de la commune";"89287";"Paron";"CHAR";5
+"CODGEO";"Code de la commune";"89345";"Saint-Florentin";"CHAR";5
+"CODGEO";"Code de la commune";"89387";"Sens";"CHAR";5
+"CODGEO";"Code de la commune";"89418";"Tonnerre";"CHAR";5
+"CODGEO";"Code de la commune";"89464";"Villeneuve-sur-Yonne";"CHAR";5
+"CODGEO";"Code de la commune";"90009";"Beaucourt";"CHAR";5
+"CODGEO";"Code de la commune";"90010";"Belfort";"CHAR";5
+"CODGEO";"Code de la commune";"90033";"Delle";"CHAR";5
+"CODGEO";"Code de la commune";"91021";"Arpajon";"CHAR";5
+"CODGEO";"Code de la commune";"91027";"Athis-Mons";"CHAR";5
+"CODGEO";"Code de la commune";"91086";"Bondoufle";"CHAR";5
+"CODGEO";"Code de la commune";"91103";"Brétigny-sur-Orge";"CHAR";5
+"CODGEO";"Code de la commune";"91105";"Breuillet";"CHAR";5
+"CODGEO";"Code de la commune";"91114";"Brunoy";"CHAR";5
+"CODGEO";"Code de la commune";"91122";"Bures-sur-Yvette";"CHAR";5
+"CODGEO";"Code de la commune";"91161";"Chilly-Mazarin";"CHAR";5
+"CODGEO";"Code de la commune";"91174";"Corbeil-Essonnes";"CHAR";5
+"CODGEO";"Code de la commune";"91191";"Crosne";"CHAR";5
+"CODGEO";"Code de la commune";"91200";"Dourdan";"CHAR";5
+"CODGEO";"Code de la commune";"91201";"Draveil";"CHAR";5
+"CODGEO";"Code de la commune";"91215";"Épinay-sous-Sénart";"CHAR";5
+"CODGEO";"Code de la commune";"91216";"Épinay-sur-Orge";"CHAR";5
+"CODGEO";"Code de la commune";"91223";"Étampes";"CHAR";5
+"CODGEO";"Code de la commune";"91228";"Évry-Courcouronnes";"CHAR";5
+"CODGEO";"Code de la commune";"91235";"Fleury-Mérogis";"CHAR";5
+"CODGEO";"Code de la commune";"91272";"Gif-sur-Yvette";"CHAR";5
+"CODGEO";"Code de la commune";"91286";"Grigny";"CHAR";5
+"CODGEO";"Code de la commune";"91312";"Igny";"CHAR";5
+"CODGEO";"Code de la commune";"91326";"Juvisy-sur-Orge";"CHAR";5
+"CODGEO";"Code de la commune";"91340";"Lisses";"CHAR";5
+"CODGEO";"Code de la commune";"91345";"Longjumeau";"CHAR";5
+"CODGEO";"Code de la commune";"91363";"Marcoussis";"CHAR";5
+"CODGEO";"Code de la commune";"91377";"Massy";"CHAR";5
+"CODGEO";"Code de la commune";"91386";"Mennecy";"CHAR";5
+"CODGEO";"Code de la commune";"91421";"Montgeron";"CHAR";5
+"CODGEO";"Code de la commune";"91432";"Morangis";"CHAR";5
+"CODGEO";"Code de la commune";"91434";"Morsang-sur-Orge";"CHAR";5
+"CODGEO";"Code de la commune";"91471";"Orsay";"CHAR";5
+"CODGEO";"Code de la commune";"91477";"Palaiseau";"CHAR";5
+"CODGEO";"Code de la commune";"91479";"Paray-Vieille-Poste";"CHAR";5
+"CODGEO";"Code de la commune";"91521";"Ris-Orangis";"CHAR";5
+"CODGEO";"Code de la commune";"91549";"Sainte-Geneviève-des-Bois";"CHAR";5
+"CODGEO";"Code de la commune";"91552";"Saint-Germain-lès-Arpajon";"CHAR";5
+"CODGEO";"Code de la commune";"91553";"Saint-Germain-lès-Corbeil";"CHAR";5
+"CODGEO";"Code de la commune";"91570";"Saint-Michel-sur-Orge";"CHAR";5
+"CODGEO";"Code de la commune";"91573";"Saint-Pierre-du-Perray";"CHAR";5
+"CODGEO";"Code de la commune";"91589";"Savigny-sur-Orge";"CHAR";5
+"CODGEO";"Code de la commune";"91600";"Soisy-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"91645";"Verrières-le-Buisson";"CHAR";5
+"CODGEO";"Code de la commune";"91657";"Vigneux-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"91661";"Villebon-sur-Yvette";"CHAR";5
+"CODGEO";"Code de la commune";"91687";"Viry-Châtillon";"CHAR";5
+"CODGEO";"Code de la commune";"91691";"Yerres";"CHAR";5
+"CODGEO";"Code de la commune";"91692";"Les Ulis";"CHAR";5
+"CODGEO";"Code de la commune";"92002";"Antony";"CHAR";5
+"CODGEO";"Code de la commune";"92004";"Asnières-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"92007";"Bagneux";"CHAR";5
+"CODGEO";"Code de la commune";"92009";"Bois-Colombes";"CHAR";5
+"CODGEO";"Code de la commune";"92012";"Boulogne-Billancourt";"CHAR";5
+"CODGEO";"Code de la commune";"92014";"Bourg-la-Reine";"CHAR";5
+"CODGEO";"Code de la commune";"92019";"Châtenay-Malabry";"CHAR";5
+"CODGEO";"Code de la commune";"92020";"Châtillon";"CHAR";5
+"CODGEO";"Code de la commune";"92022";"Chaville";"CHAR";5
+"CODGEO";"Code de la commune";"92023";"Clamart";"CHAR";5
+"CODGEO";"Code de la commune";"92024";"Clichy";"CHAR";5
+"CODGEO";"Code de la commune";"92025";"Colombes";"CHAR";5
+"CODGEO";"Code de la commune";"92026";"Courbevoie";"CHAR";5
+"CODGEO";"Code de la commune";"92032";"Fontenay-aux-Roses";"CHAR";5
+"CODGEO";"Code de la commune";"92033";"Garches";"CHAR";5
+"CODGEO";"Code de la commune";"92035";"La Garenne-Colombes";"CHAR";5
+"CODGEO";"Code de la commune";"92036";"Gennevilliers";"CHAR";5
+"CODGEO";"Code de la commune";"92040";"Issy-les-Moulineaux";"CHAR";5
+"CODGEO";"Code de la commune";"92044";"Levallois-Perret";"CHAR";5
+"CODGEO";"Code de la commune";"92046";"Malakoff";"CHAR";5
+"CODGEO";"Code de la commune";"92048";"Meudon";"CHAR";5
+"CODGEO";"Code de la commune";"92049";"Montrouge";"CHAR";5
+"CODGEO";"Code de la commune";"92050";"Nanterre";"CHAR";5
+"CODGEO";"Code de la commune";"92051";"Neuilly-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"92060";"Le Plessis-Robinson";"CHAR";5
+"CODGEO";"Code de la commune";"92062";"Puteaux";"CHAR";5
+"CODGEO";"Code de la commune";"92063";"Rueil-Malmaison";"CHAR";5
+"CODGEO";"Code de la commune";"92064";"Saint-Cloud";"CHAR";5
+"CODGEO";"Code de la commune";"92071";"Sceaux";"CHAR";5
+"CODGEO";"Code de la commune";"92072";"Sèvres";"CHAR";5
+"CODGEO";"Code de la commune";"92073";"Suresnes";"CHAR";5
+"CODGEO";"Code de la commune";"92075";"Vanves";"CHAR";5
+"CODGEO";"Code de la commune";"92076";"Vaucresson";"CHAR";5
+"CODGEO";"Code de la commune";"92077";"Ville-d'Avray";"CHAR";5
+"CODGEO";"Code de la commune";"92078";"Villeneuve-la-Garenne";"CHAR";5
+"CODGEO";"Code de la commune";"93001";"Aubervilliers";"CHAR";5
+"CODGEO";"Code de la commune";"93005";"Aulnay-sous-Bois";"CHAR";5
+"CODGEO";"Code de la commune";"93006";"Bagnolet";"CHAR";5
+"CODGEO";"Code de la commune";"93007";"Le Blanc-Mesnil";"CHAR";5
+"CODGEO";"Code de la commune";"93008";"Bobigny";"CHAR";5
+"CODGEO";"Code de la commune";"93010";"Bondy";"CHAR";5
+"CODGEO";"Code de la commune";"93013";"Le Bourget";"CHAR";5
+"CODGEO";"Code de la commune";"93014";"Clichy-sous-Bois";"CHAR";5
+"CODGEO";"Code de la commune";"93027";"La Courneuve";"CHAR";5
+"CODGEO";"Code de la commune";"93029";"Drancy";"CHAR";5
+"CODGEO";"Code de la commune";"93030";"Dugny";"CHAR";5
+"CODGEO";"Code de la commune";"93031";"Épinay-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"93032";"Gagny";"CHAR";5
+"CODGEO";"Code de la commune";"93033";"Gournay-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"93039";"L'Île-Saint-Denis";"CHAR";5
+"CODGEO";"Code de la commune";"93045";"Les Lilas";"CHAR";5
+"CODGEO";"Code de la commune";"93046";"Livry-Gargan";"CHAR";5
+"CODGEO";"Code de la commune";"93047";"Montfermeil";"CHAR";5
+"CODGEO";"Code de la commune";"93048";"Montreuil";"CHAR";5
+"CODGEO";"Code de la commune";"93049";"Neuilly-Plaisance";"CHAR";5
+"CODGEO";"Code de la commune";"93050";"Neuilly-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"93051";"Noisy-le-Grand";"CHAR";5
+"CODGEO";"Code de la commune";"93053";"Noisy-le-Sec";"CHAR";5
+"CODGEO";"Code de la commune";"93055";"Pantin";"CHAR";5
+"CODGEO";"Code de la commune";"93057";"Les Pavillons-sous-Bois";"CHAR";5
+"CODGEO";"Code de la commune";"93059";"Pierrefitte-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"93061";"Le Pré-Saint-Gervais";"CHAR";5
+"CODGEO";"Code de la commune";"93062";"Le Raincy";"CHAR";5
+"CODGEO";"Code de la commune";"93063";"Romainville";"CHAR";5
+"CODGEO";"Code de la commune";"93064";"Rosny-sous-Bois";"CHAR";5
+"CODGEO";"Code de la commune";"93066";"Saint-Denis";"CHAR";5
+"CODGEO";"Code de la commune";"93070";"Saint-Ouen-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"93071";"Sevran";"CHAR";5
+"CODGEO";"Code de la commune";"93072";"Stains";"CHAR";5
+"CODGEO";"Code de la commune";"93073";"Tremblay-en-France";"CHAR";5
+"CODGEO";"Code de la commune";"93074";"Vaujours";"CHAR";5
+"CODGEO";"Code de la commune";"93077";"Villemomble";"CHAR";5
+"CODGEO";"Code de la commune";"93078";"Villepinte";"CHAR";5
+"CODGEO";"Code de la commune";"93079";"Villetaneuse";"CHAR";5
+"CODGEO";"Code de la commune";"94002";"Alfortville";"CHAR";5
+"CODGEO";"Code de la commune";"94003";"Arcueil";"CHAR";5
+"CODGEO";"Code de la commune";"94004";"Boissy-Saint-Léger";"CHAR";5
+"CODGEO";"Code de la commune";"94011";"Bonneuil-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"94015";"Bry-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"94016";"Cachan";"CHAR";5
+"CODGEO";"Code de la commune";"94017";"Champigny-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"94018";"Charenton-le-Pont";"CHAR";5
+"CODGEO";"Code de la commune";"94019";"Chennevières-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"94021";"Chevilly-Larue";"CHAR";5
+"CODGEO";"Code de la commune";"94022";"Choisy-le-Roi";"CHAR";5
+"CODGEO";"Code de la commune";"94028";"Créteil";"CHAR";5
+"CODGEO";"Code de la commune";"94033";"Fontenay-sous-Bois";"CHAR";5
+"CODGEO";"Code de la commune";"94034";"Fresnes";"CHAR";5
+"CODGEO";"Code de la commune";"94037";"Gentilly";"CHAR";5
+"CODGEO";"Code de la commune";"94038";"L'Haÿ-les-Roses";"CHAR";5
+"CODGEO";"Code de la commune";"94041";"Ivry-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"94042";"Joinville-le-Pont";"CHAR";5
+"CODGEO";"Code de la commune";"94043";"Le Kremlin-Bicêtre";"CHAR";5
+"CODGEO";"Code de la commune";"94044";"Limeil-Brévannes";"CHAR";5
+"CODGEO";"Code de la commune";"94046";"Maisons-Alfort";"CHAR";5
+"CODGEO";"Code de la commune";"94048";"Marolles-en-Brie";"CHAR";5
+"CODGEO";"Code de la commune";"94052";"Nogent-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"94054";"Orly";"CHAR";5
+"CODGEO";"Code de la commune";"94055";"Ormesson-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"94058";"Le Perreux-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"94059";"Le Plessis-Trévise";"CHAR";5
+"CODGEO";"Code de la commune";"94060";"La Queue-en-Brie";"CHAR";5
+"CODGEO";"Code de la commune";"94065";"Rungis";"CHAR";5
+"CODGEO";"Code de la commune";"94067";"Saint-Mandé";"CHAR";5
+"CODGEO";"Code de la commune";"94068";"Saint-Maur-des-Fossés";"CHAR";5
+"CODGEO";"Code de la commune";"94069";"Saint-Maurice";"CHAR";5
+"CODGEO";"Code de la commune";"94071";"Sucy-en-Brie";"CHAR";5
+"CODGEO";"Code de la commune";"94073";"Thiais";"CHAR";5
+"CODGEO";"Code de la commune";"94074";"Valenton";"CHAR";5
+"CODGEO";"Code de la commune";"94075";"Villecresnes";"CHAR";5
+"CODGEO";"Code de la commune";"94076";"Villejuif";"CHAR";5
+"CODGEO";"Code de la commune";"94077";"Villeneuve-le-Roi";"CHAR";5
+"CODGEO";"Code de la commune";"94078";"Villeneuve-Saint-Georges";"CHAR";5
+"CODGEO";"Code de la commune";"94079";"Villiers-sur-Marne";"CHAR";5
+"CODGEO";"Code de la commune";"94080";"Vincennes";"CHAR";5
+"CODGEO";"Code de la commune";"94081";"Vitry-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"95018";"Argenteuil";"CHAR";5
+"CODGEO";"Code de la commune";"95019";"Arnouville";"CHAR";5
+"CODGEO";"Code de la commune";"95039";"Auvers-sur-Oise";"CHAR";5
+"CODGEO";"Code de la commune";"95051";"Beauchamp";"CHAR";5
+"CODGEO";"Code de la commune";"95052";"Beaumont-sur-Oise";"CHAR";5
+"CODGEO";"Code de la commune";"95060";"Bessancourt";"CHAR";5
+"CODGEO";"Code de la commune";"95063";"Bezons";"CHAR";5
+"CODGEO";"Code de la commune";"95091";"Bouffémont";"CHAR";5
+"CODGEO";"Code de la commune";"95127";"Cergy";"CHAR";5
+"CODGEO";"Code de la commune";"95176";"Cormeilles-en-Parisis";"CHAR";5
+"CODGEO";"Code de la commune";"95197";"Deuil-la-Barre";"CHAR";5
+"CODGEO";"Code de la commune";"95199";"Domont";"CHAR";5
+"CODGEO";"Code de la commune";"95203";"Eaubonne";"CHAR";5
+"CODGEO";"Code de la commune";"95205";"Écouen";"CHAR";5
+"CODGEO";"Code de la commune";"95210";"Enghien-les-Bains";"CHAR";5
+"CODGEO";"Code de la commune";"95218";"Éragny";"CHAR";5
+"CODGEO";"Code de la commune";"95219";"Ermont";"CHAR";5
+"CODGEO";"Code de la commune";"95229";"Ézanville";"CHAR";5
+"CODGEO";"Code de la commune";"95250";"Fosses";"CHAR";5
+"CODGEO";"Code de la commune";"95252";"Franconville";"CHAR";5
+"CODGEO";"Code de la commune";"95268";"Garges-lès-Gonesse";"CHAR";5
+"CODGEO";"Code de la commune";"95277";"Gonesse";"CHAR";5
+"CODGEO";"Code de la commune";"95280";"Goussainville";"CHAR";5
+"CODGEO";"Code de la commune";"95288";"Groslay";"CHAR";5
+"CODGEO";"Code de la commune";"95306";"Herblay-sur-Seine";"CHAR";5
+"CODGEO";"Code de la commune";"95313";"L'Isle-Adam";"CHAR";5
+"CODGEO";"Code de la commune";"95323";"Jouy-le-Moutier";"CHAR";5
+"CODGEO";"Code de la commune";"95351";"Louvres";"CHAR";5
+"CODGEO";"Code de la commune";"95371";"Marly-la-Ville";"CHAR";5
+"CODGEO";"Code de la commune";"95388";"Menucourt";"CHAR";5
+"CODGEO";"Code de la commune";"95394";"Méry-sur-Oise";"CHAR";5
+"CODGEO";"Code de la commune";"95424";"Montigny-lès-Cormeilles";"CHAR";5
+"CODGEO";"Code de la commune";"95427";"Montmagny";"CHAR";5
+"CODGEO";"Code de la commune";"95428";"Montmorency";"CHAR";5
+"CODGEO";"Code de la commune";"95476";"Osny";"CHAR";5
+"CODGEO";"Code de la commune";"95480";"Parmain";"CHAR";5
+"CODGEO";"Code de la commune";"95487";"Persan";"CHAR";5
+"CODGEO";"Code de la commune";"95488";"Pierrelaye";"CHAR";5
+"CODGEO";"Code de la commune";"95491";"Le Plessis-Bouchard";"CHAR";5
+"CODGEO";"Code de la commune";"95500";"Pontoise";"CHAR";5
+"CODGEO";"Code de la commune";"95539";"Saint-Brice-sous-Forêt";"CHAR";5
+"CODGEO";"Code de la commune";"95555";"Saint-Gratien";"CHAR";5
+"CODGEO";"Code de la commune";"95563";"Saint-Leu-la-Forêt";"CHAR";5
+"CODGEO";"Code de la commune";"95572";"Saint-Ouen-l'Aumône";"CHAR";5
+"CODGEO";"Code de la commune";"95574";"Saint-Prix";"CHAR";5
+"CODGEO";"Code de la commune";"95582";"Sannois";"CHAR";5
+"CODGEO";"Code de la commune";"95585";"Sarcelles";"CHAR";5
+"CODGEO";"Code de la commune";"95598";"Soisy-sous-Montmorency";"CHAR";5
+"CODGEO";"Code de la commune";"95607";"Taverny";"CHAR";5
+"CODGEO";"Code de la commune";"95637";"Vauréal";"CHAR";5
+"CODGEO";"Code de la commune";"95680";"Villiers-le-Bel";"CHAR";5
+"CODGEO";"Code de la commune";"97101";"Les Abymes";"CHAR";5
+"CODGEO";"Code de la commune";"97102";"Anse-Bertrand";"CHAR";5
+"CODGEO";"Code de la commune";"97103";"Baie-Mahault";"CHAR";5
+"CODGEO";"Code de la commune";"97104";"Baillif";"CHAR";5
+"CODGEO";"Code de la commune";"97105";"Basse-Terre";"CHAR";5
+"CODGEO";"Code de la commune";"97106";"Bouillante";"CHAR";5
+"CODGEO";"Code de la commune";"97107";"Capesterre-Belle-Eau";"CHAR";5
+"CODGEO";"Code de la commune";"97109";"Gourbeyre";"CHAR";5
+"CODGEO";"Code de la commune";"97112";"Grand-Bourg";"CHAR";5
+"CODGEO";"Code de la commune";"97113";"Le Gosier";"CHAR";5
+"CODGEO";"Code de la commune";"97114";"Goyave";"CHAR";5
+"CODGEO";"Code de la commune";"97115";"Lamentin";"CHAR";5
+"CODGEO";"Code de la commune";"97116";"Morne-à-l'Eau";"CHAR";5
+"CODGEO";"Code de la commune";"97117";"Le Moule";"CHAR";5
+"CODGEO";"Code de la commune";"97118";"Petit-Bourg";"CHAR";5
+"CODGEO";"Code de la commune";"97119";"Petit-Canal";"CHAR";5
+"CODGEO";"Code de la commune";"97120";"Pointe-à-Pitre";"CHAR";5
+"CODGEO";"Code de la commune";"97121";"Pointe-Noire";"CHAR";5
+"CODGEO";"Code de la commune";"97122";"Port-Louis";"CHAR";5
+"CODGEO";"Code de la commune";"97124";"Saint-Claude";"CHAR";5
+"CODGEO";"Code de la commune";"97125";"Saint-François";"CHAR";5
+"CODGEO";"Code de la commune";"97128";"Sainte-Anne";"CHAR";5
+"CODGEO";"Code de la commune";"97129";"Sainte-Rose";"CHAR";5
+"CODGEO";"Code de la commune";"97132";"Trois-Rivières";"CHAR";5
+"CODGEO";"Code de la commune";"97134";"Vieux-Habitants";"CHAR";5
+"CODGEO";"Code de la commune";"97207";"Ducos";"CHAR";5
+"CODGEO";"Code de la commune";"97209";"Fort-de-France";"CHAR";5
+"CODGEO";"Code de la commune";"97210";"Le François";"CHAR";5
+"CODGEO";"Code de la commune";"97212";"Gros-Morne";"CHAR";5
+"CODGEO";"Code de la commune";"97213";"Le Lamentin";"CHAR";5
+"CODGEO";"Code de la commune";"97214";"Le Lorrain";"CHAR";5
+"CODGEO";"Code de la commune";"97217";"Le Marin";"CHAR";5
+"CODGEO";"Code de la commune";"97220";"Rivière-Pilote";"CHAR";5
+"CODGEO";"Code de la commune";"97221";"Rivière-Salée";"CHAR";5
+"CODGEO";"Code de la commune";"97222";"Le Robert";"CHAR";5
+"CODGEO";"Code de la commune";"97223";"Saint-Esprit";"CHAR";5
+"CODGEO";"Code de la commune";"97224";"Saint-Joseph";"CHAR";5
+"CODGEO";"Code de la commune";"97227";"Sainte-Luce";"CHAR";5
+"CODGEO";"Code de la commune";"97228";"Sainte-Marie";"CHAR";5
+"CODGEO";"Code de la commune";"97229";"Schœlcher";"CHAR";5
+"CODGEO";"Code de la commune";"97230";"La Trinité";"CHAR";5
+"CODGEO";"Code de la commune";"97232";"Le Vauclin";"CHAR";5
+"CODGEO";"Code de la commune";"97302";"Cayenne";"CHAR";5
+"CODGEO";"Code de la commune";"97304";"Kourou";"CHAR";5
+"CODGEO";"Code de la commune";"97305";"Macouria";"CHAR";5
+"CODGEO";"Code de la commune";"97306";"Mana";"CHAR";5
+"CODGEO";"Code de la commune";"97307";"Matoury";"CHAR";5
+"CODGEO";"Code de la commune";"97309";"Remire-Montjoly";"CHAR";5
+"CODGEO";"Code de la commune";"97311";"Saint-Laurent-du-Maroni";"CHAR";5
+"CODGEO";"Code de la commune";"97353";"Maripasoula";"CHAR";5
+"CODGEO";"Code de la commune";"97357";"Grand-Santi";"CHAR";5
+"CODGEO";"Code de la commune";"97360";"Apatou";"CHAR";5
+"CODGEO";"Code de la commune";"97362";"Papaichton";"CHAR";5
+"CODGEO";"Code de la commune";"97401";"Les Avirons";"CHAR";5
+"CODGEO";"Code de la commune";"97402";"Bras-Panon";"CHAR";5
+"CODGEO";"Code de la commune";"97403";"Entre-Deux";"CHAR";5
+"CODGEO";"Code de la commune";"97404";"L'Étang-Salé";"CHAR";5
+"CODGEO";"Code de la commune";"97405";"Petite-Île";"CHAR";5
+"CODGEO";"Code de la commune";"97407";"Le Port";"CHAR";5
+"CODGEO";"Code de la commune";"97408";"La Possession";"CHAR";5
+"CODGEO";"Code de la commune";"97409";"Saint-André";"CHAR";5
+"CODGEO";"Code de la commune";"97410";"Saint-Benoît";"CHAR";5
+"CODGEO";"Code de la commune";"97411";"Saint-Denis";"CHAR";5
+"CODGEO";"Code de la commune";"97412";"Saint-Joseph";"CHAR";5
+"CODGEO";"Code de la commune";"97413";"Saint-Leu";"CHAR";5
+"CODGEO";"Code de la commune";"97414";"Saint-Louis";"CHAR";5
+"CODGEO";"Code de la commune";"97415";"Saint-Paul";"CHAR";5
+"CODGEO";"Code de la commune";"97416";"Saint-Pierre";"CHAR";5
+"CODGEO";"Code de la commune";"97417";"Saint-Philippe";"CHAR";5
+"CODGEO";"Code de la commune";"97418";"Sainte-Marie";"CHAR";5
+"CODGEO";"Code de la commune";"97419";"Sainte-Rose";"CHAR";5
+"CODGEO";"Code de la commune";"97420";"Sainte-Suzanne";"CHAR";5
+"CODGEO";"Code de la commune";"97421";"Salazie";"CHAR";5
+"CODGEO";"Code de la commune";"97422";"Le Tampon";"CHAR";5
+"CODGEO";"Code de la commune";"97423";"Les Trois-Bassins";"CHAR";5
+"CODGEO";"Code de la commune";"97424";"Cilaos";"CHAR";5
