@@ -58,5 +58,52 @@ For the website of the "Observatoire des Territoires", I had access to informati
 
 Lastly, le datas from datagouv give us the wages and wealthness of people in each city (Iris) in France.
 
+# Loading the datas 
+
+## The libraries come first
+
+```{r}
+library(here)
+library(vroom)
+library(readxl)
+```
+
+## Then I begin with the Insee and datagouv datas (the easiest ones)
+
+```{r}
+#| message: false
+table_communes <- read_xlsx(here("datasets", "table-appartenance-geo-communes-2023.xlsx"))
+```
+
+I will need to come back to this dataset because there is a problem with the import : the first 3 lines are not good.
 
 
+```{r}
+#| message: false
+taux_c2s <- vroom(here("datasets", "beneficiaires_CNAM_01-01-2023_Iris_csv", "data_CNAM2023_COM.csv"))
+```
+
+```{r}
+#| message: false
+revenus_communes <- vroom(here("datasets", "revenu-des-francais-a-la-commune-1765372688826.csv"))
+```
+
+
+## Now, I import the fragmented datas
+
+
+```{r}
+#| message: false
+data_1 <- vroom(here("datasets", "data-1.csv"))
+data_2 <- vroom(here("datasets", "data-2.csv"))
+data_3 <- vroom(here("datasets", "data-3.csv"))
+data_4 <- vroom(here("datasets", "data-4.csv"))
+data_5 <- vroom(here("datasets", "data-5.csv"))
+data_6 <- vroom(here("datasets", "data-6.csv"))
+data_7 <- vroom(here("datasets", "data-7.csv"))
+data_8 <- vroom(here("datasets", "data-8.csv"))
+data_9 <- vroom(here("datasets", "data-9.csv"))
+data_EPCI <- vroom(here("datasets", "data_EPCI.csv"))
+```
+
+I will need to merge datasets from `data_1` to `data_9` but first, I need to adress the problem of importation : the first (and sometimes, the second) line of the datasets is wrong.
