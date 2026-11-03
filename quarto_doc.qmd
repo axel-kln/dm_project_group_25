@@ -1,6 +1,32 @@
 ---
 title: "Phase 2 of the Project"
 author: "Axel Klenne"
-format: pdf
+format: 
+  pdf: default
+  html: default
 ---
+
+The link to the GitHub Project is : <https://github.com/axel-kln/dm_project_group_25.git>
+
+
+# The sources
+
+## Insee
+
+Here are the two links for the datasets that come from Insee :
+
+- <https://www.insee.fr/fr/information/7672015> ; 
+- <https://www.insee.fr/fr/statistiques/8736938>.
+
+## Observatoire des Territoires
+
+In reality, these datas come from different institutions but they are all accessible from the website of the "Observatoire des Territoires". 
+
+Here is the link : <https://www.observatoire-des-territoires.gouv.fr/outils/cartographie-interactive/#view=map80&c=indicator>
+
+Sadly, the benefit of this website can also be a drawback because to have the same datasets as me, you need to remake the whole selection of the observations and the datas. But, at the scale of the city (there is more than 30,000 in France), the you can only select a few variables at a time because if you try to load more than 15/20 variables at a time then the website reload and you have to do the whole process again (I talk from a ... traumatizing experience ...).
+
+## datagouv
+
+The link is the following : <https://www.data.gouv.fr/datasets/revenu-des-francais-a-la-commune/reuses_and_dataservices>
 
