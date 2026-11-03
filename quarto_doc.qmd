@@ -6,6 +6,12 @@ format:
   html: default
 ---
 
+```{r}
+#| message: false
+here::i_am("dm_project_group_25.Rproj")
+```
+
+
 The link to the GitHub Project is : <https://github.com/axel-kln/dm_project_group_25.git>
 
 
