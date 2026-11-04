@@ -75,7 +75,6 @@ table_communes <- read_xlsx(here("datasets", "table-appartenance-geo-communes-20
 
 I needed to skip the 5 firsts rows of the dataset because they were empty.
 
-
 ```{r}
 #| message: false
 taux_c2s <- vroom(here("datasets", "beneficiaires_CNAM_01-01-2023_Iris_csv", "data_CNAM2023_COM.csv"))
@@ -83,14 +82,12 @@ taux_c2s <- vroom(here("datasets", "beneficiaires_CNAM_01-01-2023_Iris_csv", "da
 
 This dataset is good, I don't need to do modifications at this moment.
 
-
 ```{r}
 #| message: false
 revenus_communes <- vroom(here("datasets", "revenu-des-francais-a-la-commune-1765372688826.csv"))
 ```
 
 This dataset is good, I don't need to do modifications at this moment.
-
 
 ## Now, I import the fragmented datas
 
@@ -112,4 +109,28 @@ I will need to merge datasets from `data_1` to `data_9` but first, I need to add
 
 **DISCLAIMER : to resolve the problem of the the recognition of variables, I used AI Gemini --\> I asked it why my variables were not recognized as numbers and it said to me that it was because of the "N/A - division par 0" and the "N/A - résultat non disponible". It said it made R thinks that the variables are character and that I need to make clear that these observations are missing values.**
 
+## Merging of `data_1` to `data_9`
 
+```{r}
+data_COM <- data_1 |> 
+  inner_join(data_2, by = join_by(Code)) |> 
+  inner_join(data_3, by = join_by(Code)) |> 
+  inner_join(data_4, by = join_by(Code)) |> 
+  inner_join(data_5, by = join_by(Code)) |> 
+  inner_join(data_6, by = join_by(Code)) |> 
+  inner_join(data_7, by = join_by(Code)) |> 
+  inner_join(data_8, by = join_by(Code)) |> 
+  inner_join(data_9, by = join_by(Code))
+```
+
+We have successfully merged `data_1` to `data_9` in a new dataset called `data_COM`.
+
+# Description of the datas
+
+| Dataset          | Number of rows               | Number of columns            |
+|------------------------|------------------------|------------------------|
+| data_COM         | `{r} nrow(data_COM)`         | `{r} ncol(data_COM)`         |
+| data_EPCI        | `{r} nrow(data_EPCI)`        | `{r} ncol(data_EPCI)`        |
+| revenus_communes | `{r} nrow(revenus_communes)` | `{r} ncol(revenus_communes)` |
+| table_communes   | `{r} nrow(table_communes)`   | `{r} ncol(table_communes)`   |
+| taux_c2s         | `{r} nrow(taux_c2s)`         | `{r} ncol(taux_c2s)`         |
