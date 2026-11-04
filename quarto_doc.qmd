@@ -2,8 +2,8 @@
 title: "Phase 2 of the Project"
 author: "Axel Klenne"
 format: 
-  pdf: default
   html: default
+  pdf: default
 ---
 
 ```{r}
@@ -11,9 +11,7 @@ format:
 here::i_am("dm_project_group_25.Rproj")
 ```
 
-
 The link to the GitHub Project is : <https://github.com/axel-kln/dm_project_group_25.git>
-
 
 # The sources
 
@@ -21,12 +19,12 @@ The link to the GitHub Project is : <https://github.com/axel-kln/dm_project_grou
 
 Here are the two links for the datasets that come from Insee :
 
-- <https://www.insee.fr/fr/information/7672015> ; 
+- <https://www.insee.fr/fr/information/7672015> ;
 - <https://www.insee.fr/fr/statistiques/8736938>.
 
 ## Observatoire des Territoires
 
-In reality, these datas come from different institutions but they are all accessible from the website of the "Observatoire des Territoires". 
+In reality, these datas come from different institutions but they are all accessible from the website of the "Observatoire des Territoires".
 
 Here is the link : <https://www.observatoire-des-territoires.gouv.fr/outils/cartographie-interactive/#view=map80&c=indicator>
 
@@ -36,14 +34,11 @@ Sadly, the benefit of this website can also be a drawback because to have the sa
 
 The link is the following : <https://www.data.gouv.fr/datasets/revenu-des-francais-a-la-commune/reuses_and_dataservices>
 
+# Description of the sources
 
-# Description of the sources 
+With the first link to the website of Insee, we have access, for each city in France, to the codename of their "EPCI" (Etablissement Public de Coopération Intercommunale). It allows us to go from the scale of the city to the scale of multiple-ones when it seems more convenient (or logical) like for example if we want to see if people in one city have access to a family physician : we know that people, at least in France, are able to go relatively far away to see a physician (which is totally legitimate). Insee also provided me with informations about the pourcentage of population covered by the C2S (the free one and the contributing one) in each city that has more than 10,000 inhabitants (and most of cities of more than 5,000 inhabitants).
 
-With the first link to the website of Insee, we have access, for each city in France, to the codename of their "EPCI" (Etablissement Public de Coopération Intercommunale). It allows us to go from the scale of the city to the scale of multiple-ones when it seems more convenient (or logical) like for example if we want to see if people in one city have access to a family physician : we know that people, at least in France, are able to go relatively far away to see a physician (which is totally legitimate).
-Insee also provided me with informations about the pourcentage of population covered by the C2S (the free one and the contributing one) in each city that has more than 10,000 inhabitants (and most of cities of more than 5,000 inhabitants). 
-
-
-For the website of the "Observatoire des Territoires", I had access to informations about all French cities and EPCI on the following topics : 
+For the website of the "Observatoire des Territoires", I had access to informations about all French cities and EPCI on the following topics :
 
 - demography (density, oldness, gender, etc) ;
 - family matters (size of families, only one parent families, etc) ;
@@ -52,20 +47,23 @@ For the website of the "Observatoire des Territoires", I had access to informati
 - education ;
 - housing (housing prices, housing precarity, etc) ;
 - healthcare providers ;
-- general public services access ; 
+- general public services access ;
 - social matters (RSA, APL, etc).
-
 
 Lastly, le datas from datagouv give us the wages and wealthness of people in each city (Iris) in France.
 
-# Loading the datas 
+# Loading the datas
 
 ## The libraries come first
 
 ```{r}
+#| message: false
 library(here)
 library(vroom)
 library(readxl)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
 ```
 
 ## Then I begin with the Insee and datagouv datas (the easiest ones)
