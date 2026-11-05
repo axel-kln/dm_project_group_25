@@ -64,6 +64,7 @@ library(readxl)
 library(ggplot2)
 library(dplyr)
 library(tidyr)
+theme_set(theme_bw())
 ```
 
 ## Then I begin with the Insee and datagouv datas (the easiest ones)
@@ -147,5 +148,13 @@ We know from the Drees (French Ministery of Health) that at the national scale, 
 So, I would like to do an econometrical study with cross-sectional datas to try to have a better understanding of this very high non take-up rate.
 
 
+```{r}
+#| message: false
+data_COM |> 
+  filter(!is.na(`Part de la population couverte par la C2S 2025`)) |> 
+  ggplot(aes(x = `Part de la population couverte par la C2S 2025`)) + 
+  geom_histogram() + 
+  geom_rug()
+```
 
 
