@@ -113,14 +113,14 @@ I will need to merge datasets from `data_1` to `data_9` but first, I need to add
 
 ```{r}
 data_COM <- data_1 |> 
-  inner_join(data_2, by = join_by(Code)) |> 
-  inner_join(data_3, by = join_by(Code)) |> 
-  inner_join(data_4, by = join_by(Code)) |> 
-  inner_join(data_5, by = join_by(Code)) |> 
-  inner_join(data_6, by = join_by(Code)) |> 
-  inner_join(data_7, by = join_by(Code)) |> 
-  inner_join(data_8, by = join_by(Code)) |> 
-  inner_join(data_9, by = join_by(Code))
+  inner_join(data_2, by = join_by(Code, Libellé)) |> 
+  inner_join(data_3, by = join_by(Code, Libellé)) |> 
+  inner_join(data_4, by = join_by(Code, Libellé)) |> 
+  inner_join(data_5, by = join_by(Code, Libellé)) |> 
+  inner_join(data_6, by = join_by(Code, Libellé)) |> 
+  inner_join(data_7, by = join_by(Code, Libellé)) |> 
+  inner_join(data_8, by = join_by(Code, Libellé)) |> 
+  inner_join(data_9, by = join_by(Code, Libellé))
 ```
 
 We have successfully merged `data_1` to `data_9` in a new dataset called `data_COM`.
@@ -134,3 +134,18 @@ We have successfully merged `data_1` to `data_9` in a new dataset called `data_C
 | revenus_communes | `{r} nrow(revenus_communes)` | `{r} ncol(revenus_communes)` |
 | table_communes   | `{r} nrow(table_communes)`   | `{r} ncol(table_communes)`   |
 | taux_c2s         | `{r} nrow(taux_c2s)`         | `{r} ncol(taux_c2s)`         |
+
+
+At this point, I think the more important variables are (for each Iris city) the number of people covered by the free C2S (`C_C2SNP` in `taux_c2s`) and the participative one (`C_C2SP` in `taux_c2s`). Since we have the total population of these cities, we can calculate the rate of C2S take-up. 
+
+I also think that, for the first part of the project (calculation of the non take-up rate), variables such as the median of the income, the poverty rate and the D1 will be very useful. 
+
+# My project
+
+I want to make for the 1928 cities that we have in `taux_c2` an approximation of the non take-up rate for C2S. When it is done, I would like to find out what are the socials, demographics and economics reasons why there is non take-up. 
+We know from the Drees (French Ministery of Health) that at the national scale, there is roughly 44% of non take-up (31% for free C2S and 66% for the contributive one). But the Drees only make assumptions of the reasons why there could be such a phenomena. 
+So, I would like to do an econometrical study with cross-sectional datas to try to have a better understanding of this very high non take-up rate.
+
+
+
+
