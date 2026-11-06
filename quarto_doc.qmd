@@ -67,7 +67,7 @@ library(tidyr)
 theme_set(theme_bw())
 ```
 
-## Then I begin with the Insee and datagouv datas (the easiest ones)
+## Then I begin with the Insee and datagouv data (the easiest ones)
 
 ```{r}
 #| message: false
@@ -90,7 +90,7 @@ revenus_communes <- vroom(here("datasets", "revenu-des-francais-a-la-commune-176
 
 This dataset is good, I don't need to do modifications at this moment.
 
-## Now, I import the fragmented datas
+## Now, I import the fragmented data
 
 ```{r}
 #| message: false
@@ -143,10 +143,13 @@ I also think that, for the first part of the project (calculation of the non tak
 
 # My project
 
-I want to make for the 1928 cities that we have in `taux_c2` an approximation of the non take-up rate for C2S. When it is done, I would like to find out what are the socials, demographics and economics reasons why there is non take-up. 
-We know from the Drees (French Ministery of Health) that at the national scale, there is roughly 44% of non take-up (31% for free C2S and 66% for the contributive one). But the Drees only make assumptions of the reasons why there could be such a phenomena. 
-So, I would like to do an econometrical study with cross-sectional datas to try to have a better understanding of this very high non take-up rate.
+We know from the Drees (French Minister of Health) that at the national scale, there is roughly 44% of non take-up (31% for free C2S and 66% for the contributive one). But the Drees only make assumptions of the reasons why there could be such a phenomena. 
 
+First, I would like to create an econometric model explaining the take-up rate of the C2S with on one side, the explaining variables for needs (poverty, low income, unemployment, family situation, etc) and on the other side, the explaining variables for access (France Travail, APL for physicians, level of education, etc). The model will allow us to control for needs and to have the ceteris paribus effect of the access variables on take-up but also non take-up.
+
+Then, I want to make for the 1928 cities that we have in `taux_c2` an approximation of the non take-up rate for C2S. When it is done, I would like to find out what are the socials, demographics and economics reasons why there is non take-up. The goal will be to confirm that we have the same results and explanations than before. 
+
+# Graphical representation
 
 ```{r}
 #| message: false
@@ -157,4 +160,10 @@ data_COM |>
   geom_rug()
 ```
 
+```{r}
+data_COM |> 
+  filter(!is.na(`Part de la population couverte par la C2S 2025`)) |>
+  count()
+```
 
+This histogram show the distribution of the percentage of the recipients in the population of the 1 881 cities which have at least one Iris in `data_COM`.
