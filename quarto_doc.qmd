@@ -167,3 +167,32 @@ data_COM |>
 ```
 
 This histogram show the distribution of the percentage of the recipients in the population of the 1 881 cities which have at least one Iris in `data_COM`.
+
+
+```{r}
+#| message: false
+taux_c2s |> 
+  mutate(P_C2SNP = (C_C2SNP/C)*100) |> 
+  mutate(P_C2SP = (C_C2SP/C)*100) |> 
+  pivot_longer(cols = c(P_C2SNP,P_C2SP), names_to = "Type de C2S", values_to = "Part de la population couverte") |> 
+  select(CODGEO, `Type de C2S`, `Part de la population couverte`) |> 
+  head()
+```
+
+
+```{r}
+#| message: false
+#| warning: false
+taux_c2s |> 
+  mutate(P_C2SNP = (C_C2SNP/C)*100) |> 
+  mutate(P_C2SP = (C_C2SP/C)*100) |> 
+  pivot_longer(cols = c(P_C2SNP,P_C2SP), names_to = "Type de C2S", values_to = "Part de la population couverte") |> 
+  ggplot(aes(x = `Part de la population couverte`, fill = `Type de C2S`)) + 
+  geom_histogram(alpha = 0.5, position = "identity") + 
+  geom_rug(aes(colour = `Type de C2S`)) + 
+  labs(title = "Distribution de la part de la population \ncouverte par la C2S au sein des communes irisées", y = "Nombre de communes", caption = "Notes : \nP_C2SNP = part de bénéficiaires de la C2S non-participative \nP_C2SP = part de bénéficiaires de la C2S participative")
+```
+
+
+
+
