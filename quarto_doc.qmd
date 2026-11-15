@@ -152,40 +152,40 @@ Then, I want to make for the 1928 cities that we have in `taux_c2` an approximat
 # Graphical representation
 
 ```{r}
-#| message: false
-data_COM |> 
-  filter(!is.na(`Part de la population couverte par la C2S 2025`)) |> 
-  ggplot(aes(x = `Part de la population couverte par la C2S 2025`)) + 
-  geom_histogram() + 
-  geom_rug()
+taux_c2s |> 
+  filter(!is.na(C)) |> 
+  nrow()
 ```
-
 ```{r}
-data_COM |> 
-  filter(!is.na(`Part de la population couverte par la C2S 2025`)) |>
-  count()
+taux_c2s |> 
+  filter(!is.na(C_C2SNP)) |> 
+  nrow()
+```
+```{r}
+taux_c2s |> 
+  filter(!is.na(C_C2SP)) |> 
+  nrow()
 ```
 
-This histogram show the distribution of the percentage of the recipients in the population of the 1 881 cities which have at least one Iris in `data_COM`.
-
+Only 4 missing values (`NA`) for the variable `C_C2SP`. 
 
 ```{r}
 #| message: false
 taux_c2s |> 
   mutate(P_C2SNP = (C_C2SNP/C)*100) |> 
   mutate(P_C2SP = (C_C2SP/C)*100) |> 
+  filter(!is.na(P_C2SP)) |>
   pivot_longer(cols = c(P_C2SNP,P_C2SP), names_to = "Type de C2S", values_to = "Part de la population couverte") |> 
   select(CODGEO, `Type de C2S`, `Part de la population couverte`) |> 
   head()
 ```
 
-
 ```{r}
 #| message: false
-#| warning: false
 taux_c2s |> 
   mutate(P_C2SNP = (C_C2SNP/C)*100) |> 
   mutate(P_C2SP = (C_C2SP/C)*100) |> 
+  filter(!is.na(P_C2SP)) |> 
   pivot_longer(cols = c(P_C2SNP,P_C2SP), names_to = "Type de C2S", values_to = "Part de la population couverte") |> 
   ggplot(aes(x = `Part de la population couverte`, fill = `Type de C2S`)) + 
   geom_histogram(alpha = 0.5, position = "identity") + 
@@ -193,6 +193,27 @@ taux_c2s |>
   labs(title = "Distribution de la part de la population \ncouverte par la C2S au sein des communes irisées", y = "Nombre de communes", caption = "Notes : \nP_C2SNP = part de bénéficiaires de la C2S non-participative \nP_C2SP = part de bénéficiaires de la C2S participative")
 ```
 
+This histogram show the distribution of the percentage of the recipients in the population of the 1 928 cities (1 924 for `P_C2SP`) which have at least one Iris in `taux_c2s`. We can see that the non-free C2S is present in many cities but it covers only a small portion of the population. On the other hand, for the free C2S, the distribution shows that, it covers more important parts of population. 
 
+Now, the question is : which covers the higher part of the population ? Free or non-free C2S ? 
+
+```{r}
+#| echo: false
+taux_c2s |> 
+  summarise("Pop totale" = sum(C), 
+            "Pop totale C2S" = sum(C_C2SNP) + sum(C_C2SP, na.rm = TRUE),
+            "Pop C2S NP" = sum(C_C2SNP), 
+            "Pop C2S P" = sum(C_C2SP, na.rm = TRUE)
+            )
+```
+
+```{r}
+#| echo: false
+taux_c2s |> 
+  summarise("Part C2SNP/C2S" = ((sum(C_C2SNP)/(sum(C_C2SNP) + sum(C_C2SP, na.rm = TRUE)))*100), 
+            "Part C2SP/C2S" = ((sum(C_C2SP, na.rm = TRUE)/(sum(C_C2SNP) + sum(C_C2SP, na.rm = TRUE)))*100), 
+            "Part C2SNP/TOT" = (sum(C_C2SNP)/sum(C))*100, 
+            "Part C2SP/TOT" = (sum(C_C2SP, na.rm = TRUE)/sum(C))*100)
+```
 
 
