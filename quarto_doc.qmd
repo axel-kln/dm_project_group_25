@@ -216,4 +216,65 @@ taux_c2s |>
             "Part C2SP/TOT" = (sum(C_C2SP, na.rm = TRUE)/sum(C))*100)
 ```
 
+In `revenus_communes`, the "Nom géographique GMS" column is useless so I delete it : 
+```{r}
+revenus_communes <- revenus_communes |> 
+  select(-`Nom géographique GMS`) |> 
+  rename("CODGEO" = "Code géographique")
+```
+
+
+```{r}
+tauxc2s_revenus_communes <- taux_c2s |> 
+  inner_join(revenus_communes, by = join_by(CODGEO))
+```
+
+
+```{r}
+tauxc2s_revenus_communes <- tauxc2s_revenus_communes |> 
+  mutate(P_C2SNP = (C_C2SNP/C)*100) |> 
+  mutate(P_C2SP = (C_C2SP/C)*100)
+```
+
+
+```{r}
+#| message: false
+tauxc2s_revenus_communes |> 
+  ggplot(aes(x = `[DISP] 1ᵉʳ décile (€)`, y = P_C2SNP)) + 
+  geom_point(alpha = 0.3) + 
+  geom_smooth() + 
+  geom_rug(alpha = 0.3) + 
+  labs(title = "Proportion de la population couverte par la C2S \nnon-participative en fonction du niveau du 1er décile \nde revenu dans la commune")
+```
+
+We can see, there is some points for which, the C2S rate is way higher than for cities with the same income for D1. The question is why ? Is this some kind of proof of the non take-up in others cities ? 
+
+
+```{r}
+tauxc2s_revenus_communes |> 
+  filter(`[DISP] 1ᵉʳ décile (€)` < 10000) |> 
+  filter(P_C2SNP > 40) |> 
+  summarise(.by = c(CODGEO, `Libellé géographique`, `[DISP] 1ᵉʳ décile (€)`, P_C2SNP))
+```
+
+```{r}
+tauxc2s_revenus_communes |> 
+  filter(`[DISP] 1ᵉʳ décile (€)` < 10000) |> 
+  filter(P_C2SNP < 10) |> 
+  summarise(.by = c(CODGEO, `Libellé géographique`, `[DISP] 1ᵉʳ décile (€)`, P_C2SNP))
+```
+
+
+
+```{r}
+#| message: false
+tauxc2s_revenus_communes |> 
+  ggplot(aes(x = `[DISP] 2ᵉ décile (€)`, y = P_C2SNP)) + 
+  geom_point(alpha = 0.3) + 
+  geom_smooth() + 
+  geom_rug(alpha = 0.3) + 
+  labs(title = "Proportion de la population couverte par la C2S \nnon-participative en fonction du niveau du 2e décile \nde revenu dans la commune")
+```
+
+
 
