@@ -94,16 +94,16 @@ This dataset is good, I don't need to do modifications at this moment.
 
 ```{r}
 #| message: false
-data_1 <- vroom(here("datasets", "data-1.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
-data_2 <- vroom(here("datasets", "data-2.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
-data_3 <- vroom(here("datasets", "data-3.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
-data_4 <- vroom(here("datasets", "data-4.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
-data_5 <- vroom(here("datasets", "data-5.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
-data_6 <- vroom(here("datasets", "data-6.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
-data_7 <- vroom(here("datasets", "data-7.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
-data_8 <- vroom(here("datasets", "data-8.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
-data_9 <- vroom(here("datasets", "data-9.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
-data_EPCI <- vroom(here("datasets", "data_EPCI.csv"), skip = 2, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_1 <- read_xlsx(here("datasets", "data-1.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_2 <- read_xlsx(here("datasets", "data-2.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_3 <- read_xlsx(here("datasets", "data-3.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_4 <- read_xlsx(here("datasets", "data-4.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_5 <- read_xlsx(here("datasets", "data-5.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_6 <- read_xlsx(here("datasets", "data-6.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_7 <- read_xlsx(here("datasets", "data-7.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_8 <- read_xlsx(here("datasets", "data-8.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_9 <- read_xlsx(here("datasets", "data-9.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
+data_EPCI <- read_xlsx(here("datasets", "data_EPCI.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
 ```
 
 I will need to merge datasets from `data_1` to `data_9` but first, I need to address the problem of importation : the first (and sometimes, the second) line of the datasets is wrong. The second problem was the fact that the variables where recognized as characters and not doubles.
