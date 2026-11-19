@@ -141,6 +141,41 @@ At this point, I think the more important variables are (for each Iris city) the
 
 I also think that, for the first part of the project (calculation of the non take-up rate), variables such as the median of the income, the poverty rate and the D1 will be very useful. 
 
+## Final merging 
+
+```{r}
+data_COM <- data_COM |> 
+  rename(CODGEO = Code) |> 
+  rename(LIBGEO = Libellé)
+data_EPCI <- data_EPCI |> 
+  rename(CODEPCI = Code) |> 
+  rename(LIBEPCI = Libellé) |> 
+  mutate(CODEPCI = as.character(CODEPCI))
+table_communes <- table_communes |> 
+  rename(CODEPCI = EPCI)
+revenus_communes <- revenus_communes |> 
+  rename(`[DISP] Indice de Gini` = `[DISP] Iice de Gini`) |> 
+  select(-`Nom géographique GMS`) |> 
+  rename(CODGEO = `Code géographique`)
+
+data <- taux_c2s |> 
+  left_join(revenus_communes, by = join_by(CODGEO)) |>
+  select(-c(NOTE, `Libellé géographique`)) |> 
+  inner_join(data_COM, by = join_by(CODGEO)) |> 
+  relocate(LIBGEO, .after = CODGEO) |> 
+  inner_join(select(table_communes, CODGEO, LIBGEO, CODEPCI), by = join_by(CODGEO, LIBGEO)) |> 
+  inner_join(data_EPCI, by = join_by(CODEPCI), suffix = c("_COM", "_EPCI"))
+
+rm(data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8, data_9, data_COM, data_EPCI, revenus_communes, table_communes, taux_c2s)
+```
+
+Now, all the data are in a unique dataset. 
+
+| Dataset          | Number of rows               | Number of columns            |
+|------------------------|------------------------|------------------------|
+| data         | `{r} nrow(data)`         | `{r} ncol(data)`         |
+
+
 # My project
 
 We know from the Drees (French Minister of Health) that at the national scale, there is roughly 44% of non take-up (31% for free C2S and 66% for the contributive one). But the Drees only make assumptions of the reasons why there could be such a phenomena. 
@@ -149,42 +184,49 @@ First, I would like to create an econometric model explaining the take-up rate o
 
 Then, I want to make for the 1928 cities that we have in `taux_c2` an approximation of the non take-up rate for C2S. When it is done, I would like to find out what are the socials, demographics and economics reasons why there is non take-up. The goal will be to confirm that we have the same results and explanations than before. 
 
-# Graphical representation
+
+A FAIRE ==> Quelques stats (regarder par rapport aux assurés sociaux et la population totale, quels résultats sont les plus logiques ?) / fusionner les bases de donées 
+
+# Analysis of the data
 
 ```{r}
-taux_c2s |> 
+data |> 
   filter(!is.na(C)) |> 
   nrow()
 ```
+
+No `NA` in `C`
+
 ```{r}
-taux_c2s |> 
+data |> 
   filter(!is.na(C_C2SNP)) |> 
   nrow()
 ```
+
+No `NA` in `C_C2SNP`
+
 ```{r}
-taux_c2s |> 
+data |> 
   filter(!is.na(C_C2SP)) |> 
   nrow()
 ```
 
-Only 4 missing values (`NA`) for the variable `C_C2SP`. 
+Only 4 missing values (`NA`) for the variable `C_C2SP`
 
 ```{r}
 #| message: false
-taux_c2s |> 
+data <- data |> 
   mutate(P_C2SNP = (C_C2SNP/C)*100) |> 
   mutate(P_C2SP = (C_C2SP/C)*100) |> 
-  filter(!is.na(P_C2SP)) |>
-  pivot_longer(cols = c(P_C2SNP,P_C2SP), names_to = "Type de C2S", values_to = "Part de la population couverte") |> 
-  select(CODGEO, `Type de C2S`, `Part de la population couverte`) |> 
-  head()
+  relocate(P_C2SNP, .after = C_C2SNP) |> 
+  relocate(P_C2SP, .after = C_C2SP)
 ```
 
+Using percentage values is far easier for comparative analysis. 
+
 ```{r}
 #| message: false
-taux_c2s |> 
-  mutate(P_C2SNP = (C_C2SNP/C)*100) |> 
-  mutate(P_C2SP = (C_C2SP/C)*100) |> 
+data |> 
   filter(!is.na(P_C2SP)) |> 
   pivot_longer(cols = c(P_C2SNP,P_C2SP), names_to = "Type de C2S", values_to = "Part de la population couverte") |> 
   ggplot(aes(x = `Part de la population couverte`, fill = `Type de C2S`)) + 
@@ -193,13 +235,13 @@ taux_c2s |>
   labs(title = "Distribution de la part de la population \ncouverte par la C2S au sein des communes irisées", y = "Nombre de communes", caption = "Notes : \nP_C2SNP = part de bénéficiaires de la C2S non-participative \nP_C2SP = part de bénéficiaires de la C2S participative")
 ```
 
-This histogram show the distribution of the percentage of the recipients in the population of the 1 928 cities (1 924 for `P_C2SP`) which have at least one Iris in `taux_c2s`. We can see that the non-free C2S is present in many cities but it covers only a small portion of the population. On the other hand, for the free C2S, the distribution shows that, it covers more important parts of population. 
+This histogram show the distribution of the percentage of the recipients in the population of the 1 868 cities (1 864 for `P_C2SP`) which have at least one Iris in `taux_c2s`. We can see that the non-free C2S is present in many cities but it covers only a small portion of the population. On the other hand, for the free C2S, the distribution shows that, it covers more important parts of population. 
 
 Now, the question is : which covers the higher part of the population ? Free or non-free C2S ? 
 
 ```{r}
 #| echo: false
-taux_c2s |> 
+data |> 
   summarise("Pop totale" = sum(C), 
             "Pop totale C2S" = sum(C_C2SNP) + sum(C_C2SP, na.rm = TRUE),
             "Pop C2S NP" = sum(C_C2SNP), 
@@ -209,37 +251,18 @@ taux_c2s |>
 
 ```{r}
 #| echo: false
-taux_c2s |> 
+data |> 
   summarise("Part C2SNP/C2S" = ((sum(C_C2SNP)/(sum(C_C2SNP) + sum(C_C2SP, na.rm = TRUE)))*100), 
             "Part C2SP/C2S" = ((sum(C_C2SP, na.rm = TRUE)/(sum(C_C2SNP) + sum(C_C2SP, na.rm = TRUE)))*100), 
             "Part C2SNP/TOT" = (sum(C_C2SNP)/sum(C))*100, 
             "Part C2SP/TOT" = (sum(C_C2SP, na.rm = TRUE)/sum(C))*100)
 ```
 
-In `revenus_communes`, the "Nom géographique GMS" column is useless so I delete it : 
-```{r}
-revenus_communes <- revenus_communes |> 
-  select(-`Nom géographique GMS`) |> 
-  rename("CODGEO" = "Code géographique")
-```
-
-
-```{r}
-tauxc2s_revenus_communes <- taux_c2s |> 
-  inner_join(revenus_communes, by = join_by(CODGEO))
-```
-
-
-```{r}
-tauxc2s_revenus_communes <- tauxc2s_revenus_communes |> 
-  mutate(P_C2SNP = (C_C2SNP/C)*100) |> 
-  mutate(P_C2SP = (C_C2SP/C)*100)
-```
-
 
 ```{r}
 #| message: false
-tauxc2s_revenus_communes |> 
+data |> 
+  filter(!is.na(`[DISP] 1ᵉʳ décile (€)`)) |> 
   ggplot(aes(x = `[DISP] 1ᵉʳ décile (€)`, y = P_C2SNP)) + 
   geom_point(alpha = 0.3) + 
   geom_smooth() + 
@@ -251,29 +274,37 @@ We can see, there is some points for which, the C2S rate is way higher than for 
 
 
 ```{r}
-tauxc2s_revenus_communes |> 
+data |> 
   filter(`[DISP] 1ᵉʳ décile (€)` < 10000) |> 
   filter(P_C2SNP > 40) |> 
-  summarise(.by = c(CODGEO, `Libellé géographique`, `[DISP] 1ᵉʳ décile (€)`, P_C2SNP))
+  summarise(.by = c(CODGEO, LIBGEO, `[DISP] 1ᵉʳ décile (€)`, P_C2SNP))
 ```
 
 ```{r}
-tauxc2s_revenus_communes |> 
+data |> 
   filter(`[DISP] 1ᵉʳ décile (€)` < 10000) |> 
   filter(P_C2SNP < 10) |> 
-  summarise(.by = c(CODGEO, `Libellé géographique`, `[DISP] 1ᵉʳ décile (€)`, P_C2SNP))
+  summarise(.by = c(CODGEO, LIBGEO, `[DISP] 1ᵉʳ décile (€)`, P_C2SNP))
 ```
 
 
 
 ```{r}
 #| message: false
-tauxc2s_revenus_communes |> 
+data |> 
+  filter(!is.na(`[DISP] 2ᵉ décile (€)`)) |> 
   ggplot(aes(x = `[DISP] 2ᵉ décile (€)`, y = P_C2SNP)) + 
   geom_point(alpha = 0.3) + 
   geom_smooth() + 
   geom_rug(alpha = 0.3) + 
   labs(title = "Proportion de la population couverte par la C2S \nnon-participative en fonction du niveau du 2e décile \nde revenu dans la commune")
+```
+
+```{r}
+data |> 
+  filter(`[DISP] 2ᵉ décile (€)` < 10000) |> 
+  filter(P_C2SNP > 40) |> 
+  summarise(.by = c(CODGEO, LIBGEO, `[DISP] 2ᵉ décile (€)`, P_C2SNP))
 ```
 
 
