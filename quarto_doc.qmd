@@ -3,7 +3,7 @@ title: "Phase 2 of the Project"
 author: "Axel Klenne"
 format: 
   html: default
-  pdf: default
+  typst: default
 ---
 
 ```{r}
@@ -90,6 +90,12 @@ revenus_communes <- vroom(here("datasets", "revenu-des-francais-a-la-commune-176
 
 This dataset is good, I don't need to do modifications at this moment.
 
+```{r}
+#| message: true
+type_COM <- read_xlsx(here("datasets", "type_com.xlsx"), skip = 3)
+type_EPCI <- read_xlsx(here("datasets", "type_epci.xlsx"), skip = 3)
+```
+
 ## Now, I import the fragmented data
 
 ```{r}
@@ -136,12 +142,11 @@ We have successfully merged `data_1` to `data_9` in a new dataset called `data_C
 | table_communes   | `{r} nrow(table_communes)`   | `{r} ncol(table_communes)`   |
 | taux_c2s         | `{r} nrow(taux_c2s)`         | `{r} ncol(taux_c2s)`         |
 
+At this point, I think the more important variables are (for each Iris city) the number of people covered by the free C2S (`C_C2SNP` in `taux_c2s`) and the participative one (`C_C2SP` in `taux_c2s`). Since we have the total population of these cities, we can calculate the rate of C2S take-up.
 
-At this point, I think the more important variables are (for each Iris city) the number of people covered by the free C2S (`C_C2SNP` in `taux_c2s`) and the participative one (`C_C2SP` in `taux_c2s`). Since we have the total population of these cities, we can calculate the rate of C2S take-up. 
+I also think that, for the first part of the project (calculation of the non take-up rate), variables such as the median of the income, the poverty rate and the D1 will be very useful.
 
-I also think that, for the first part of the project (calculation of the non take-up rate), variables such as the median of the income, the poverty rate and the D1 will be very useful. 
-
-## Final merging 
+## Final merging
 
 ```{r}
 data_COM <- data_COM |> 
@@ -155,39 +160,48 @@ table_communes <- table_communes |>
   rename(CODEPCI = EPCI)
 revenus_communes <- revenus_communes |> 
   rename(`[DISP] Indice de Gini` = `[DISP] Iice de Gini`) |> 
+  rename(`[DEC] Indice de Gini` = `[DEC] Iice de Gini`) |> 
+  rename(`[DISP] dont part des indemnités de chômage (%)` = `[DISP] dont part des iemnités de chômage (%)`) |> 
+  rename(`[DEC] dont part des indemnités de chômage (%)` = `[DEC] dont part des iemnités de chômage (%)`) |> 
   select(-`Nom géographique GMS`) |> 
   rename(CODGEO = `Code géographique`)
+type_COM <- type_COM |> 
+  rename(CODGEO = Code) |> 
+  rename(LIBGEO = Libellé)
+type_EPCI <- type_EPCI |> 
+  rename(CODEPCI = Code) |> 
+  rename(LIBEPCI = Libellé)
 
 data <- taux_c2s |> 
   left_join(revenus_communes, by = join_by(CODGEO)) |>
   select(-c(NOTE, `Libellé géographique`)) |> 
   inner_join(data_COM, by = join_by(CODGEO)) |> 
   relocate(LIBGEO, .after = CODGEO) |> 
+  inner_join(type_COM, by = join_by(CODGEO, LIBGEO)) |> 
   inner_join(select(table_communes, CODGEO, LIBGEO, CODEPCI), by = join_by(CODGEO, LIBGEO)) |> 
-  inner_join(data_EPCI, by = join_by(CODEPCI), suffix = c("_COM", "_EPCI"))
+  inner_join(data_EPCI, by = join_by(CODEPCI), suffix = c("_COM", "_EPCI")) |> 
+  inner_join(type_EPCI, by = join_by(CODEPCI, LIBEPCI))
 
-rm(data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8, data_9, data_COM, data_EPCI, revenus_communes, table_communes, taux_c2s)
+rm(data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8, data_9, data_COM, data_EPCI, revenus_communes, table_communes, taux_c2s, type_COM, type_EPCI)
 ```
 
-Now, all the data are in a unique dataset. 
+Now, all the data are in a unique dataset.
 
-| Dataset          | Number of rows               | Number of columns            |
-|------------------------|------------------------|------------------------|
-| data         | `{r} nrow(data)`         | `{r} ncol(data)`         |
-
+| Dataset | Number of rows   | Number of columns |
+|---------|------------------|-------------------|
+| data    | `{r} nrow(data)` | `{r} ncol(data)`  |
 
 # My project
 
-We know from the Drees (French Minister of Health) that at the national scale, there is roughly 44% of non take-up (31% for free C2S and 66% for the contributive one). But the Drees only make assumptions of the reasons why there could be such a phenomena. 
+We know from the Drees (French Minister of Health) that at the national scale, there is roughly 44% of non take-up (31% for free C2S and 66% for the contributive one). But the Drees only make assumptions of the reasons why there could be such a phenomena.
 
 First, I would like to create an econometric model explaining the take-up rate of the C2S with on one side, the explaining variables for needs (poverty, low income, unemployment, family situation, etc) and on the other side, the explaining variables for access (France Travail, APL for physicians, level of education, etc). The model will allow us to control for needs and to have the ceteris paribus effect of the access variables on take-up but also non take-up.
 
-Then, I want to make for the 1928 cities that we have in `taux_c2` an approximation of the non take-up rate for C2S. When it is done, I would like to find out what are the socials, demographics and economics reasons why there is non take-up. The goal will be to confirm that we have the same results and explanations than before. 
+Then, I want to make, for the 1868 cities that we have in `data`, an approximation of the non take-up rate for C2S. When it is done, I would like to find out what are the socials, demographics and economics reasons why there is non take-up. The goal will be to confirm that we have the same results and explanations than before.
 
+# Data analysis
 
-A FAIRE ==> Quelques stats (regarder par rapport aux assurés sociaux et la population totale, quels résultats sont les plus logiques ?) / fusionner les bases de donées 
-
-# Analysis of the data
+## Analysis of the data (looking for `NA`) and histogram
 
 ```{r}
 data |> 
@@ -222,7 +236,7 @@ data <- data |>
   relocate(P_C2SP, .after = C_C2SP)
 ```
 
-Using percentage values is far easier for comparative analysis. 
+Using percentage values is far easier for comparative analysis.
 
 ```{r}
 #| message: false
@@ -235,9 +249,11 @@ data |>
   labs(title = "Distribution de la part de la population \ncouverte par la C2S au sein des communes irisées", y = "Nombre de communes", caption = "Notes : \nP_C2SNP = part de bénéficiaires de la C2S non-participative \nP_C2SP = part de bénéficiaires de la C2S participative")
 ```
 
-This histogram show the distribution of the percentage of the recipients in the population of the 1 868 cities (1 864 for `P_C2SP`) which have at least one Iris in `taux_c2s`. We can see that the non-free C2S is present in many cities but it covers only a small portion of the population. On the other hand, for the free C2S, the distribution shows that, it covers more important parts of population. 
+This histogram show the distribution of the percentage of the recipients in the population of the 1 868 cities (1 864 for `P_C2SP`) which have at least one Iris in `taux_c2s`. We can see that the non-free C2S is present in many cities but it covers only a small portion of the population. On the other hand, for the free C2S, the distribution shows that, it covers more important parts of population.
 
-Now, the question is : which covers the higher part of the population ? Free or non-free C2S ? 
+Now, the question is : which covers the higher part of the population ? Free or non-free C2S ?
+
+## Statistics for the total population
 
 ```{r}
 #| echo: false
@@ -258,6 +274,7 @@ data |>
             "Part C2SP/TOT" = (sum(C_C2SP, na.rm = TRUE)/sum(C))*100)
 ```
 
+## Clouds of points and tendencies analysis
 
 ```{r}
 #| message: false
@@ -270,8 +287,7 @@ data |>
   labs(title = "Proportion de la population couverte par la C2S \nnon-participative en fonction du niveau du 1er décile \nde revenu dans la commune")
 ```
 
-We can see, there is some points for which, the C2S rate is way higher than for cities with the same income for D1. The question is why ? Is this some kind of proof of the non take-up in others cities ? 
-
+We can see, there is some points for which, the C2S rate is way higher than for cities with the same income for D1. The question is why ? Is this some kind of proof of the non take-up in others cities ?
 
 ```{r}
 data |> 
@@ -286,8 +302,6 @@ data |>
   filter(P_C2SNP < 10) |> 
   summarise(.by = c(CODGEO, LIBGEO, `[DISP] 1ᵉʳ décile (€)`, P_C2SNP))
 ```
-
-
 
 ```{r}
 #| message: false
@@ -307,5 +321,46 @@ data |>
   summarise(.by = c(CODGEO, LIBGEO, `[DISP] 2ᵉ décile (€)`, P_C2SNP))
 ```
 
+# Identification of variables of needs and access at the city level
 
+## Variables of needs : 
+1 - `Part des 15-29 ans 2023_COM` ;
+2 - `Part des 60-74 ans 2023_COM` ;
+3 - `Taille moyenne des ménages des résidences principales occupées par des locataires du secteur libre 2023_COM` ;
+4 - `Taille moyenne des ménages des résidences principales HLM louées vides 2023_COM` ;
+5 - `Part des ménages dont la famille principale est une famille monoparentale 2023_COM` ;
+6 - `Part des étrangers dans la population 2023_COM` ; 
+7 - `Part des immigrés dans la population 2023_COM` ;
+8 - `Part des "agriculteurs exploitants" chez les 15-64 ans 2023_x000d_ Ensemble_COM` ;
+9 - `Part des "ouvriers" chez les 15-64 ans 2023_x000d_ Ensemble_COM` ;
+10 - `Part des "employés" chez les 15-64 ans 2023_x000d_ Ensemble_COM` ;
+11 - `Part des "autres sans activité professionnelle" dans la population 2023_x000d_ Ensemble_COM` ;
+12 - `Part des actifs de 15-24 ans en emploi à temps partiel 2023_x000d_ Ensemble_COM` ;
+13 - `Part des actifs de 55-64 ans en emploi à temps partiel 2023_x000d_ Ensemble_COM` ;
+14 - `Part des salariés de 15-24 ans en emploi précaire 2023_x000d_ Ensemble_COM` ; 
+15 - `Part des salariés de 55-64 ans en emploi précaire 2023_x000d_ Ensemble_COM` ; 
+16 - `Taux de chômage des 15-24 ans (RP) 2023_x000d_ Ensemble_COM` ; 
+17 - `Taux de chômage des 55-64 ans (RP) 2023_x000d_ Ensemble_COM` ; 
+18 - `Taux de pauvreté (seuil à 60% du revenu médian) 2023 2023_COM` ;
+19 - `Part d'allocataires du RSA (pour 1 000 habitants de 15-64 ans) 2024_COM` ;
+20 - `Part de bénéficiaires d'une aide au logement 2024_COM` ; 
+21 - `Part des jeunes non insérés (ni en emploi, ni scolarisés - NEET) 2023_COM` ;
+22 - `Part des non diplomés parmi les 15 ans et plus non scolarisés 2023_x000d_ Ensemble_COM` ;
+23 - `Niveau d'occupation des logements 2023_x000d_ Sur-occupation accentuée` ;
+24 - `Part des ménages de 65 ans et plus locataires de leur résidence principale 2023_COM` ;
+25 - `Part des ménages en précarité énergétique logement par niveau de vie 2022_COM` ;
+26 - `Part de la population municipale résidant en QPV_COM`.
+
+## Variables of access : 
+1 - 
+
+
+
+# Identification of variables of needs and access at the EPCI level
+
+## Variables of needs : 
+1 - 
+
+## Variables of access : 
+1 - 
 
