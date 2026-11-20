@@ -4,6 +4,10 @@ author: "Axel Klenne"
 format: 
   html: default
   typst: default
+  revealjs: 
+    echo: true
+lightbox: true
+df-print: kable
 ---
 
 ```{r}
@@ -321,46 +325,100 @@ data |>
   summarise(.by = c(CODGEO, LIBGEO, `[DISP] 2ᵉ décile (€)`, P_C2SNP))
 ```
 
+```{r}
+#| warning: false
+data |> 
+  pivot_longer(cols = c(P_C2SNP, P_C2SP), names_to = "Type de C2S", values_to = "Pourcentage") |> 
+  ggplot(aes(x = `Type de C2S`, y = Pourcentage)) + 
+  geom_boxplot()
+
+data |> 
+  pivot_longer(cols = c(P_C2SNP, P_C2SP), names_to = "Type de C2S", values_to = "Pourcentage") |> 
+  ggplot(aes(x = `Type de C2S`, y = Pourcentage)) + 
+  geom_violin()
+
+data |> 
+  pivot_longer(cols = c(P_C2SNP, P_C2SP), names_to = "Type de C2S", values_to = "Pourcentage") |> 
+  ggplot(aes(x = Pourcentage)) + 
+  geom_density(bw = "sj") + 
+  geom_rug(alpha = 0.2) + 
+  facet_wrap(~ `Type de C2S`)
+```
+
+```{r}
+data <- data |> 
+  mutate(rural_EPCI = if_else(`Grille intercommunale de densité en 3 niveaux` == "3- Rural - Rural", 1, 0))
+```
+
+Creation of a dummy variable to compare between urban and rural EPCI.
+
+```{r}
+data <- data |> 
+  mutate(DROM_COM = if_else(substr(CODGEO, 1, 2) == "97", 1, 0)) |> 
+  relocate(DROM_COM, .before = CODEPCI)
+```
+
+Creation of a dummy variable to compare between "France métropolitaine" and "DROM".
+
 # Identification of variables of needs and access at the city level
 
-## Variables of needs : 
-1 - `Part des 15-29 ans 2023_COM` ;
-2 - `Part des 60-74 ans 2023_COM` ;
-3 - `Taille moyenne des ménages des résidences principales occupées par des locataires du secteur libre 2023_COM` ;
-4 - `Taille moyenne des ménages des résidences principales HLM louées vides 2023_COM` ;
-5 - `Part des ménages dont la famille principale est une famille monoparentale 2023_COM` ;
-6 - `Part des étrangers dans la population 2023_COM` ; 
-7 - `Part des immigrés dans la population 2023_COM` ;
-8 - `Part des "agriculteurs exploitants" chez les 15-64 ans 2023_x000d_ Ensemble_COM` ;
-9 - `Part des "ouvriers" chez les 15-64 ans 2023_x000d_ Ensemble_COM` ;
-10 - `Part des "employés" chez les 15-64 ans 2023_x000d_ Ensemble_COM` ;
-11 - `Part des "autres sans activité professionnelle" dans la population 2023_x000d_ Ensemble_COM` ;
-12 - `Part des actifs de 15-24 ans en emploi à temps partiel 2023_x000d_ Ensemble_COM` ;
-13 - `Part des actifs de 55-64 ans en emploi à temps partiel 2023_x000d_ Ensemble_COM` ;
-14 - `Part des salariés de 15-24 ans en emploi précaire 2023_x000d_ Ensemble_COM` ; 
-15 - `Part des salariés de 55-64 ans en emploi précaire 2023_x000d_ Ensemble_COM` ; 
-16 - `Taux de chômage des 15-24 ans (RP) 2023_x000d_ Ensemble_COM` ; 
-17 - `Taux de chômage des 55-64 ans (RP) 2023_x000d_ Ensemble_COM` ; 
-18 - `Taux de pauvreté (seuil à 60% du revenu médian) 2023 2023_COM` ;
-19 - `Part d'allocataires du RSA (pour 1 000 habitants de 15-64 ans) 2024_COM` ;
-20 - `Part de bénéficiaires d'une aide au logement 2024_COM` ; 
-21 - `Part des jeunes non insérés (ni en emploi, ni scolarisés - NEET) 2023_COM` ;
-22 - `Part des non diplomés parmi les 15 ans et plus non scolarisés 2023_x000d_ Ensemble_COM` ;
-23 - `Niveau d'occupation des logements 2023_x000d_ Sur-occupation accentuée` ;
-24 - `Part des ménages de 65 ans et plus locataires de leur résidence principale 2023_COM` ;
-25 - `Part des ménages en précarité énergétique logement par niveau de vie 2022_COM` ;
-26 - `Part de la population municipale résidant en QPV_COM`.
+I don't really know how to class `DROM_COM` because it is both needs and access variables. Hence, it will be in the model but its interpretation will be subject to future discussions.
 
-## Variables of access : 
-1 - 
+## Variables of needs :
 
+1. `Part des 15-29 ans 2023_COM` ; 
+2. `Part des 60-74 ans 2023_COM` ; 
+3. `Taille moyenne des ménages des résidences principales occupées par des locataires du secteur libre 2023_COM` ; 
+4. `Taille moyenne des ménages des résidences principales HLM louées vides 2023_COM` ; 
+5. `Part des ménages dont la famille principale est une famille monoparentale 2023_COM` ; 
+6. `Part des étrangers dans la population 2023_COM` ; 
+7. `Part des immigrés dans la population 2023_COM` ; 
+8. `Part des "agriculteurs exploitants" chez les 15-64 ans 2023_x000d_ Ensemble_COM` ; 
+9. `Part des "ouvriers" chez les 15-64 ans 2023_x000d_ Ensemble_COM` ; 
+10. `Part des "employés" chez les 15-64 ans 2023_x000d_ Ensemble_COM` ; 
+11. `Part des "autres sans activité professionnelle" dans la population 2023_x000d_ Ensemble_COM` ; 
+12. `Part des actifs de 15-24 ans en emploi à temps partiel 2023_x000d_ Ensemble_COM` ; 
+13. `Part des actifs de 55-64 ans en emploi à temps partiel 2023_x000d_ Ensemble_COM` ; 
+14. `Part des salariés de 15-24 ans en emploi précaire 2023_x000d_ Ensemble_COM` ; 
+15. `Part des salariés de 55-64 ans en emploi précaire 2023_x000d_ Ensemble_COM` ; 
+16. `Taux de chômage des 15-24 ans (RP) 2023_x000d_ Ensemble_COM` ; 
+17. `Taux de chômage des 55-64 ans (RP) 2023_x000d_ Ensemble_COM` ; 
+18. `Taux de pauvreté (seuil à 60% du revenu médian) 2023 2023_COM` ; 
+19. `Part d'allocataires du RSA (pour 1 000 habitants de 15-64 ans) 2024_COM` ; 
+20. `Part de bénéficiaires d'une aide au logement 2024_COM` ; 
+21. `Part des jeunes non insérés (ni en emploi, ni scolarisés - NEET) 2023_COM` ; 
+22. `Part des non diplomés parmi les 15 ans et plus non scolarisés 2023_x000d_ Ensemble_COM` ; 
+23. `Niveau d'occupation des logements 2023_x000d_ Sur-occupation accentuée` ; 
+24. `Part des ménages de 65 ans et plus locataires de leur résidence principale 2023_COM` ; 
+25. `Part des ménages en précarité énergétique logement par niveau de vie 2022_COM` ; 
+26. `Part de la population municipale résidant en QPV_COM`.
 
+## Variables of access :
+
+1. `Taux de réussite au DNB 2024-2025_x000d_ Public_COM` ; 
+2. `Part des diplomés du supérieur parmi les 15 ans et plus non scolarisés 2023_x000d_ Ensemble_COM` ; 
+3. `Part des personnes de 75 ans et plus vivant seules 2023_COM` ; 
+4. `Typologie communale de l'accessibilité aux soins de premier recours en France 2021` ; 
+5. `APL aux médecins généralistes de moins de 65 ans 2024_COM` ; 
+6. `APL aux sages-femmes 2024_COM` ; 
+7. `APL aux masseurs-kinésithérapeutes 2024_COM` ; 
+8. `APL aux infirmiers 2024_COM` ; 
+9. `APL aux chirurgiens-dentistes 2024_COM` ; 
+10. `Présidentielles - Taux d'abstention 2022_x000d_ 1er tour_COM`.
 
 # Identification of variables of needs and access at the EPCI level
 
-## Variables of needs : 
-1 - 
+## Variables of needs :
 
-## Variables of access : 
-1 - 
+1. `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Risque industriel` ; 
+2. `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Radon` ; 
+3. `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Phénomène atmosphérique` ; 
+4. `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Pollution des eaux`.
+
+## Variable of access :
+
+1. `rural_EPCI`.
+
+
+
 
