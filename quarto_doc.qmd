@@ -420,5 +420,61 @@ I don't really know how to class `DROM_COM` because it is both needs and access 
 1. `rural_EPCI`.
 
 
+# The complete model
 
+## Installation of the libraries
 
+```{r}
+#| message: false
+library(car)
+library(lmtest)
+library(broom)
+library(performance)
+```
+
+## First try on `P_C2SNP`
+
+```{r}
+#| eval: false
+model_complet <- lm(data = data, P_C2SNP ~ `Part des 15-29 ans 2023_COM` + 
+                      `Part des 60-74 ans 2023_COM` + 
+                      `Taille moyenne des ménages des résidences principales occupées par des locataires du secteur libre 2023_COM` + 
+                      `Taille moyenne des ménages des résidences principales HLM louées vides 2023_COM` + 
+                      `Part des ménages dont la famille principale est une famille monoparentale 2023_COM` + 
+                      `Part des étrangers dans la population 2023_COM` + `Part des immigrés dans la population 2023_COM` + 
+                      `Part des "agriculteurs exploitants" chez les 15-64 ans 2023_x000d_ Ensemble_COM` + 
+                      `Part des "ouvriers" chez les 15-64 ans 2023_x000d_ Ensemble_COM` + 
+                      `Part des "employés" chez les 15-64 ans 2023_x000d_ Ensemble_COM` + 
+                      `Part des "autres sans activité professionnelle" dans la population 2023_x000d_ Ensemble_COM` + 
+                      `Part des actifs de 15-24 ans en emploi à temps partiel 2023_x000d_ Ensemble_COM` + 
+                      `Part des actifs de 55-64 ans en emploi à temps partiel 2023_x000d_ Ensemble_COM` + 
+                      `Part des salariés de 15-24 ans en emploi précaire 2023_x000d_ Ensemble_COM` + 
+                      `Part des salariés de 55-64 ans en emploi précaire 2023_x000d_ Ensemble_COM` + 
+                      `Taux de chômage des 15-24 ans (RP) 2023_x000d_ Ensemble_COM` + 
+                      `Taux de chômage des 55-64 ans (RP) 2023_x000d_ Ensemble_COM` + 
+                      `Taux de pauvreté (seuil à 60% du revenu médian) 2023 2023_COM` + 
+                      `Part d'allocataires du RSA (pour 1 000 habitants de 15-64 ans) 2024_COM` + 
+                      `Part de bénéficiaires d'une aide au logement 2024_COM` + 
+                      `Part des jeunes non insérés (ni en emploi, ni scolarisés - NEET) 2023_COM` + 
+                      `Part des non diplomés parmi les 15 ans et plus non scolarisés 2023_x000d_ Ensemble_COM` + 
+                      `Niveau d'occupation des logements 2023_x000d_ Sur-occupation accentuée` + 
+                      `Part des ménages de 65 ans et plus locataires de leur résidence principale 2023_COM` + 
+                      `Part des ménages en précarité énergétique logement par niveau de vie 2022_COM` + 
+                      `Part de la population municipale résidant en QPV_COM` + `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Risque industriel` + 
+                      `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Radon` + 
+                      `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Phénomène atmosphérique` + 
+                      `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Pollution des eaux` + 
+                      `Taux de réussite au DNB 2024-2025_x000d_ Public_COM` + 
+                      `Part des diplomés du supérieur parmi les 15 ans et plus non scolarisés 2023_x000d_ Ensemble_COM` + 
+                      `Part des personnes de 75 ans et plus vivant seules 2023_COM` + 
+                      `Typologie communale de l'accessibilité aux soins de premier recours en France 2021` + 
+                      `APL aux médecins généralistes de moins de 65 ans 2024_COM` + `APL aux sages-femmes 2024_COM` + 
+                      `APL aux masseurs-kinésithérapeutes 2024_COM` + 
+                      `APL aux infirmiers 2024_COM` + 
+                      `APL aux chirurgiens-dentistes 2024_COM` + 
+                      `Présidentielles - Taux d'abstention 2022_x000d_ 1er tour_COM` + 
+                      `rural_EPCI` + `DROM_COM`)
+
+```
+
+Doesn't work when it runs from `Part des "agriculteurs exploitants" chez les 15-64 ans 2023_x000d_ Ensemble_COM` --> probably a problem with `_x000d_` 
