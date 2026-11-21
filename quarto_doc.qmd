@@ -176,7 +176,11 @@ We have successfully merged `data_1` to `data_9` in a new dataset called `data_C
 | table_communes   | `{r} nrow(table_communes)`   | `{r} ncol(table_communes)`   |
 | taux_c2s         | `{r} nrow(taux_c2s)`         | `{r} ncol(taux_c2s)`         |
 
-At this point, I think the more important variables are (for each Iris city) the number of people covered by the free C2S (`C_C2SNP` in `taux_c2s`) and the participative one (`C_C2SP` in `taux_c2s`). Since we have the total population of these cities, we can calculate the rate of C2S take-up.
+At this point, I think the more important variables are (for each Iris city) the number of people covered by the free C2S (`C_C2SNP` in `taux_c2s`) and the non-free one (`C_C2SP` in `taux_c2s`). Since we have the total covered population of these cities, we can calculate the rate of C2S take-up.
+
+I also think that, for the first part of the project, variables such as the median of the income, the poverty rate and the D1 will be very useful.
+
+Another thing I will have to be cautious with : coming from a city near Luxembourg, I know that many people in cities near borders work in Luxembourg and Switzerland. These people are not attached to the "régime général de la Sécurité Sociale" so this can create a bias in our estimation. I will have to identify these cities and create a dummy variable. 
 
 
 # Datasets corrections and final merging
@@ -187,8 +191,7 @@ data_COM <- data_COM |>
   rename(LIBGEO = Libellé)
 data_EPCI <- data_EPCI |> 
   rename(CODEPCI = Code) |> 
-  rename(LIBEPCI = Libellé) |> 
-  mutate(CODEPCI = as.character(CODEPCI))
+  rename(LIBEPCI = Libellé)
 table_communes <- table_communes |> 
   rename(CODEPCI = EPCI)
 revenus_communes <- revenus_communes |> 
@@ -215,7 +218,7 @@ data <- taux_c2s |>
   inner_join(data_EPCI, by = join_by(CODEPCI), suffix = c("_COM", "_EPCI")) |> 
   inner_join(type_EPCI, by = join_by(CODEPCI, LIBEPCI))
 
-rm(data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8, data_9, data_COM, data_EPCI, revenus_communes, table_communes, taux_c2s, type_COM, type_EPCI)
+rm(data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8, data_9, data_COM, data_EPCI, revenus_communes, table_communes, type_COM, type_EPCI)
 ```
 
 Now, all the data are in a unique dataset.
@@ -401,6 +404,16 @@ data |>
   geom_rug(alpha = 0.2) + 
   facet_wrap(~ `Type de C2S`)
 ```
+
+The non-free C2S was created to avoid threshold effect when people have a little increase of their incomes. So it seems logical that the proportion of non-free C2S in the total of C2S and in the total of the covered population is so small. The density graphic shows us that the proportion of non-free C2S recipients in cities is globally very low (less than 5%). On the other hand, it could be only the proof of non-take-up (~ 67% for non-free C2S).
+The main problem is a statistical one. If the variation of the explained variable is not important enough then we can not make a regression of good quality so there is a risk that the main variable of interest will be `P_C2SNP` : 
+
+```{r}
+data |> 
+  filter(!is.na(P_C2SP)) |> 
+  summarise(variance_C2SP = var(P_C2SP), ecart_type_C2SP = sd(P_C2SP), variance_C2SNP = var(P_C2SNP), ecart_type_C2SNP = sd(P_C2SNP))
+```
+
 
 ```{r}
 data <- data |> 
