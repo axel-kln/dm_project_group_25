@@ -17,6 +17,7 @@ here::i_am("dm_project_group_25.Rproj")
 
 The link to the GitHub Project is : <https://github.com/axel-kln/dm_project_group_25.git>
 
+
 # The sources
 
 ## Insee
@@ -26,17 +27,20 @@ Here are the two links for the datasets that come from Insee :
 - <https://www.insee.fr/fr/information/7672015> ;
 - <https://www.insee.fr/fr/statistiques/8736938>.
 
+
 ## Observatoire des Territoires
 
 In reality, these datas come from different institutions but they are all accessible from the website of the "Observatoire des Territoires".
 
 Here is the link : <https://www.observatoire-des-territoires.gouv.fr/outils/cartographie-interactive/#view=map80&c=indicator>
 
-Sadly, the benefit of this website can also be a drawback because to have the same datasets as me, you need to remake the whole selection of the observations and the datas. But, at the scale of the city (there is more than 30,000 in France), the you can only select a few variables at a time because if you try to load more than 15/20 variables at a time then the website reload and you have to do the whole process again (I talk from a ... traumatizing experience ...).
+Sadly, the benefit of this website can also be a drawback because to have the same datasets as me, you need to remake the whole selection of the observations and the datas. But, at the scale of the city (there is more than 30,000 in France), you can only select a few variables at a time because if you try to load more than 15/20 variables at a time then the website reload and you have to do the whole process again (I had some ... traumatizing experiences ...).
+
 
 ## datagouv
 
 The link is the following : <https://www.data.gouv.fr/datasets/revenu-des-francais-a-la-commune/reuses_and_dataservices>
+
 
 # Description of the sources
 
@@ -56,9 +60,10 @@ For the website of the "Observatoire des Territoires", I had access to informati
 
 Lastly, le datas from datagouv give us the wages and wealthness of people in each city (Iris) in France.
 
+
 # Loading the datas
 
-## The libraries come first
+## The libraries
 
 ```{r}
 #| message: false
@@ -71,7 +76,10 @@ library(tidyr)
 theme_set(theme_bw())
 ```
 
-## Then I begin with the Insee and datagouv data (the easiest ones)
+
+## The datasets
+
+### The "normals" datasets 
 
 ```{r}
 #| message: false
@@ -80,12 +88,14 @@ table_communes <- read_xlsx(here("datasets", "table-appartenance-geo-communes-20
 
 I needed to skip the 5 firsts rows of the dataset because they were empty.
 
+
 ```{r}
 #| message: false
 taux_c2s <- vroom(here("datasets", "beneficiaires_CNAM_01-01-2023_Iris_csv", "data_CNAM2023_COM.csv"))
 ```
 
 This dataset is good, I don't need to do modifications at this moment.
+
 
 ```{r}
 #| message: false
@@ -100,7 +110,7 @@ type_COM <- read_xlsx(here("datasets", "type_com.xlsx"), skip = 3)
 type_EPCI <- read_xlsx(here("datasets", "type_epci.xlsx"), skip = 3)
 ```
 
-## Now, I import the fragmented data
+### The "fragmented" datasets
 
 ```{r}
 #| message: false
@@ -116,9 +126,10 @@ data_9 <- read_xlsx(here("datasets", "data-9.xlsx"), skip = 3, na = c("N/A - div
 data_EPCI <- read_xlsx(here("datasets", "data_EPCI.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
 ```
 
-I will need to merge datasets from `data_1` to `data_9` but first, I need to address the problem of importation : the first (and sometimes, the second) line of the datasets is wrong. The second problem was the fact that the variables where recognized as characters and not doubles.
+I will need to merge datasets from `data_1` to `data_9` but first, I need to address the problem of importation : the first, second and third lines of the datasets are wrong. The second problem was the fact that the variables where recognized as characters and not doubles.
 
-**DISCLAIMER : to resolve the problem of the the recognition of variables, I used AI Gemini --\> I asked it why my variables were not recognized as numbers and it said to me that it was because of the "N/A - division par 0" and the "N/A - résultat non disponible". It said it made R thinks that the variables are character and that I need to make clear that these observations are missing values.**
+**DISCLAIMER : to resolve the problem of the the recognition of variables, I used AI Gemini --> I asked it why my variables were not recognized as numbers and it said to me that it was because of the "N/A - division par 0" and the "N/A - résultat non disponible". It said it made R thinks that the variables are character and that I need to make clear that these observations are missing values.**
+
 
 ## Merging of `data_1` to `data_9`
 
@@ -136,6 +147,7 @@ data_COM <- data_1 |>
 
 We have successfully merged `data_1` to `data_9` in a new dataset called `data_COM`.
 
+
 # Description of the datas
 
 | Dataset          | Number of rows               | Number of columns            |
@@ -148,9 +160,8 @@ We have successfully merged `data_1` to `data_9` in a new dataset called `data_C
 
 At this point, I think the more important variables are (for each Iris city) the number of people covered by the free C2S (`C_C2SNP` in `taux_c2s`) and the participative one (`C_C2SP` in `taux_c2s`). Since we have the total population of these cities, we can calculate the rate of C2S take-up.
 
-I also think that, for the first part of the project (calculation of the non take-up rate), variables such as the median of the income, the poverty rate and the D1 will be very useful.
 
-## Final merging
+# Datasets corrections and final merging
 
 ```{r}
 data_COM <- data_COM |> 
@@ -203,9 +214,10 @@ First, I would like to create an econometric model explaining the take-up rate o
 
 Then, I want to make, for the 1868 cities that we have in `data`, an approximation of the non take-up rate for C2S. When it is done, I would like to find out what are the socials, demographics and economics reasons why there is non take-up. The goal will be to confirm that we have the same results and explanations than before.
 
+
 # Data analysis
 
-## Analysis of the data (looking for `NA`) and histogram
+## Analysis of the data (looking for `NA`)
 
 ```{r}
 data |> 
@@ -213,7 +225,8 @@ data |>
   nrow()
 ```
 
-No `NA` in `C`
+No `NA` in `C`.
+
 
 ```{r}
 data |> 
@@ -221,7 +234,8 @@ data |>
   nrow()
 ```
 
-No `NA` in `C_C2SNP`
+No `NA` in `C_C2SNP`.
+
 
 ```{r}
 data |> 
@@ -229,7 +243,8 @@ data |>
   nrow()
 ```
 
-Only 4 missing values (`NA`) for the variable `C_C2SP`
+Only 4 missing values (`NA`) for the variable `C_C2SP`.
+
 
 ```{r}
 #| message: false
@@ -241,6 +256,9 @@ data <- data |>
 ```
 
 Using percentage values is far easier for comparative analysis.
+
+
+## Histogram 
 
 ```{r}
 #| message: false
@@ -256,6 +274,7 @@ data |>
 This histogram show the distribution of the percentage of the recipients in the population of the 1 868 cities (1 864 for `P_C2SP`) which have at least one Iris in `taux_c2s`. We can see that the non-free C2S is present in many cities but it covers only a small portion of the population. On the other hand, for the free C2S, the distribution shows that, it covers more important parts of population.
 
 Now, the question is : which covers the higher part of the population ? Free or non-free C2S ?
+
 
 ## Statistics for the total population
 
@@ -278,6 +297,7 @@ data |>
             "Part C2SP/TOT" = (sum(C_C2SP, na.rm = TRUE)/sum(C))*100)
 ```
 
+
 ## Clouds of points and tendencies analysis
 
 ```{r}
@@ -292,6 +312,7 @@ data |>
 ```
 
 We can see, there is some points for which, the C2S rate is way higher than for cities with the same income for D1. The question is why ? Is this some kind of proof of the non take-up in others cities ?
+
 
 ```{r}
 data |> 
@@ -352,6 +373,7 @@ data <- data |>
 
 Creation of a dummy variable to compare between urban and rural EPCI.
 
+
 ```{r}
 data <- data |> 
   mutate(DROM_COM = if_else(substr(CODGEO, 1, 2) == "97", 1, 0)) |> 
@@ -360,9 +382,11 @@ data <- data |>
 
 Creation of a dummy variable to compare between "France métropolitaine" and "DROM".
 
+
 # Identification of variables of needs and access at the city level
 
 I don't really know how to class `DROM_COM` because it is both needs and access variables. Hence, it will be in the model but its interpretation will be subject to future discussions.
+
 
 ## Variables of needs :
 
@@ -393,6 +417,7 @@ I don't really know how to class `DROM_COM` because it is both needs and access 
 25. `Part des ménages en précarité énergétique logement par niveau de vie 2022_COM` ; 
 26. `Part de la population municipale résidant en QPV_COM`.
 
+
 ## Variables of access :
 
 1. `Taux de réussite au DNB 2024-2025_x000d_ Public_COM` ; 
@@ -406,6 +431,7 @@ I don't really know how to class `DROM_COM` because it is both needs and access 
 9. `APL aux chirurgiens-dentistes 2024_COM` ; 
 10. `Présidentielles - Taux d'abstention 2022_x000d_ 1er tour_COM`.
 
+
 # Identification of variables of needs and access at the EPCI level
 
 ## Variables of needs :
@@ -414,6 +440,7 @@ I don't really know how to class `DROM_COM` because it is both needs and access 
 2. `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Radon` ; 
 3. `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Phénomène atmosphérique` ; 
 4. `Part des communes soumises à un aléa ou un risque naturel ou technologique 2026_x000d_ Pollution des eaux`.
+
 
 ## Variable of access :
 
@@ -431,6 +458,7 @@ library(lmtest)
 library(broom)
 library(performance)
 ```
+
 
 ## First try on `P_C2SNP`
 
