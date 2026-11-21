@@ -224,6 +224,29 @@ Now, all the data are in a unique dataset.
 |---------|------------------|-------------------|
 | data    | `{r} nrow(data)` | `{r} ncol(data)`  |
 
+As you can see, we have lost some observations : there is three main reasons I can think about. Two of them are linked to the fact that Insee's data are from 2023 when the data of "Observatoire des Territoires" are from 2026.
+1. The name of the city (or its geographical code) changed or the city disappeared ; 
+2. The name of the ECPI (or its geographical code) changed or the EPCI disappeared ;
+3. The districts of Paris, Lyon and Marseille are included in the Insee's data but not in the "Observatoire des Territoires.
+
+```{r}
+#| eval: false
+taux_c2s |> 
+  anti_join(data, by = join_by(CODGEO))
+```
+```{r}
+rm(taux_c2s)
+```
+
+This `anti_join` gives us the proof that most of the disappeared observations come from the districts of Paris, Lyon and Marseille. But that is not a problem because the cities themselves are still in the `data` dataset : 
+
+```{r}
+data |> 
+  filter(CODGEO == "13055" | CODGEO == "69123" | CODGEO == "75056") |> 
+  select(CODGEO, LIBGEO, C, C_C2SNP, C_C2SP, LIBEPCI)
+```
+
+
 # My project
 
 We know from the Drees (French Minister of Health) that at the national scale, there is roughly 44% of non take-up (31% for free C2S and 66% for the contributive one). But the Drees only make assumptions of the reasons why there could be such a phenomena.
@@ -370,11 +393,6 @@ data |>
   pivot_longer(cols = c(P_C2SNP, P_C2SP), names_to = "Type de C2S", values_to = "Pourcentage") |> 
   ggplot(aes(x = `Type de C2S`, y = Pourcentage)) + 
   geom_boxplot()
-
-data |> 
-  pivot_longer(cols = c(P_C2SNP, P_C2SP), names_to = "Type de C2S", values_to = "Pourcentage") |> 
-  ggplot(aes(x = `Type de C2S`, y = Pourcentage)) + 
-  geom_violin()
 
 data |> 
   pivot_longer(cols = c(P_C2SNP, P_C2SP), names_to = "Type de C2S", values_to = "Pourcentage") |> 
