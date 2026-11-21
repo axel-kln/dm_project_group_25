@@ -102,13 +102,29 @@ This dataset is good, I don't need to do modifications at this moment.
 revenus_communes <- vroom(here("datasets", "revenu-des-francais-a-la-commune-1765372688826.csv"))
 ```
 
-This dataset is good, I don't need to do modifications at this moment.
+This dataset is not good. There seems to be a problem with the title of some columns and rows. It seems that every "nd" is erased (example : "[DISP] Iice de Gini", "[DISP] dont part des iemnités de chômage (%)"). I think, the names of cities are also touched so I will have to be careful with the merging. 
+
 
 ```{r}
-#| message: true
-type_COM <- read_xlsx(here("datasets", "type_com.xlsx"), skip = 3)
-type_EPCI <- read_xlsx(here("datasets", "type_epci.xlsx"), skip = 3)
+#| message: false
+type_COM <- vroom(here("datasets", "type_com.csv"), skip = 2, col_types = cols(
+  Code = col_character(),
+  Libellé = col_character(),
+  `Typologie diversité des ruralités (Commune)` = col_double(),
+  `Grille communale de densité en 7 niveaux` = col_double(),
+  .delim = ";"
+))
+type_EPCI <- vroom(here("datasets", "type_epci.csv"), skip = 2, col_types = cols(
+  Code = col_character(),
+  Libellé = col_character(),
+  `Typologie diversité des ruralités (EPCI)` = col_double(),
+  `Grille intercommunale de densité en 3 niveaux` = col_character(),
+  .delim = ";"
+))
 ```
+
+This dataset is good, I don't need to do modifications at this moment.
+
 
 ### The "fragmented" datasets
 
@@ -125,6 +141,8 @@ data_8 <- read_xlsx(here("datasets", "data-8.xlsx"), skip = 3, na = c("N/A - div
 data_9 <- read_xlsx(here("datasets", "data-9.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
 data_EPCI <- read_xlsx(here("datasets", "data_EPCI.xlsx"), skip = 3, na = c("N/A - division par 0", "N/A - résultat non disponible"))
 ```
+
+Sadly, I had to import datasets in the XLSX format and not in CSV format because because the sub-categories ("Femme", "Homme", "Ensemble") disappeared in the CSV format which make it almost unusable. For an unknown reason, it seems that these sub-categories appear in the XLSX format.
 
 I will need to merge datasets from `data_1` to `data_9` but first, I need to address the problem of importation : the first, second and third lines of the datasets are wrong. The second problem was the fact that the variables where recognized as characters and not doubles.
 
